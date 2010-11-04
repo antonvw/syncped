@@ -1,0 +1,294 @@
+<!--
+Name:      syncped.htm
+Purpose:   Users guide for syncped
+Author:    Anton van Wezenbeek
+Created:   2007
+RCS-ID:    $Id$
+Copyright: (c) 2009 Anton van Wezenbeek
+-->
+
+<head>
+<title>syncped help
+</title>
+</head>
+
+<style type="text/css">
+.TableStyle
+{
+<!-- font-family: Verdana; -->
+font-weight: normal;
+font-size: 9px;
+color: #404040;
+background-color: #fafafa;
+border: 1px #6699CC solid;
+}
+</style>
+
+<p>
+syncped is a synchronizing portable editor, supporting more than 80 programming
+langauges, and
+with automatic synchronizing for all its
+<a HREF="#EDIT">Editor windows</a> and its <a HREF="#LIST">List windows</a>.
+
+<p>
+It can be configured to work with most 
+<a HREF="#VCS">version control systems</a>. 
+
+<p>
+You can use <a HREF="#VI">vi</a> keys for navigating by setting 
+the vi Mode in the options.
+
+<p>
+Currently translation to Dutch is available, other languages
+are easy to implement, translating two po files is all that is necessary.
+
+<p>
+You can view a file in hex format by pressing the Hex 
+checkbox on the toolbar.
+
+<p>
+The configuration is read when starting up and saved when closing down.
+all data is read and saved from the same directory as your executable is in.
+
+<p>
+You can specify on the command line the file(s) to open, 
+wildcards * and ? are allowed.
+You can also drop files from windows explorer to syncped, these are opened
+automatically.
+
+<p>
+You can select and run a process using Process Select and Process Execute.
+The output (stdout and stderr) of the process is logged into the output
+list 'Process Output'.
+
+<hr>
+<a NAME="EDIT"></a><b>Editor</b>
+<p>
+This is an MDI notebook editor implemented using a
+<a HREF="http://www.scintilla.org">scintilla</a> component.
+
+<p>
+It has the next features:
+<ul>
+<li> Synchronizes if the file is changed from outside. Can be used for
+     viewing log files: If you're on the last position in a log file
+     and the log file is synchronized, then only new data is added to the
+     file, and your position is restored to the end of file. 
+     This also works in hex mode.
+<li> All scintilla lexers are supported, the colouring and 
+     keywords are read from lexers.xml, editable using 'Lexers File Open'.
+     Editing this file and saving it directly shows
+     colouring style changes on all open editors.
+<li> Fast searching by selecting text and pressing F3 or F4.
+<li> If you select several lines, you can sort the selection using
+     any sort position in the selection. The default sort position
+     is the cursor position at the last line of the selection.
+<li> You can set the position of the edge column.
+<li> You can set rectangular selection by pressing ALT before selecting.
+<li> When the mouse is on a hex number the decimal number is
+     shown as a tooltip by pressing Ctrl T.
+<li> Links are navigated using the popup menu on a Link.
+</ul>
+
+<hr>
+<a NAME="VI"></a><b>vi mode</b>
+<p>
+In vi mode you can perform vi like navigating and editing. Almost all vi keys
+are supported, including yanking, ranges, substituting and markers. 
+Char buffers are not yet supported. 
+</p>
+
+<p>
+<table border="1">
+<tr bgcolor="#9acd32">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
+
+<tr><td colspan="2" bgcolor="#9acd32">single char commands</td></tr>
+<tr><td>a</td><td>insert after cursor</td></tr>
+<tr><td>b</td><td>left one word</td></tr>
+<tr><td>e</td><td>word right end</td></tr>
+<tr><td>g</td><td>start of document</td></tr>
+<tr><td>h</td><td>left one character</td></tr>
+<tr><td>i</td><td>insert before cursor</td></tr>
+<tr><td>j</td><td>down one line</td></tr>
+<tr><td>k</td><td>up one line</td></tr>
+<tr><td>l</td><td>right one character></td></tr>
+<tr><td>n</td><td>repeat the most recent search, in the same direction</td></tr>
+<tr><td>o</td><td>insert after line</td></tr>
+<tr><td>p</td><td>put after cursor</td></tr>
+<tr><td>u</td><td>undo</td></tr>
+<tr><td>w</td><td>right one word</td></tr>
+<tr><td>x</td><td>delete</td></tr>
+<tr><td> </td><td>right one character</td></tr>
+
+<tr><td>A</td><td>insert after end of line</td></tr>
+<tr><td>C</td><td>change to end of line</td></tr>
+<tr><td>D</td><td>delete line right</td></tr>
+<tr><td>G</td><td>goto end or line number if prefixed</td></tr>
+<tr><td>H</td><td>goto first visible display line</td></tr>
+<tr><td>I</td><td>insert</td></tr>
+<tr><td>J</td><td>join lines</td></tr>
+<tr><td>M</td><td>goto mid of display line</td></tr>
+<tr><td>L</td><td>goto end of display line</td></tr>
+<tr><td>N</td><td>repeat the most recent search, in the opposite  direction</td></tr>
+<tr><td>O</td><td>insert before line</td></tr>
+<tr><td>P</td><td>put before cursor</td></tr>
+<tr><td>R</td><td>change to end of line, then inserts</td></tr>
+<tr><td>X</td><td>delete backwards</td></tr>
+
+<tr><td>/</td><td>next occurrence</td></tr>
+<tr><td>?</td><td>previous occurrence</td></tr>
+<tr><td>.</td><td>repeat last action</td></tr>
+<tr><td>~</td><td>toggle case</td></tr>
+<tr><td>$</td><td>end of document</td></tr>
+<tr><td>{</td><td>paragraph up</td></tr>
+<tr><td>}</td><td>paragraph down</td></tr>
+<tr><td>%</td><td>matching brace</td></tr>
+<tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
+<tr><td>*</td><td>next occurrence of word under cursor</td></tr>
+
+<tr><td colspan="2" bgcolor="#9acd32">control char commands</td></tr>
+<tr><td>ctrl b</td><td>page up</td></tr>
+<tr><td>ctrl f</td><td>page down</td></tr>
+<tr><td>ctrl p</td><td>scroll up</td></tr>
+<tr><td>ctrl n</td><td>scroll down</td></tr>
+
+<tr><td colspan="2" bgcolor="#9acd32">double char commands</td></tr>
+<tr><td>cw</td><td>change word</td></tr>
+<tr><td>cc</td><td>change line</td></tr>
+<tr><td>dd</td><td>delete line</td></tr>
+<tr><td>d0</td><td>delete line left</td></tr>
+<tr><td>d$</td><td>delete line right</td></tr>
+<tr><td>dw</td><td>delete word</td></tr>
+<tr><td>f?</td><td>find next character</td></tr>
+<tr><td>F?</td><td>find previous character</td></tr>
+<tr><td>m?</td><td>mark line</td></tr>
+<tr><td>r?</td><td>replace current character only</td></tr>
+<tr><td>yw</td><td>yank word</td></tr>
+<tr><td>yy</td><td>yank line</td></tr>
+<tr><td>ZZ</td><td>save and quit</td></tr>
+<tr><td>zc</td><td>fold close</td></tr>
+<tr><td>zo</td><td>fold open</td></tr>
+<tr><td>zE</td><td>fold disable</td></tr>
+<tr><td>zf</td><td>fold enable</td></tr>
+<tr><td>'?</td><td>goto marker</td></tr>
+<tr><td>&gt;&gt;</td><td>increase indent</td></tr>
+<tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
+
+<tr><td colspan="2" bgcolor="#9acd32">colon commands</td></tr>
+<tr><td>:.=        </td><td>current line</td></tr>
+<tr><td>:$         </td><td>goto end of document</td></tr>
+<tr><td>:close     </td><td>closes current document</td></tr>
+<tr><td>:[address]d</td><td>delete</td></tr>
+<tr><td>:e         </td><td>edit</td></tr>
+<tr><td>:e *       </td><td>edit *</td></tr>
+<tr><td>:[address]m dest </td><td>move dest</td></tr>
+<tr><td>:n         </td><td>next</td></tr>
+<tr><td>:prev      </td><td>previous</td></tr>
+<tr><td>:q         </td><td>quit unless modified</td></tr>
+<tr><td>:q!        </td><td>quit forced</td></tr>
+<tr><td>:[address]s/p/r/</td><td>substitute p by r (always global)</td></tr>
+<tr><td>:w         </td><td>save</td></tr>
+<tr><td>:w *       </td><td>save *</td></tr>
+<tr><td>:x         </td><td>save and quit</td></tr>
+<tr><td>:y         </td><td>yank</td></tr>
+
+</table>
+
+<p>
+Most commands can be prefixed with a multidigit number, that takes care of
+repeating that command the number of times it was prefixed.
+
+<hr>
+<a NAME="LIST"></a><b>List</b>
+<p>
+The output lists and the projects are implemented using a MDI notebook using a
+standard list control component.
+
+<p>
+It has the next features:
+
+<ul>
+<li> Synchronizes if a list item is changed from outside.
+<li> Columns<br>
+All lists have at least the following columns:
+<ul>
+<li> Name
+<li> Type<br>
+For folders this field holds the pattern that was specified during 
+adding the folder.
+<li> Modified<br>
+<li> In Folder
+<li> Size<br>
+For folders this field is not used.
+</ul>
+<li> 'Find In ...' is available that allows you
+to find text in all files in your project. If items are selected in
+the project, then searching is limited to these files.
+<li> The list can be sorted on each of its columns by
+clicking on the column header.
+You also have an Automatic Sort option for the project. If set, then
+your project is automatically sorted ascending or descending
+(depending on your SortMethod) and resorted whenever
+one of the files in the project is synchronized.
+<li> An item on the list can be opened by double clicking.
+<li> List items can be copied to the clipboard as
+ascii text with columns separated by tabs, and then pasted on other lists,
+or into an edit window.
+<li> You can compare items with each other, or with a base version from
+a version list. A version list can be created from an item if the item
+is part of a directory structure where the same item appears in
+another directory as well where that directory 
+matches the [0-9]*\\.[0-9]*.*" regular expression.
+</ul>
+
+<p>
+The project files are stored as XML files containing the full paths of all items.
+You can edit it using 'File Open As Text' in order to replace or change items.
+
+<p>
+File attributes like modification times and access rights are 
+not stored in this file,
+they are read from disk each time you open the file.
+
+
+<hr>
+<a NAME="VCS"></a><b>Version Control Systems</b>
+<p>
+Support for VCS is configured by the vcss.xml file. 
+At this moment there is support for 
+SVN, GIT and CVS. Others should be not to difficult to add.
+
+<p>
+e.g. the next svn commands are supported:
+
+<p>
+<table border="1">
+<tr bgcolor="#9acd32">
+  <th align="left">svn command</th>
+  <th align="left">action</th>
+</tr>
+
+<tr><td>add     </td><td>invokes svn add</td></tr>
+<tr><td>blame   </td><td>asks for revision and shows revision with blame info in editor window</</td></tr>
+<tr><td>cat     </td><td>asks for revision and shows revision in editor window</td></tr>
+<tr><td>commit  </td><td>asks for commit text and commits</td></tr>
+<tr><td>diff    </td><td>shows svn diff</td></tr>
+<tr><td>help    </td><td>invokes svn add</td></tr>
+<tr><td>info    </td><td>shows svn help</td></tr>
+<tr><td>log     </td><td>shows svn log</td></tr>
+<tr><td>ls      </td><td>invokes svn ls</td></tr>
+<tr><td>proplist</td><td>shows svn properties</td></tr>
+<tr><td>propset </td><td>sets svn properties</td></tr>
+<tr><td>revert  </td><td>invokes svn revert</td></tr>
+<tr><td>stat    </td><td>shows svn stat</td></tr>
+<tr><td>update  </td><td>updates svn</td></tr>
+
+</table>
+
+<p>
+The VCS submenu is shown when right clicking on an editor window, and 
+the associated file is within a folder that is under version control.
+It is also shown if the VCS option has been set in the main Edit menu.
