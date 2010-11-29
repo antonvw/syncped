@@ -114,7 +114,7 @@ Char buffers are not yet supported.
 <tr><td>u</td><td>undo</td></tr>
 <tr><td>w</td><td>right one word</td></tr>
 <tr><td>x</td><td>delete</td></tr>
-<tr><td> </td><td>right one character</td></tr>
+<tr><td><i>space</i></td><td>right one character</td></tr>
 
 <tr><td>A</td><td>insert after end of line</td></tr>
 <tr><td>C</td><td>change to end of line</td></tr>
@@ -187,13 +187,13 @@ Char buffers are not yet supported.
 <tr><td>:w *       </td><td>save *</td></tr>
 <tr><td>:x         </td><td>save and quit</td></tr>
 <tr><td>:y         </td><td>yank</td></tr>
-<tr><td>:!<command></td><td>executes <command> amd shows output</td></tr>
+<tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
 </table>
 
 <p>
 Most commands can be prefixed with a multidigit number, that takes care of
-repeating that command the number of times it was prefixed.
+repeating that command the number specified.
 
 <hr>
 <a NAME="LIST"></a><b>List</b>
@@ -253,7 +253,7 @@ they are read from disk each time you open the file.
 <p>
 Support for VCS is configured by the vcss.xml file. 
 At this moment there is support for 
-SVN, GIT, CVS and BAZAAR. Others should be not to difficult to add.
+BAZAAR, CVS, MERCURIAL, GIT, and SVN. Others should be not to difficult to add.
 
 <p>
 e.g. the next svn commands are supported:
