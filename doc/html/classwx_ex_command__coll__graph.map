@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classwx_ex_s_t_c_entry_dialog.html" title="Offers an wxExSTC as a dialog (like wxTextEntryDialog)." alt="" coords="5,302,149,333"/>
+<area shape="rect" id="node4" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="44,6,135,37"/>
+<area shape="rect" id="node15" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="199,105,324,135"/>
+<area shape="rect" id="node6" href="$classwx_ex_s_t_c.html" title="Offers a styled text ctrl with find/replace, printing, popup menu, macro support, vi support and lexe..." alt="" coords="347,203,424,234"/>
+<area shape="rect" id="node8" href="$classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="217,302,284,333"/>
+<area shape="rect" id="node20" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="496,302,595,333"/>
+<area shape="rect" id="node10" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="219,203,323,234"/>
+<area shape="rect" id="node13" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="76,105,169,135"/>
+<area shape="rect" id="node18" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="371,6,456,37"/>
+<area shape="rect" id="node26" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="460,105,569,135"/>
+<area shape="rect" id="node22" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="568,203,643,234"/>
+<area shape="rect" id="node24" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="507,6,584,37"/>
+</map>

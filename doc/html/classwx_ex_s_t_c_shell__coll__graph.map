@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classwx_ex_s_t_c.html" title="Offers a styled text ctrl with find/replace, printing, popup menu, macro support, vi support and lexe..." alt="" coords="284,203,361,234"/>
+<area shape="rect" id="node4" href="$classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="128,302,195,333"/>
+<area shape="rect" id="node17" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="425,302,524,333"/>
+<area shape="rect" id="node6" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="155,203,259,234"/>
+<area shape="rect" id="node9" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="5,105,99,135"/>
+<area shape="rect" id="node11" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="171,105,296,135"/>
+<area shape="rect" id="node13" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="188,6,279,37"/>
+<area shape="rect" id="node15" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="339,6,424,37"/>
+<area shape="rect" id="node23" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="420,105,529,135"/>
+<area shape="rect" id="node19" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="488,203,563,234"/>
+<area shape="rect" id="node21" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="487,6,564,37"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classwx_ex_s_t_c.html" title="Offers a styled text ctrl with find/replace, printing, popup menu, macro support, vi support and lexe..." alt="" coords="437,203,515,234"/>
+<area shape="rect" id="node4" href="$classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="212,302,279,333"/>
+<area shape="rect" id="node17" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="427,302,525,333"/>
+<area shape="rect" id="node6" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="168,203,272,234"/>
+<area shape="rect" id="node9" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="5,105,99,135"/>
+<area shape="rect" id="node11" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="569,105,695,135"/>
+<area shape="rect" id="node29" href="$classwx_ex_frame_with_history.html" title="Adds file and project history support to wxExManagedFrame." alt="" coords="660,203,817,234"/>
+<area shape="rect" id="node13" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="587,6,677,37"/>
+<area shape="rect" id="node15" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="389,6,475,37"/>
+<area shape="rect" id="node23" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="319,105,428,135"/>
+<area shape="rect" id="node19" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="335,203,409,234"/>
+<area shape="rect" id="node21" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="197,6,275,37"/>
+<area shape="rect" id="node34" href="$classwx_ex_process.html" title="Offers a wxProcess with output to a listview." alt="" coords="785,302,887,333"/>
+<area shape="rect" id="node31" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="793,105,895,135"/>
+</map>

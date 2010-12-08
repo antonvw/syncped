@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node8" href="$classwx_ex_process.html" title="Offers a wxProcess with output to a listview." alt="" coords="60,286,161,317"/>
+<area shape="rect" id="node2" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="5,89,107,119"/>
+<area shape="rect" id="node4" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="151,89,276,119"/>
+<area shape="rect" id="node6" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="168,6,259,37"/>
+</map>

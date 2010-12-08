@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classwx_ex_list_view_standard.html" title="Adds some standard lists." alt="" coords="385,187,540,218"/>
+<area shape="rect" id="node4" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="243,89,344,119"/>
+<area shape="rect" id="node6" href="$classwx_ex_frame_with_history.html" title="Adds file and project history support to wxExManagedFrame." alt="" coords="55,187,212,218"/>
+<area shape="rect" id="node13" href="$classwx_ex_process.html" title="Offers a wxProcess with output to a listview." alt="" coords="83,286,184,317"/>
+<area shape="rect" id="node9" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="5,89,131,119"/>
+<area shape="rect" id="node11" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="23,6,113,37"/>
+</map>

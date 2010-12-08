@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classwx_ex_list_view_with_frame.html" title="Adds a wxExFrameWithHistory to wxExListViewStandard." alt="" coords="133,286,299,317"/>
+<area shape="rect" id="node4" href="$classwx_ex_list_view_standard.html" title="Adds some standard lists." alt="" coords="5,187,160,218"/>
+<area shape="rect" id="node6" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="157,89,259,119"/>
+<area shape="rect" id="node8" href="$classwx_ex_frame_with_history.html" title="Adds file and project history support to wxExManagedFrame." alt="" coords="300,187,457,218"/>
+<area shape="rect" id="node15" href="$classwx_ex_process.html" title="Offers a wxProcess with output to a listview." alt="" coords="323,286,424,317"/>
+<area shape="rect" id="node11" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="405,89,531,119"/>
+<area shape="rect" id="node13" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="423,6,513,37"/>
+<area shape="rect" id="node19" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="613,286,688,317"/>
+<area shape="rect" id="node21" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="620,89,697,119"/>
+<area shape="rect" id="node23" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="717,187,827,218"/>
+<area shape="rect" id="node25" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="729,89,815,119"/>
+</map>
