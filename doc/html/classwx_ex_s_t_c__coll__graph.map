@@ -1,12 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="193,302,260,333"/>
-<area shape="rect" id="node15" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="445,302,544,333"/>
-<area shape="rect" id="node4" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="155,203,259,234"/>
-<area shape="rect" id="node7" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="5,105,99,135"/>
-<area shape="rect" id="node9" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="219,105,344,135"/>
-<area shape="rect" id="node11" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="236,6,327,37"/>
-<area shape="rect" id="node13" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="387,6,472,37"/>
-<area shape="rect" id="node21" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="468,105,577,135"/>
-<area shape="rect" id="node17" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="520,203,595,234"/>
-<area shape="rect" id="node19" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="535,6,612,37"/>
+<area shape="rect" id="node2" href="$classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="335,518,401,549"/>
+<area shape="rect" id="node6" href="$classwx_ex_frame.html" title="Offers a frame with easy statusbar methods, find/replace, and allows for file dropping." alt="" coords="193,321,284,351"/>
+<area shape="rect" id="node27" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="624,321,723,351"/>
+<area shape="rect" id="node4" href="$classwx_ex_managed_frame.html" title="Offers an aui managed frame with a notebook multiple document interface, used by the notebook classes..." alt="" coords="179,419,320,450"/>
+<area shape="rect" id="node10" href="$classwx_ex_status_bar.html" title="Offers a status bar that calls virtual methods from wxExFrame." alt="" coords="43,419,155,450"/>
+<area shape="rect" id="node8" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="53,203,155,234"/>
+<area shape="rect" id="node14" href="$classwx_ex_grid.html" title="Offers popup menu with copy/paste, printing." alt="" coords="200,203,277,234"/>
+<area shape="rect" id="node16" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="344,419,448,450"/>
+<area shape="rect" id="node19" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="85,105,179,135"/>
+<area shape="rect" id="node21" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="379,105,504,135"/>
+<area shape="rect" id="node23" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="396,6,487,37"/>
+<area shape="rect" id="node25" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="547,6,632,37"/>
+<area shape="rect" id="node33" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="628,105,737,135"/>
+<area shape="rect" id="node29" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="699,203,773,234"/>
+<area shape="rect" id="node31" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="695,6,772,37"/>
 </map>

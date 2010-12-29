@@ -27,22 +27,30 @@
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <h1>wxExFrameWithHistory Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="wxExFrameWithHistory" -->
-<p>Adds file and project history support to wxExManagedFrame.  
+<!-- doxytag: class="wxExFrameWithHistory" --><!-- doxytag: inherits="wxExManagedFrame" -->
+<p>Adds file and project history support to <a class="el" href="classwx_ex_managed_frame.html" title="Offers an aui managed frame with a notebook multiple document interface, used by the notebook classes...">wxExManagedFrame</a>.  
 <a href="#_details">More...</a></p>
 
 <p><code>#include &lt;frame.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for wxExFrameWithHistory:</div>
+<div class="dyncontent">
+<div class="center"><img src="classwx_ex_frame_with_history__inherit__graph.png" border="0" usemap="#wx_ex_frame_with_history_inherit__map" alt="Inheritance graph"/></div>
+<map name="wx_ex_frame_with_history_inherit__map" id="wx_ex_frame_with_history_inherit__map">
+<area shape="rect" id="node2" href="classwx_ex_managed_frame.html" title="Offers an aui managed frame with a notebook multiple document interface, used by the notebook classes..." alt="" coords="13,86,155,117"/><area shape="rect" id="node4" href="classwx_ex_frame.html" title="Offers a frame with easy statusbar methods, find/replace, and allows for file dropping." alt="" coords="39,6,129,37"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for wxExFrameWithHistory:</div>
 <div class="dyncontent">
 <div class="center"><img src="classwx_ex_frame_with_history__coll__graph.png" border="0" usemap="#wx_ex_frame_with_history_coll__map" alt="Collaboration graph"/></div>
 <map name="wx_ex_frame_with_history_coll__map" id="wx_ex_frame_with_history_coll__map">
-<area shape="rect" id="node8" href="classwx_ex_process.html" title="Offers a wxProcess with output to a listview." alt="" coords="60,286,161,317"/><area shape="rect" id="node2" href="classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="5,89,107,119"/><area shape="rect" id="node4" href="classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="151,89,276,119"/><area shape="rect" id="node6" href="classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="168,6,259,37"/></map>
+<area shape="rect" id="node43" href="classwx_ex_process.html" title="Offers a wxProcess with output to a listview." alt="" coords="33,419,135,450"/><area shape="rect" id="node2" href="classwx_ex_managed_frame.html" title="Offers an aui managed frame with a notebook multiple document interface, used by the notebook classes..." alt="" coords="297,203,439,234"/><area shape="rect" id="node13" href="classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="727,321,793,351"/><area shape="rect" id="node4" href="classwx_ex_frame.html" title="Offers a frame with easy statusbar methods, find/replace, and allows for file dropping." alt="" coords="431,105,521,135"/><area shape="rect" id="node8" href="classwx_ex_status_bar.html" title="Offers a status bar that calls virtual methods from wxExFrame." alt="" coords="513,203,625,234"/><area shape="rect" id="node6" href="classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="60,6,161,37"/><area shape="rect" id="node11" href="classwx_ex_s_t_c.html" title="Offers a styled text ctrl with find/replace, printing, popup menu, macro support, vi support and lexe..." alt="" coords="795,419,872,450"/><area shape="rect" id="node27" href="classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="857,518,956,549"/><area shape="rect" id="node16" href="classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="649,203,753,234"/><area shape="rect" id="node19" href="classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="839,203,932,234"/><area shape="rect" id="node21" href="classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="148,203,273,234"/><area shape="rect" id="node23" href="classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="187,105,277,135"/><area shape="rect" id="node25" href="classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="1073,203,1159,234"/><area shape="rect" id="node33" href="classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="1171,321,1280,351"/><area shape="rect" id="node29" href="classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="1188,419,1263,450"/><area shape="rect" id="node31" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="1201,203,1279,234"/><area shape="rect" id="node39" href="classwx_ex_grid.html" title="Offers popup menu with copy/paste, printing." alt="" coords="437,6,515,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classwx_ex_frame_with_history-members.html">List of all members.</a></p>
@@ -94,9 +102,14 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Uses specified history list, and adds all elements from file history to the list.  <a href="#a7de9deb29e343c0333d3ed94585365e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_frame_with_history.html#aa807aa37e2cf7824ff54e29e57c246e1">UseProjectHistory</a> (wxWindowID id, wxMenu *menu)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a recent project menu to specified menu, and sets the project history to use it.  <a href="#aa807aa37e2cf7824ff54e29e57c246e1"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aade96d70ddaddf550e06ee971b71d888"></a><!-- doxytag: member="wxExFrameWithHistory::OnCommand" ref="aade96d70ddaddf550e06ee971b71d888" args="(wxCommandEvent &amp;event)" -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_frame_with_history.html#aade96d70ddaddf550e06ee971b71d888">OnCommand</a> (wxCommandEvent &amp;event)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Handles command event. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Adds file and project history support to wxExManagedFrame. </p>
+<p>Adds file and project history support to <a class="el" href="classwx_ex_managed_frame.html" title="Offers an aui managed frame with a notebook multiple document interface, used by the notebook classes...">wxExManagedFrame</a>. </p>
 <p>It also updates the title of the frame if you have a focused STC file or listview project. Finally it adds process support and find in files dialog. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aedbddf3dc547a8552f1d6367b313a162"></a><!-- doxytag: member="wxExFrameWithHistory::wxExFrameWithHistory" ref="aedbddf3dc547a8552f1d6367b313a162" args="(wxWindow *parent, wxWindowID id, const wxString &amp;title, size_t maxFiles=9, size_t maxProjects=0, int style=wxDEFAULT_FRAME_STYLE)" -->
@@ -353,7 +366,7 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Thu Dec 9 2010 16:53:35 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Dec 29 2010 10:56:15 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
