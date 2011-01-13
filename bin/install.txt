@@ -1,0 +1,6 @@
+Under MSW, just unpack the 7Z file, to wherever you want and run the exe file.
+ADD manifest file??
+
+Under GTK, gunzip and tar -xf the file, to e.g. you bin folder. Also set the 
+LD_LIBRARY_PATH to the folder where you put the files. Localization??
+
