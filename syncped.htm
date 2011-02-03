@@ -44,7 +44,8 @@ checkbox on the toolbar.
 
 <p>
 The configuration is read when starting up and saved when closing down.
-all data is read and saved from the same directory as your executable is in.
+all data is read and saved from the same directory as your executable is in (for Microsoft Windows).
+For Linux the data is in your .syncped home directory.
 
 <p>
 You can specify on the command line the file(s) to open, 
@@ -71,10 +72,14 @@ It has the next features:
      and the log file is synchronized, then only new data is added to the
      file, and your position is restored to the end of file. 
      This also works in hex mode.
+     Syncped maintains a log file it self, you can open it using the File menu,
+     or by double clicking on the status bar text pane 
+     (this gives you only logging for current session).
 <li> All scintilla lexers are supported, the colouring and 
      keywords are read from lexers.xml, editable using 'Lexers File Open'.
      Editing this file and saving it directly shows
      colouring style changes on all open editors.
+     You can double click on the status bar pane Lexer to change the current lexer.
 <li> Fast searching by selecting text and pressing F3 or F4.
 <li> If you select several lines, you can sort the selection using
      any sort position in the selection. The default sort position
@@ -84,6 +89,10 @@ It has the next features:
 <li> When the mouse is on a hex number the decimal number is
      shown as a tooltip by pressing Ctrl T.
 <li> Links are navigated using the popup menu on a Link.
+<li> Zoom in and out using Ctrl - and Ctrl = keys.
+<li> Find marked text using Ctrl 9 and Ctrl 0 keys.
+<li> You can double click on the status bar pane file type to change the current
+     file type.
 </ul>
 
 <hr>
