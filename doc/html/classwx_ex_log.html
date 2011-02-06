@@ -27,8 +27,7 @@
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <h1>wxExLog Class Reference</h1>  </div>
 </div>
@@ -38,107 +37,55 @@
 <a href="#_details">More...</a></p>
 
 <p><code>#include &lt;log.h&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for wxExLog:</div>
-<div class="dyncontent">
-<div class="center"><img src="classwx_ex_log__coll__graph.png" border="0" usemap="#wx_ex_log_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classwx_ex_log-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d674902abbb6705febec49618bd7962"></a><!-- doxytag: member="wxExLog::wxExLog" ref="a9d674902abbb6705febec49618bd7962" args="(const wxFileName &amp;filename, bool logging=true)" -->
-&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a9d674902abbb6705febec49618bd7962">wxExLog</a> (const wxFileName &amp;filename, bool logging=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor, calls SetLogging with logging as specified. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a584881640a5a506162dd069a2fa97bb5"></a><!-- doxytag: member="wxExLog::wxExLog" ref="a584881640a5a506162dd069a2fa97bb5" args="(const wxString &amp;filename)" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a584881640a5a506162dd069a2fa97bb5">wxExLog</a> (const wxString &amp;filename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacd3c39d6ac6354b1f246c272a0df8a9"></a><!-- doxytag: member="wxExLog::operator&lt;&lt;" ref="aacd3c39d6ac6354b1f246c272a0df8a9" args="(const wxString &amp;text)" -->
 const <a class="el" href="classwx_ex_log.html">wxExLog</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#aacd3c39d6ac6354b1f246c272a0df8a9">operator&lt;&lt;</a> (const wxString &amp;text)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Logs the text, using a timestamp. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae309091b8f469a3ebd8292d8306d75a0"></a><!-- doxytag: member="wxExLog::GetFileName" ref="ae309091b8f469a3ebd8292d8306d75a0" args="() const " -->
-const wxFileName &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#ae309091b8f469a3ebd8292d8306d75a0">GetFileName</a> () const </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the filename of the logfile. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a646ea246b9d5edfcd42636f0e613658a"></a><!-- doxytag: member="wxExLog::GetLogging" ref="a646ea246b9d5edfcd42636f0e613658a" args="() const " -->
-bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a646ea246b9d5edfcd42636f0e613658a">GetLogging</a> () const </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the member. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a508507ca629f0f3dc3faa4d3182103de"></a><!-- doxytag: member="wxExLog::Log" ref="a508507ca629f0f3dc3faa4d3182103de" args="(const wxString &amp;text, bool add_timestamp=true) const " -->
-bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a508507ca629f0f3dc3faa4d3182103de">Log</a> (const wxString &amp;text, bool add_timestamp=true) const </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Logs text (if logging is on) with a timestamp at the end of the file. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#aed2adde9b7696b43633dd7cf5ca19872">SetLogging</a> (bool logging=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets logging as specified.  <a href="#aed2adde9b7696b43633dd7cf5ca19872"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_ex_log.html">wxExLog</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a576cce75e546ed33e0454544357a5779">Get</a> (bool createOnDemand=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the global log object.  <a href="#a576cce75e546ed33e0454544357a5779"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwx_ex_log.html">wxExLog</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a2b2750757b81a428f5199bbefab903c3">Set</a> (<a class="el" href="classwx_ex_log.html">wxExLog</a> *log)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the object as the current one, returns the pointer to the previous current object (both the parameter and returned value may be NULL).  <a href="#a2b2750757b81a428f5199bbefab903c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_log.html#a508507ca629f0f3dc3faa4d3182103de">Log</a> (const wxString &amp;text, bool add_timestamp=true) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Logs text with a timestamp at the end of the file.  <a href="#a508507ca629f0f3dc3faa4d3182103de"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Offers logging. </p>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a576cce75e546ed33e0454544357a5779"></a><!-- doxytag: member="wxExLog::Get" ref="a576cce75e546ed33e0454544357a5779" args="(bool createOnDemand=true)" -->
+<a class="anchor" id="a508507ca629f0f3dc3faa4d3182103de"></a><!-- doxytag: member="wxExLog::Log" ref="a508507ca629f0f3dc3faa4d3182103de" args="(const wxString &amp;text, bool add_timestamp=true) const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classwx_ex_log.html">wxExLog</a>* wxExLog::Get </td>
+          <td class="memname">bool wxExLog::Log </td>
           <td>(</td>
-          <td class="paramtype">bool&nbsp;</td>
-          <td class="paramname"> <em>createOnDemand</em> = <code>true</code></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [static]</code></td>
+          <td class="paramtype">const wxString &amp;&nbsp;</td>
+          <td class="paramname"> <em>text</em>, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns the global log object. </p>
-<p>The global file logging is default turned off. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2b2750757b81a428f5199bbefab903c3"></a><!-- doxytag: member="wxExLog::Set" ref="a2b2750757b81a428f5199bbefab903c3" args="(wxExLog *log)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classwx_ex_log.html">wxExLog</a>* wxExLog::Set </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwx_ex_log.html">wxExLog</a> *&nbsp;</td>
-          <td class="paramname"> <em>log</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sets the object as the current one, returns the pointer to the previous current object (both the parameter and returned value may be NULL). </p>
-
-</div>
-</div>
-<a class="anchor" id="aed2adde9b7696b43633dd7cf5ca19872"></a><!-- doxytag: member="wxExLog::SetLogging" ref="aed2adde9b7696b43633dd7cf5ca19872" args="(bool logging=true)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void wxExLog::SetLogging </td>
-          <td>(</td>
-          <td class="paramtype">bool&nbsp;</td>
-          <td class="paramname"> <em>logging</em> = <code>true</code></td>
-          <td>&nbsp;)&nbsp;</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>add_timestamp</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Sets logging as specified. </p>
-<p>If the logging is true and the logfile does not exist, it is created. </p>
+<p>Logs text with a timestamp at the end of the file. </p>
+<p>Returns true if writing was succesfull. </p>
 
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Dec 29 2010 10:56:15 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 6 2011 15:14:06 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

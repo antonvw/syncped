@@ -6,6 +6,6 @@
 <area shape="rect" id="node11" href="$classwx_ex_grid.html" title="Offers popup menu with copy/paste, printing." alt="" coords="456,6,533,37"/>
 <area shape="rect" id="node14" href="$classwx_ex_r_c_s.html" title="Class for keeping RCS information." alt="" coords="532,123,612,154"/>
 <area shape="rect" id="node16" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="636,123,745,154"/>
-<area shape="rect" id="node18" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="595,6,680,37"/>
+<area shape="rect" id="node18" href="$classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="595,6,680,37"/>
 <area shape="rect" id="node20" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="704,6,781,37"/>
 </map>

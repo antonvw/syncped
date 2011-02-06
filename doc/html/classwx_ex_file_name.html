@@ -27,6 +27,7 @@
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
@@ -34,7 +35,7 @@
 </div>
 <div class="contents">
 <!-- doxytag: class="wxExFileName" -->
-<p>Adds a <a class="el" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk.">wxExStat</a> and a <a class="el" href="classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions.">wxExLexer</a> member to wxFileName.  
+<p>Adds a <a class="el" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk.">wxExStat</a> and a <a class="el" href="classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions.">wxExLexer</a> member to wxFileName.  
 <a href="#_details">More...</a></p>
 
 <p><code>#include &lt;filename.h&gt;</code></p>
@@ -43,11 +44,19 @@ Collaboration diagram for wxExFileName:</div>
 <div class="dyncontent">
 <div class="center"><img src="classwx_ex_file_name__coll__graph.png" border="0" usemap="#wx_ex_file_name_coll__map" alt="Collaboration graph"/></div>
 <map name="wx_ex_file_name_coll__map" id="wx_ex_file_name_coll__map">
-<area shape="rect" id="node2" href="classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="5,6,91,37"/><area shape="rect" id="node4" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="115,6,192,37"/></map>
+<area shape="rect" id="node2" href="classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="5,6,91,37"/><area shape="rect" id="node4" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="115,6,192,37"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classwx_ex_file_name-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_file_name.html#a377ac05b3da8927124dad5d2aef80a5e">wxExStatusFlags</a> { <a class="el" href="classwx_ex_file_name.html#a377ac05b3da8927124dad5d2aef80a5ea91ea3abdc81a5680d4ef37f00d1ab6a7">STAT_DEFAULT</a> =  0x0000, 
+<a class="el" href="classwx_ex_file_name.html#a377ac05b3da8927124dad5d2aef80a5ea16ca0784375922b9a443a0e2fdffb86f">STAT_SYNC</a> =  0x0001, 
+<a class="el" href="classwx_ex_file_name.html#a377ac05b3da8927124dad5d2aef80a5eab52e2039ae6629cac7544f2493410a5f">STAT_FULLPATH</a> =  0x0002
+ }</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><p>Flags for StatusText. </p>
+ <a href="classwx_ex_file_name.html#a377ac05b3da8927124dad5d2aef80a5e">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb3d45bbe41d170855bcc34b47f4d6fe"></a><!-- doxytag: member="wxExFileName::wxExFileName" ref="adb3d45bbe41d170855bcc34b47f4d6fe" args="()" -->
@@ -68,15 +77,47 @@ const <a class="el" href="classwx_ex_lexer.html">wxExLexer</a> &amp;&nbsp;</td><
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95f8c086170a72312660a8d9b03a64c4"></a><!-- doxytag: member="wxExFileName::GetStat" ref="a95f8c086170a72312660a8d9b03a64c4" args="() const " -->
 const <a class="el" href="classwx_ex_stat.html">wxExStat</a> &amp;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_file_name.html#a95f8c086170a72312660a8d9b03a64c4">GetStat</a> () const </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the stat. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd3e01a8feaf50225dca3b9a35c68be7"></a><!-- doxytag: member="wxExFileName::StatusText" ref="afd3e01a8feaf50225dca3b9a35c68be7" args="(long flags=STAT_DEFAULT) const " -->
+void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_file_name.html#afd3e01a8feaf50225dca3b9a35c68be7">StatusText</a> (long flags=STAT_DEFAULT) const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Shows filename info on the statusbar. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="friends"></a>
 Friends</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3d46f98463bfa04f2cf111ef5a4b98f"></a><!-- doxytag: member="wxExFileName::wxExFile" ref="ab3d46f98463bfa04f2cf111ef5a4b98f" args="" -->
 class&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_file_name.html#ab3d46f98463bfa04f2cf111ef5a4b98f">wxExFile</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Adds a <a class="el" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk.">wxExStat</a> and a <a class="el" href="classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions.">wxExLexer</a> member to wxFileName. </p>
+<p>Adds a <a class="el" href="classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk.">wxExStat</a> and a <a class="el" href="classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions.">wxExLexer</a> member to wxFileName. </p>
+<hr/><h2>Member Enumeration Documentation</h2>
+<a class="anchor" id="a377ac05b3da8927124dad5d2aef80a5e"></a><!-- doxytag: member="wxExFileName::wxExStatusFlags" ref="a377ac05b3da8927124dad5d2aef80a5e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classwx_ex_file_name.html#a377ac05b3da8927124dad5d2aef80a5e">wxExFileName::wxExStatusFlags</a></td>
+        </tr>
+      </table>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Dec 29 2010 10:56:15 for wxextension by&nbsp;
+<div class="memdoc">
+
+<p>Flags for StatusText. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a377ac05b3da8927124dad5d2aef80a5ea91ea3abdc81a5680d4ef37f00d1ab6a7"></a><!-- doxytag: member="STAT_DEFAULT" ref="a377ac05b3da8927124dad5d2aef80a5ea91ea3abdc81a5680d4ef37f00d1ab6a7" args="" -->STAT_DEFAULT</em>&nbsp;</td><td>
+<p>shows 'modified' and file 'fullname' </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a377ac05b3da8927124dad5d2aef80a5ea16ca0784375922b9a443a0e2fdffb86f"></a><!-- doxytag: member="STAT_SYNC" ref="a377ac05b3da8927124dad5d2aef80a5ea16ca0784375922b9a443a0e2fdffb86f" args="" -->STAT_SYNC</em>&nbsp;</td><td>
+<p>shows 'synchronized' instead of 'modified' </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a377ac05b3da8927124dad5d2aef80a5eab52e2039ae6629cac7544f2493410a5f"></a><!-- doxytag: member="STAT_FULLPATH" ref="a377ac05b3da8927124dad5d2aef80a5eab52e2039ae6629cac7544f2493410a5f" args="" -->STAT_FULLPATH</em>&nbsp;</td><td>
+<p>shows file 'fullpath' instead of 'fullname' </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 6 2011 15:14:05 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

@@ -44,10 +44,10 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_v_c_s_command.html#aa023511d99cfdc6d6b1cfcc5cd78dca4">wxExVCSCommandType</a> { <a class="el" href="classwx_ex_v_c_s_command.html#aa023511d99cfdc6d6b1cfcc5cd78dca4a2b77e95c825e933cdb6b240023177fb4">VCS_COMMAND_IS_BOTH</a> =  0x0001, 
-<a class="el" href="classwx_ex_v_c_s_command.html#aa023511d99cfdc6d6b1cfcc5cd78dca4a6ac6745497f9cd7cd1a7c3ec2a56baef">VCS_COMMAND_IS_POPUP</a> =  0x0002, 
-<a class="el" href="classwx_ex_v_c_s_command.html#aa023511d99cfdc6d6b1cfcc5cd78dca4ae111706069c3da5c4cbbe4e946031390">VCS_COMMAND_IS_MAIN</a> =  0x0004, 
-<a class="el" href="classwx_ex_v_c_s_command.html#aa023511d99cfdc6d6b1cfcc5cd78dca4ae4b279d306a041425095ef349f78b5c6">VCS_COMMAND_SEPARATOR</a> =  0x0010
+<tr><td class="memItemLeft" align="right" valign="top">enum &nbsp;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classwx_ex_v_c_s_command.html#a7c01492846acd865b61868c5f2b6a6e5a2b77e95c825e933cdb6b240023177fb4">VCS_COMMAND_IS_BOTH</a> =  0x0001, 
+<a class="el" href="classwx_ex_v_c_s_command.html#a7c01492846acd865b61868c5f2b6a6e5a6ac6745497f9cd7cd1a7c3ec2a56baef">VCS_COMMAND_IS_POPUP</a> =  0x0002, 
+<a class="el" href="classwx_ex_v_c_s_command.html#a7c01492846acd865b61868c5f2b6a6e5ae111706069c3da5c4cbbe4e946031390">VCS_COMMAND_IS_MAIN</a> =  0x0004, 
+<a class="el" href="classwx_ex_v_c_s_command.html#a7c01492846acd865b61868c5f2b6a6e5ae4b279d306a041425095ef349f78b5c6">VCS_COMMAND_SEPARATOR</a> =  0x0010
  }</td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -94,6 +94,12 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9a27d1636301f629f97b79c02e08e6a"></a><!-- doxytag: member="wxExVCSCommand::IsUpdate" ref="ad9a27d1636301f629f97b79c02e08e6a" args="() const " -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_v_c_s_command.html#ad9a27d1636301f629f97b79c02e08e6a">IsUpdate</a> () const </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if this is a update like command. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42f4fc961f5cae88a53099f45a76f906"></a><!-- doxytag: member="wxExVCSCommand::UseFlags" ref="a42f4fc961f5cae88a53099f45a76f906" args="() const " -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_v_c_s_command.html#a42f4fc961f5cae88a53099f45a76f906">UseFlags</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if flags can be used for this command. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac928612ea72592d3e2db8499af237206"></a><!-- doxytag: member="wxExVCSCommand::UseSubcommand" ref="ac928612ea72592d3e2db8499af237206" args="() const " -->
+bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_v_c_s_command.html#ac928612ea72592d3e2db8499af237206">UseSubcommand</a> () const </td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if a subcommand can be used for this command. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_v_c_s_command.html#ac8456c096f46657fc16fcaba218a224e">ResetInstances</a> ()</td></tr>
@@ -102,27 +108,27 @@ Static Public Member Functions</h2></td></tr>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This class contains a single vcs command. </p>
 <hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="aa023511d99cfdc6d6b1cfcc5cd78dca4"></a><!-- doxytag: member="wxExVCSCommand::wxExVCSCommandType" ref="aa023511d99cfdc6d6b1cfcc5cd78dca4" args="" -->
+<a class="anchor" id="a7c01492846acd865b61868c5f2b6a6e5"></a><!-- doxytag: member="wxExVCSCommand::@7" ref="a7c01492846acd865b61868c5f2b6a6e5" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classwx_ex_v_c_s_command.html#aa023511d99cfdc6d6b1cfcc5cd78dca4">wxExVCSCommand::wxExVCSCommandType</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="aa023511d99cfdc6d6b1cfcc5cd78dca4a2b77e95c825e933cdb6b240023177fb4"></a><!-- doxytag: member="VCS_COMMAND_IS_BOTH" ref="aa023511d99cfdc6d6b1cfcc5cd78dca4a2b77e95c825e933cdb6b240023177fb4" args="" -->VCS_COMMAND_IS_BOTH</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a7c01492846acd865b61868c5f2b6a6e5a2b77e95c825e933cdb6b240023177fb4"></a><!-- doxytag: member="VCS_COMMAND_IS_BOTH" ref="a7c01492846acd865b61868c5f2b6a6e5a2b77e95c825e933cdb6b240023177fb4" args="" -->VCS_COMMAND_IS_BOTH</em>&nbsp;</td><td>
 <p>command in main and popup menu </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="aa023511d99cfdc6d6b1cfcc5cd78dca4a6ac6745497f9cd7cd1a7c3ec2a56baef"></a><!-- doxytag: member="VCS_COMMAND_IS_POPUP" ref="aa023511d99cfdc6d6b1cfcc5cd78dca4a6ac6745497f9cd7cd1a7c3ec2a56baef" args="" -->VCS_COMMAND_IS_POPUP</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a7c01492846acd865b61868c5f2b6a6e5a6ac6745497f9cd7cd1a7c3ec2a56baef"></a><!-- doxytag: member="VCS_COMMAND_IS_POPUP" ref="a7c01492846acd865b61868c5f2b6a6e5a6ac6745497f9cd7cd1a7c3ec2a56baef" args="" -->VCS_COMMAND_IS_POPUP</em>&nbsp;</td><td>
 <p>command in popup menu </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="aa023511d99cfdc6d6b1cfcc5cd78dca4ae111706069c3da5c4cbbe4e946031390"></a><!-- doxytag: member="VCS_COMMAND_IS_MAIN" ref="aa023511d99cfdc6d6b1cfcc5cd78dca4ae111706069c3da5c4cbbe4e946031390" args="" -->VCS_COMMAND_IS_MAIN</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a7c01492846acd865b61868c5f2b6a6e5ae111706069c3da5c4cbbe4e946031390"></a><!-- doxytag: member="VCS_COMMAND_IS_MAIN" ref="a7c01492846acd865b61868c5f2b6a6e5ae111706069c3da5c4cbbe4e946031390" args="" -->VCS_COMMAND_IS_MAIN</em>&nbsp;</td><td>
 <p>command in main menu </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="aa023511d99cfdc6d6b1cfcc5cd78dca4ae4b279d306a041425095ef349f78b5c6"></a><!-- doxytag: member="VCS_COMMAND_SEPARATOR" ref="aa023511d99cfdc6d6b1cfcc5cd78dca4ae4b279d306a041425095ef349f78b5c6" args="" -->VCS_COMMAND_SEPARATOR</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a7c01492846acd865b61868c5f2b6a6e5ae4b279d306a041425095ef349f78b5c6"></a><!-- doxytag: member="VCS_COMMAND_SEPARATOR" ref="a7c01492846acd865b61868c5f2b6a6e5ae4b279d306a041425095ef349f78b5c6" args="" -->VCS_COMMAND_SEPARATOR</em>&nbsp;</td><td>
 <p>command is followed by a separator </p>
 </td></tr>
 </table>
@@ -214,7 +220,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Dec 29 2010 10:56:16 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 6 2011 15:14:06 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

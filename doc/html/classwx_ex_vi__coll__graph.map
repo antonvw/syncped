@@ -7,7 +7,7 @@
 <area shape="rect" id="node20" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="541,321,640,351"/>
 <area shape="rect" id="node14" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="295,105,420,135"/>
 <area shape="rect" id="node16" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="312,6,403,37"/>
-<area shape="rect" id="node18" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="476,6,561,37"/>
+<area shape="rect" id="node18" href="$classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="476,6,561,37"/>
 <area shape="rect" id="node26" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="544,105,653,135"/>
 <area shape="rect" id="node22" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="613,203,688,234"/>
 <area shape="rect" id="node24" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="597,6,675,37"/>

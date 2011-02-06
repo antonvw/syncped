@@ -49,9 +49,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor for a user control.  <a href="#a5edce2f2a16dd47eebac811145b0f505"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_config_item.html#af0fb3efa3453750f99706cbc0a1cd38d">wxExConfigItem</a> (const wxString &amp;name, const wxString &amp;value=wxEmptyString, const wxString &amp;page=wxEmptyString, long style=0, <a class="el" href="configitem_8h.html#a921934b4f0c593e1af4bd52d8391b6d9">wxExConfigType</a> type=CONFIG_STRING, bool is_required=false, bool add_name=true, int cols=-1)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor for a string, a hyperlink ctrl or a static text.  <a href="#af0fb3efa3453750f99706cbc0a1cd38d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea4d56a5bff620f4db6504fbe67dc4f4"></a><!-- doxytag: member="wxExConfigItem::wxExConfigItem" ref="aea4d56a5bff620f4db6504fbe67dc4f4" args="(const wxString &amp;name, double min, double max, const wxString &amp;page=wxEmptyString, wxExConfigType type=CONFIG_SPINCTRL, long style=wxSL_HORIZONTAL, double inc=1, int cols=&#45;1)" -->
-&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_config_item.html#aea4d56a5bff620f4db6504fbe67dc4f4">wxExConfigItem</a> (const wxString &amp;name, double min, double max, const wxString &amp;page=wxEmptyString, <a class="el" href="configitem_8h.html#a921934b4f0c593e1af4bd52d8391b6d9">wxExConfigType</a> type=CONFIG_SPINCTRL, long style=wxSL_HORIZONTAL, double inc=1, int cols=-1)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor for a spin ctrl, a spin ctrl double or a slider. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_config_item.html#aea4d56a5bff620f4db6504fbe67dc4f4">wxExConfigItem</a> (const wxString &amp;name, double min, double max, const wxString &amp;page=wxEmptyString, <a class="el" href="configitem_8h.html#a921934b4f0c593e1af4bd52d8391b6d9">wxExConfigType</a> type=CONFIG_SPINCTRL, long style=wxSL_HORIZONTAL, double inc=1, int cols=-1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor for a spin ctrl, a spin ctrl double or a slider.  <a href="#aea4d56a5bff620f4db6504fbe67dc4f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_config_item.html#a53ed3619fde930d32efde79145538e6d">wxExConfigItem</a> (const std::set&lt; wxString &gt; &amp;choices, const wxString &amp;page=wxEmptyString, int cols=-1)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor for a checklistbox without a name.  <a href="#a53ed3619fde930d32efde79145538e6d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_config_item.html#a866d3ded322b990a064e0b7ca9976522">wxExConfigItem</a> (const wxString &amp;name, const std::map&lt; long, const wxString &gt; &amp;choices, bool use_radiobox=true, const wxString &amp;page=wxEmptyString, int majorDimension=0, long style=wxRA_SPECIFY_COLS, int cols=-1)</td></tr>
@@ -87,7 +86,11 @@ Protected Member Functions</h2></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>Container class for using with <a class="el" href="classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config.">wxExConfigDialog</a>. </p>
-<p>If you specify a page, then all items are placed on that page in a notebook. If you specify add name, then the name is added as a label to the item as well, otherwise the name is not added, and only used for loading and saving from config. If you use the default for cols, then the number of cols used is determined by the config dialog, otherwise this number is used. </p>
+<ul>
+<li>If you specify a page, then all items are placed on that page in a book ctrl on the config dialog.</li>
+<li>If you specify add name, then the name is added as a label to the item as well, otherwise the name is not added, and only used for loading and saving from config.</li>
+<li>If you use the default for cols, then the number of cols used is determined by the config dialog, otherwise this number is used. </li>
+</ul>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4dfb12259112af1a873d0caa58408fbc"></a><!-- doxytag: member="wxExConfigItem::wxExConfigItem" ref="a4dfb12259112af1a873d0caa58408fbc" args="(const wxString &amp;name, wxExConfigType type, const wxString &amp;page=wxEmptyString, bool is_required=false, int id=wxID_ANY, int max_items=25, bool add_name=true, int cols=&#45;1, long style=0)" -->
 <div class="memitem">
@@ -159,10 +162,15 @@ Protected Member Functions</h2></td></tr>
 <p>Constuctor for most types. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>is_required</em>&nbsp;</td><td>the id as used by the control, when using for a combobox dir, use id &lt; wxID_LOWEST accessible using <a class="el" href="classwx_ex_config_item.html#a7544cc334e2e805a0c6ed71bb1e73a02" title="Gets the control (first call Layout).">GetControl()</a>-&gt;GetId() </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>used by CONFIG_COMBOBOX </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>max_items</em>&nbsp;</td><td>will the name be displayed as a static text </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>extra style, only used for static line </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name for the control as on the dialog and in the config </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>type </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>page on notebook </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>is_required</em>&nbsp;</td><td>is this item required </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>the id as used by the control, when using for a combobox dir, use id &lt; wxID_LOWEST accessible using <a class="el" href="classwx_ex_config_item.html#a7544cc334e2e805a0c6ed71bb1e73a02" title="Gets the control (first call Layout).">GetControl()</a>-&gt;GetId() </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>max_items</em>&nbsp;</td><td>used by CONFIG_COMBOBOX </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>add_name</em>&nbsp;</td><td>will the name be displayed as a static text </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>the number of cols </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>style</em>&nbsp;</td><td>extra style, only used for static line </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,11 +230,12 @@ Protected Member Functions</h2></td></tr>
 <p>Default it has no relation to the config, if you want to, you have to implement UserControlToConfig in your derived class. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name for the control as on the dialog and in the config the control (use default constructor for it) </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>control</em>&nbsp;</td><td>the page </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>is this control required </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>is_required</em>&nbsp;</td><td>will the name be displayed as a static text </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>add_name</em>&nbsp;</td><td>number of cols for this control </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name for the control as on the dialog and in the config </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>control</em>&nbsp;</td><td>the control (use default constructor for it) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>page on notebook </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>is_required</em>&nbsp;</td><td>is this control required </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>add_name</em>&nbsp;</td><td>will the name be displayed as a static text </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>number of cols for this control </td></tr>
   </table>
   </dd>
 </dl>
@@ -298,8 +307,92 @@ Protected Member Functions</h2></td></tr>
 <p>The extra style argument is the style for the control used (e.g. wxTE_MULTILINE or wxTE_PASSWORD). </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>used as default for a hyperlink ctrl </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>is_required</em>&nbsp;</td><td>ignored for a static text </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name for the control as on the dialog and in the config </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>used as default for a hyperlink ctrl </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>page on noyytebook </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>style</em>&nbsp;</td><td>the style </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>the type </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>is_required</em>&nbsp;</td><td>is this item required </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>add_name</em>&nbsp;</td><td>ignored for a static text </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>number of cols for this control </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aea4d56a5bff620f4db6504fbe67dc4f4"></a><!-- doxytag: member="wxExConfigItem::wxExConfigItem" ref="aea4d56a5bff620f4db6504fbe67dc4f4" args="(const wxString &amp;name, double min, double max, const wxString &amp;page=wxEmptyString, wxExConfigType type=CONFIG_SPINCTRL, long style=wxSL_HORIZONTAL, double inc=1, int cols=&#45;1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxExConfigItem::wxExConfigItem </td>
+          <td>(</td>
+          <td class="paramtype">const wxString &amp;&nbsp;</td>
+          <td class="paramname"> <em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const wxString &amp;&nbsp;</td>
+          <td class="paramname"> <em>page</em> = <code>wxEmptyString</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="configitem_8h.html#a921934b4f0c593e1af4bd52d8391b6d9">wxExConfigType</a>&nbsp;</td>
+          <td class="paramname"> <em>type</em> = <code>CONFIG_SPINCTRL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&nbsp;</td>
+          <td class="paramname"> <em>style</em> = <code>wxSL_HORIZONTAL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&nbsp;</td>
+          <td class="paramname"> <em>inc</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>cols</em> = <code>-1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor for a spin ctrl, a spin ctrl double or a slider. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name for the control as on the dialog and in the config </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>min</em>&nbsp;</td><td>minimum value </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>max</em>&nbsp;</td><td>maximum value </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>page on noyytebook </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>type </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>style</em>&nbsp;</td><td>style </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>inc</em>&nbsp;</td><td>incrment value </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>number of cols for this control </td></tr>
   </table>
   </dd>
 </dl>
@@ -338,7 +431,15 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructor for a checklistbox without a name. </p>
-<p>Just specify the set with names of boolean items. A checklistbox without a name (not mutually exclusive choices) should be used to get/set several boolean values in one checklistbox. </p>
+<p>This checklistbox can be used to get/set several boolean values. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>choices</em>&nbsp;</td><td>the set with names of boolean items </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>page on noyytebook </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>number of cols for this control </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -398,7 +499,19 @@ Protected Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructor for a radiobox or a checklistbox. </p>
-<p>Just specify the map with values and text. A checklistbox (not mutually exclusive choices) should be used to get/set individual bits in a long. A radiobox (mutually exclusive choices) should be used when a long value can have a short set of possible individual values. </p>
+<p>This checklistbox (not mutually exclusive choices) can be used to get/set individual bits in a long. A radiobox (mutually exclusive choices) should be used when a long value can have a short set of possible individual values. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>name</em>&nbsp;</td><td>name for the control as on the dialog and in the config </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>choices</em>&nbsp;</td><td>the map with values and text </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>use_radiobox</em>&nbsp;</td><td>indicates whether to use a radiobox or a checklistbox. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>page</em>&nbsp;</td><td>page on noyytebook </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>majorDimension</em>&nbsp;</td><td>major dimension for the radiobox </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>style</em>&nbsp;</td><td>style for the radiobox </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cols</em>&nbsp;</td><td>number of cols for this control </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -444,8 +557,10 @@ Protected Member Functions</h2></td></tr>
 <p>It returns the flex grid sizer that was used for creating the item sizer. Or it returns NULL if no flex grid sizer was used. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>sizer</em>&nbsp;</td><td>specify the item will be readonly, it will not be changeable if underlying control supports this </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>readonly</em>&nbsp;</td><td>specify the sizer for creating the item, or NULL, than a new one is created </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>parent</em>&nbsp;</td><td>the parent </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sizer</em>&nbsp;</td><td>the sizer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>readonly</em>&nbsp;</td><td>specify the item will be readonly, it will not be changeable if underlying control supports this </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>fgz</em>&nbsp;</td><td>specify the sizer for creating the item, or NULL, than a new one is created </td></tr>
   </table>
   </dd>
 </dl>
@@ -525,7 +640,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Wed Dec 29 2010 10:56:14 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Feb 6 2011 15:14:05 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

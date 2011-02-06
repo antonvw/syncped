@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node2" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="5,105,107,135"/>
 <area shape="rect" id="node4" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="131,105,240,135"/>
-<area shape="rect" id="node6" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="89,6,175,37"/>
+<area shape="rect" id="node6" href="$classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="89,6,175,37"/>
 <area shape="rect" id="node8" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="199,6,276,37"/>
 </map>

@@ -12,7 +12,7 @@
 <area shape="rect" id="node20" href="$classwx_ex_grid.html" title="Offers popup menu with copy/paste, printing." alt="" coords="359,203,436,234"/>
 <area shape="rect" id="node22" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="563,419,667,450"/>
 <area shape="rect" id="node25" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="5,105,99,135"/>
-<area shape="rect" id="node30" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="699,6,784,37"/>
+<area shape="rect" id="node30" href="$classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="699,6,784,37"/>
 <area shape="rect" id="node38" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="789,105,899,135"/>
 <area shape="rect" id="node34" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="909,203,984,234"/>
 <area shape="rect" id="node36" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="836,6,913,37"/>

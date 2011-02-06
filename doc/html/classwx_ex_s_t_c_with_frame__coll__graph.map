@@ -13,7 +13,7 @@
 <area shape="rect" id="node21" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="212,565,305,595"/>
 <area shape="rect" id="node23" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="196,173,321,203"/>
 <area shape="rect" id="node25" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="5,173,96,203"/>
-<area shape="rect" id="node27" href="$classwx_ex_lexer.html" title="This class defines a lexer using file associations, syntax colouring and comment definitions." alt="" coords="8,387,93,418"/>
+<area shape="rect" id="node27" href="$classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="8,387,93,418"/>
 <area shape="rect" id="node35" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="204,435,313,466"/>
 <area shape="rect" id="node31" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="489,493,564,523"/>
 <area shape="rect" id="node33" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="12,461,89,491"/>
