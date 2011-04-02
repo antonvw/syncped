@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classwx_ex_vi.html" title="Offers a class that extends wxExSTC with vi behaviour." alt="" coords="316,105,383,135"/>
+<area shape="rect" id="node2" href="$classwx_ex_frame.html" title="Offers a frame with easy statusbar methods, find/replace, and allows for file dropping." alt="" coords="185,321,276,351"/>
+<area shape="rect" id="node6" href="$classwx_ex_status_bar.html" title="Offers a status bar that calls virtual methods from wxExFrame." alt="" coords="175,419,287,450"/>
+<area shape="rect" id="node4" href="$classwx_ex_list_view.html" title="Adds printing, popup menu, images, columns and items to wxListView." alt="" coords="113,203,215,234"/>
+<area shape="rect" id="node9" href="$classwx_ex_s_t_c.html" title="Offers a styled text ctrl with find/replace, printing, popup menu, macro support, vi support and lexe..." alt="" coords="468,203,545,234"/>
+<area shape="rect" id="node25" href="$classwx_ex_s_t_c_file.html" title="Adds file read and write to wxExSTC." alt="" coords="567,321,665,351"/>
+<area shape="rect" id="node14" href="$classwx_ex_indicator.html" title="This class defines our scintilla indicators." alt="" coords="171,6,275,37"/>
+<area shape="rect" id="node17" href="$classwx_ex_marker.html" title="This class defines our scintilla markers." alt="" coords="365,6,459,37"/>
+<area shape="rect" id="node19" href="$classwx_ex_config_dialog.html" title="Offers a dialog to set several items in the config." alt="" coords="599,105,724,135"/>
+<area shape="rect" id="node21" href="$classwx_ex_dialog.html" title="Offers a general dialog, with a separated button sizer at the bottom." alt="" coords="616,6,707,37"/>
+<area shape="rect" id="node23" href="$classwx_ex_lexer.html" title="This class defines a lexer using file extensions, syntax colouring and comment definitions." alt="" coords="757,6,843,37"/>
+<area shape="rect" id="node31" href="$classwx_ex_file_name.html" title="Adds a wxExStat and a wxExLexer member to wxFileName." alt="" coords="847,105,956,135"/>
+<area shape="rect" id="node27" href="$classwx_ex_file.html" title="Adds several File* methods to wxFile." alt="" coords="864,203,939,234"/>
+<area shape="rect" id="node29" href="$classwx_ex_stat.html" title="Adds IsOk to the stat base class, several methods to get/update on the stat members, and Sync to sync the stat from disk." alt="" coords="893,6,971,37"/>
+<area shape="rect" id="node37" href="$classwx_ex_grid.html" title="Offers popup menu with copy/paste, printing." alt="" coords="260,203,337,234"/>
+</map>
