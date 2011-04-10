@@ -31,11 +31,13 @@
 </div>
 <div class="contents">
 <code>#include &lt;wx/aui/auibook.h&gt;</code><br/>
-<code>#include &lt;wx/extension/filename.h&gt;</code><br/>
+<code>#include &lt;wx/filename.h&gt;</code><br/>
 <div class="dynheader">
 Include dependency graph for util.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="report_2util_8h__incl.png" border="0" usemap="#include_2wx_2extension_2report_2util_8h" alt=""/></div>
+<map name="include_2wx_2extension_2report_2util_8h" id="include_2wx_2extension_2report_2util_8h">
+</map>
 </div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
@@ -45,8 +47,6 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb5d12d9ff6b9847a2f32efdbc09bd25"></a><!-- doxytag: member="report/util.h::wxExForEach" ref="adb5d12d9ff6b9847a2f32efdbc09bd25" args="(wxAuiNotebook *notebook, int id, const wxFont &amp;font=wxFont())" -->
 bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="report_2util_8h.html#adb5d12d9ff6b9847a2f32efdbc09bd25">wxExForEach</a> (wxAuiNotebook *notebook, int id, const wxFont &amp;font=wxFont())</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Do something (id) for all pages on the notebook. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="report_2util_8h.html#a8d9b49758f2cf789c16222687f4f8837">wxExGetIconID</a> (const <a class="el" href="classwx_ex_file_name.html">wxExFileName</a> &amp;filename)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the icon index for this filename (uses the file extension to get it).  <a href="#a8d9b49758f2cf789c16222687f4f8837"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="report_2util_8h.html#a856f7b8d30f8af0a2dee98163e135dcd">wxExMake</a> (<a class="el" href="classwx_ex_frame_with_history.html">wxExFrameWithHistory</a> *frame, const wxFileName &amp;makefile)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Run make on specified makefile.  <a href="#a856f7b8d30f8af0a2dee98163e135dcd"></a><br/></td></tr>
 </table>
@@ -82,27 +82,6 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="repo
 
 </div>
 </div>
-<a class="anchor" id="a8d9b49758f2cf789c16222687f4f8837"></a><!-- doxytag: member="util.h::wxExGetIconID" ref="a8d9b49758f2cf789c16222687f4f8837" args="(const wxExFileName &amp;filename)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int wxExGetIconID </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwx_ex_file_name.html">wxExFileName</a> &amp;&nbsp;</td>
-          <td class="paramname"> <em>filename</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gets the icon index for this filename (uses the file extension to get it). </p>
-<p>The return value is an index in wxTheFileIconsTable. </p>
-
-</div>
-</div>
 <a class="anchor" id="a856f7b8d30f8af0a2dee98163e135dcd"></a><!-- doxytag: member="util.h::wxExMake" ref="a856f7b8d30f8af0a2dee98163e135dcd" args="(wxExFrameWithHistory *frame, const wxFileName &amp;makefile)" -->
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +113,7 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="repo
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 2 2011 14:33:23 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Apr 10 2011 12:00:29 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

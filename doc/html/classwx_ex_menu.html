@@ -80,18 +80,11 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a separator.  <a href="#a4da2cd6677a92f23fcf9d748c31c25ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a039c23443edfd6ec9a3f8116143e5dbb"></a><!-- doxytag: member="wxExMenu::AppendSubMenu" ref="a039c23443edfd6ec9a3f8116143e5dbb" args="(wxMenu *submenu, const wxString &amp;text, const wxString &amp;help=wxEmptyString, int itemid=wxID_ANY)" -->
 void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#a039c23443edfd6ec9a3f8116143e5dbb">AppendSubMenu</a> (wxMenu *submenu, const wxString &amp;text, const wxString &amp;help=wxEmptyString, int itemid=wxID_ANY)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a submenu (and resets the is separator member). <br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a submenu. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#a305010f3f3fd249463ab13967ae74e64">AppendTools</a> (int itemid=wxID_ANY)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends a tools submenu.  <a href="#a305010f3f3fd249463ab13967ae74e64"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a825d737c046bcbdfaf557db7e61e2156"></a><!-- doxytag: member="wxExMenu::AppendVCS" ref="a825d737c046bcbdfaf557db7e61e2156" args="(const wxExFileName &amp;filename)" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#a825d737c046bcbdfaf557db7e61e2156">AppendVCS</a> (const <a class="el" href="classwx_ex_file_name.html">wxExFileName</a> &amp;filename)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends VCS menu items. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3bd754d1d82eb6381b7feaa5a61ba0a"></a><!-- doxytag: member="wxExMenu::BuildVCS" ref="af3bd754d1d82eb6381b7feaa5a61ba0a" args="()" -->
-void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#af3bd754d1d82eb6381b7feaa5a61ba0a">BuildVCS</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Builds VCS main menu items. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7273cf3d6925851e74ad6106b49b6cb9"></a><!-- doxytag: member="wxExMenu::IsVCSBuild" ref="a7273cf3d6925851e74ad6106b49b6cb9" args="() const " -->
-bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#a7273cf3d6925851e74ad6106b49b6cb9">IsVCSBuild</a> () const </td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Is the VCS menu build? <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#a985fbcbc90d6b0124030960932d775e1">AppendVCS</a> (const wxFileName &amp;filename=wxFileName())</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Appends VCS menu items.  <a href="#a985fbcbc90d6b0124030960932d775e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f2a88d454a67bd6860ef2c09b8104a6"></a><!-- doxytag: member="wxExMenu::GetStyle" ref="a7f2a88d454a67bd6860ef2c09b8104a6" args="() const " -->
 long&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_menu.html#a7f2a88d454a67bd6860ef2c09b8104a6">GetStyle</a> () const </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the style. <br/></td></tr>
@@ -221,8 +214,29 @@ void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a985fbcbc90d6b0124030960932d775e1"></a><!-- doxytag: member="wxExMenu::AppendVCS" ref="a985fbcbc90d6b0124030960932d775e1" args="(const wxFileName &amp;filename=wxFileName())" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wxExMenu::AppendVCS </td>
+          <td>(</td>
+          <td class="paramtype">const wxFileName &amp;&nbsp;</td>
+          <td class="paramname"> <em>filename</em> = <code>wxFileName()</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 2 2011 14:33:24 for wxextension by&nbsp;
+<div class="memdoc">
+
+<p>Appends VCS menu items. </p>
+<p>If a filename is specified the menu is built as a submenu, otherwise as menu items. </p>
+
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>Generated on Sun Apr 10 2011 12:00:30 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>

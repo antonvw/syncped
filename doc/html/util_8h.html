@@ -70,6 +70,8 @@ const wxString&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac065dfde4990fbe0876c20c4aa2edb85"></a><!-- doxytag: member="util.h::wxExGetFieldSeparator" ref="ac065dfde4990fbe0876c20c4aa2edb85" args="()" -->
 const wxUniChar&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac065dfde4990fbe0876c20c4aa2edb85">wxExGetFieldSeparator</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets field separator. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#af9ea8d966b8f2cbdcb2d824cf29804f6">wxExGetIconID</a> (const wxFileName &amp;filename)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets the icon index for this filename (uses the file extension to get it).  <a href="#af9ea8d966b8f2cbdcb2d824cf29804f6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe5b6a7929d764b38bbcff3351292d3c"></a><!-- doxytag: member="util.h::wxExGetLineNumber" ref="abe5b6a7929d764b38bbcff3351292d3c" args="(const wxString &amp;text)" -->
 int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#abe5b6a7929d764b38bbcff3351292d3c">wxExGetLineNumber</a> (const wxString &amp;text)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gets a line number from a string. <br/></td></tr>
@@ -265,6 +267,27 @@ const std::list&lt; wxString &gt;&nbsp;</td><td class="memItemRight" valign="bot
 <div class="memdoc">
 
 <p>If text length exceeds max_chars, returns an ellipse prefix followed by the last max_chars from the text, otherwise just returns the text. </p>
+
+</div>
+</div>
+<a class="anchor" id="af9ea8d966b8f2cbdcb2d824cf29804f6"></a><!-- doxytag: member="util.h::wxExGetIconID" ref="af9ea8d966b8f2cbdcb2d824cf29804f6" args="(const wxFileName &amp;filename)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wxExGetIconID </td>
+          <td>(</td>
+          <td class="paramtype">const wxFileName &amp;&nbsp;</td>
+          <td class="paramname"> <em>filename</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gets the icon index for this filename (uses the file extension to get it). </p>
+<p>The return value is an index in wxTheFileIconsTable. You can use this index as a bitmap using: wxTheFileIconsTable-&gt;GetSmallImageList()-&gt;GetBitmap(wxExGetIconID(file)) </p>
 
 </div>
 </div>
@@ -499,7 +522,7 @@ const std::list&lt; wxString &gt;&nbsp;</td><td class="memItemRight" valign="bot
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 2 2011 14:33:23 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Apr 10 2011 12:00:29 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
