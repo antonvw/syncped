@@ -63,6 +63,8 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the key specified by the given page.  <a href="#a7aabfcb4cc00dfc5e513bef55af54b93"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">wxWindow *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_notebook.html#a44d41a6f12951927200acbc8990ae559">GetPageByKey</a> (const wxString &amp;key) const </td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the page specified by the given key.  <a href="#a44d41a6f12951927200acbc8990ae559"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">wxWindow *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_notebook.html#ab7e79a0ac4ceaa823b6b5e875b320e56">SelectPage</a> (const wxString &amp;key)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Selects (and returns) the page specified by the given key.  <a href="#ab7e79a0ac4ceaa823b6b5e875b320e56"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwx_ex_notebook.html#a6746899211cacb3e5d00b791577be1c0">SetPageText</a> (const wxString &amp;key, const wxString &amp;new_key, const wxString &amp;text, const wxBitmap &amp;bitmap=wxNullBitmap)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the pagetext for the given new key, on the page for the given key.  <a href="#a6746899211cacb3e5d00b791577be1c0"></a><br/></td></tr>
 </table>
@@ -180,6 +182,27 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="ab7e79a0ac4ceaa823b6b5e875b320e56"></a><!-- doxytag: member="wxExNotebook::SelectPage" ref="ab7e79a0ac4ceaa823b6b5e875b320e56" args="(const wxString &amp;key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxWindow* wxExNotebook::SelectPage </td>
+          <td>(</td>
+          <td class="paramtype">const wxString &amp;&nbsp;</td>
+          <td class="paramname"> <em>key</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Selects (and returns) the page specified by the given key. </p>
+<p>If the key does not exist NULL is returned. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6746899211cacb3e5d00b791577be1c0"></a><!-- doxytag: member="wxExNotebook::SetPageText" ref="a6746899211cacb3e5d00b791577be1c0" args="(const wxString &amp;key, const wxString &amp;new_key, const wxString &amp;text, const wxBitmap &amp;bitmap=wxNullBitmap)" -->
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +246,7 @@ bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 </div>
-<hr class="footer"/><address class="footer"><small>Generated on Sun Apr 10 2011 12:23:31 for wxextension by&nbsp;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Apr 14 2011 19:12:03 for wxextension by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.1 </small></address>
 </body>
