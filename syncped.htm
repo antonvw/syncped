@@ -2,7 +2,7 @@
 Name:      syncped.htm
 Purpose:   Users guide for syncped
 Author:    Anton van Wezenbeek
-Copyright: (c) 2011 Anton van Wezenbeek
+Copyright: (c) 2012 Anton van Wezenbeek
 -->
 
 <html>
@@ -57,8 +57,8 @@ checkbox on the toolbar, then files are directly opened in hex mode.
 
 <p>
 The configuration is read when starting up and saved when closing down.
-all data is read and saved from the same directory as your executable is in (for Microsoft Windows).
-For Linux the data is in your .syncped home directory.
+all data is read and saved from the same directory as your executable is in 
+(for Microsoft Windows). For Linux the data is in your .syncped home directory.
 
 <p>
 You can specify on the command line the file(s) to open, 
@@ -85,16 +85,15 @@ It has the next features:
      and the log file is synchronized, then only new data is added to the
      file, and your position is restored to the end of file. 
      This also works in hex mode.
-     Syncped maintains a log file itself, you can open it using the File menu,
-     or by left right clicking on the status bar text pane 
-     (this gives you only logging for current session).
-     You can also left double click the status text bar pane,
+     You can also right double click the notebook tab pane,
      this shows the recently opened file menu.
 <li> All scintilla lexers are supported, the colouring and 
-     keywords are read from lexers.xml, editable by right double clicking on the status bar lexer pane.
+     keywords are read from lexers.xml, editable by right double clicking on 
+     the status bar lexer pane.
      Editing this file and saving it directly shows
      colouring style changes on all open editors.
-     You can ileft double click on the status bar pane lexer to change the current lexer.
+     You can left double click on the status bar pane lexer to change the 
+     current lexer.
 <li> Fast searching by selecting text and pressing F3 or F4.
 <li> If you select several lines, you can sort the selection using
      any sort position in the selection. The default sort position
@@ -115,7 +114,6 @@ It has the next features:
 <p>
 In vi mode you can perform vi like navigating and editing. Almost all vi keys
 are supported, including yanking, ranges, substituting and markers. 
-Char buffers are not yet supported. 
 </p>
 
 <p>
@@ -128,6 +126,7 @@ Char buffers are not yet supported.
 <tr><td colspan="2" bgcolor="#9acd32">single char commands</td></tr>
 <tr><td>a</td><td>insert after cursor</td></tr>
 <tr><td>b</td><td>left one word</td></tr>
+<tr><td>d</td><td>delete selection</td></tr>
 <tr><td>e</td><td>word right end</td></tr>
 <tr><td>g</td><td>start of document</td></tr>
 <tr><td>h</td><td>left one character</td></tr>
@@ -138,8 +137,10 @@ Char buffers are not yet supported.
 <tr><td>n</td><td>repeat the most recent search, in the same direction</td></tr>
 <tr><td>o</td><td>insert after line</td></tr>
 <tr><td>p</td><td>put after cursor</td></tr>
+<tr><td>q</td><td>stop macro recording</td></tr>
 <tr><td>u</td><td>undo</td></tr>
 <tr><td>w</td><td>right one word</td></tr>
+<tr><td>y</td><td>yank selection</td></tr>
 <tr><td>x</td><td>delete</td></tr>
 <tr><td><i>space</i></td><td>right one character</td></tr>
 
@@ -150,8 +151,8 @@ Char buffers are not yet supported.
 <tr><td>H</td><td>goto first visible display line</td></tr>
 <tr><td>I</td><td>insert at begin</td></tr>
 <tr><td>J</td><td>join lines</td></tr>
-<tr><td>M</td><td>goto mid of display line</td></tr>
 <tr><td>L</td><td>goto end of display line</td></tr>
+<tr><td>M</td><td>goto mid of display line</td></tr>
 <tr><td>N</td><td>repeat the most recent search, in the opposite  direction</td></tr>
 <tr><td>O</td><td>insert before line</td></tr>
 <tr><td>P</td><td>put before cursor</td></tr>
@@ -161,6 +162,7 @@ Char buffers are not yet supported.
 <tr><td>/</td><td>next occurrence</td></tr>
 <tr><td>?</td><td>previous occurrence</td></tr>
 <tr><td>.</td><td>repeat last action</td></tr>
+<tr><td>;</td><td>repeat last find char</td></tr>
 <tr><td>~</td><td>toggle case</td></tr>
 <tr><td>$</td><td>end of line</td></tr>
 <tr><td>0,^</td><td>begin of line</td></tr>
@@ -172,9 +174,11 @@ Char buffers are not yet supported.
 
 <tr><td colspan="2" bgcolor="#9acd32">control char commands</td></tr>
 <tr><td>ctrl b</td><td>page up</td></tr>
+<tr><td>ctrl e</td><td>increment word under caret</td></tr>
 <tr><td>ctrl f</td><td>page down</td></tr>
+<tr><td>ctrl j</td><td>decrement word under caret</td></tr>
 <tr><td>ctrl p</td><td>scroll up</td></tr>
-<tr><td>ctrl n</td><td>scroll down</td></tr>
+<tr><td>ctrl q</td><td>scroll down</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">double char commands</td></tr>
 <tr><td>cw</td><td>change word</td></tr>
@@ -186,6 +190,11 @@ Char buffers are not yet supported.
 <tr><td>f?</td><td>find next character</td></tr>
 <tr><td>F?</td><td>find previous character</td></tr>
 <tr><td>m?</td><td>mark line</td></tr>
+<tr><td>*J</td><td>join lines</td></tr>
+<tr><td>qx</td><td>record macro x</td></tr>
+<tr><td>qX</td><td>record macro x (appends to x)</td></tr>
+<tr><td>@x</td><td>plays back macro x</td></tr>
+<tr><td>@@</td><td>plays back last macro</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
 <tr><td>yw</td><td>yank word</td></tr>
 <tr><td>yy</td><td>yank line</td></tr>
@@ -208,10 +217,12 @@ Char buffers are not yet supported.
 <tr><td>:e         </td><td>edit</td></tr>
 <tr><td>:e *       </td><td>edit *</td></tr>
 <tr><td>:[address]m dest </td><td>move dest</td></tr>
+<tr><td>:g         </td><td>global command</td></tr>
 <tr><td>:n         </td><td>next</td></tr>
 <tr><td>:prev      </td><td>previous</td></tr>
 <tr><td>:q         </td><td>quit unless modified</td></tr>
 <tr><td>:q!        </td><td>quit forced</td></tr>
+<tr><td>:r *       </td><td>read file *</td></tr>
 <tr><td>:[address]s/p/r/</td><td>substitute p by r (always global)</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save *</td></tr>
