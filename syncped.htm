@@ -50,6 +50,10 @@ It can be configured to work with most
 You can use <a HREF="#VI">vi</a> keys for navigating and editing by setting 
 the vi Mode in the options.
 
+Vi macros are supported as well, you can record them using key strokes, and play back
+and edit them. The vi macros are stored in macros.xml, this file can be edited
+and saved as well.
+
 <p>
 You can view a file in hex format by double clicking the file type pane
 on the status bar. You can also set the Hex 
@@ -292,7 +296,7 @@ they are read from disk each time you open the file.
 <hr>
 <a NAME="VCS"></a><b>Version Control Systems</b>
 <p>
-Support for VCS is configured by the vcss.xml file. 
+Support for VCS is configured by the vcs.xml file. 
 At this moment there is support for 
 Bazaar, CVS, GIT, Mercurial, SCCS and SVN. 
 Others should be not to difficult to add.
@@ -337,8 +341,9 @@ files selected.
 
 <p>
 Finally you can configure auto VCS to be used, in that case 
-syncped determines for each file which vcsw is most appropriate and
-uses the one chosen.
+syncped checks for each file whether there is an admin dir 
+according to the information in vcs.xml and and
+uses that one.
 
 </body>
 </html>
