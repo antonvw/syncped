@@ -236,8 +236,17 @@ are supported, including yanking, ranges, substituting, macros and markers.
 </table>
 
 <p>
+When substituting you can use &amp; to represent the target, and &#92;U to
+convert to uppercase and &#92;L to convert to lowercase.
+
+<p>
 Most commands can be prefixed with a multidigit number, that takes care of
 repeating that command the number specified.
+
+<p>
+Some special macro variables exist as well, see the macros.xml file.
+These variables can be used inside macros, or entered on the vi bar.
+When used inside macros, they are expanded when playing back.
 
 <hr>
 <a NAME="LIST"></a><b>List</b>
@@ -322,8 +331,9 @@ files selected.
 
 <p>
 Finally you can configure auto VCS to be used, in that case 
-syncped determines for each file which vcs is most appropriate and
-uses the one chosen.
+syncped checks for each file whether there is an admin dir 
+according to the information in vcs.xml and 
+uses that one.
 
 </body>
 </html>
