@@ -28,7 +28,8 @@ border: 1px #6699CC solid;
 <p>
 syncped is a <b>SYNC</b>hronizing <b>P</b>ortable <b>ED</b>itor
 supporting more than 80 programming
-languages, is available under Windows and Linux, has a vi compatibility mode, and
+languages, is available under Windows, Linux, Mac OS 10.4, 
+has a vi compatibility mode, and
 can be configured to work with most version control systems.
 
 <p>
@@ -49,10 +50,6 @@ It can be configured to work with most
 <p>
 You can use <a HREF="#VI">vi</a> keys for navigating and editing by setting 
 the vi Mode in the options.
-
-Vi macros are supported as well, you can record them using key strokes, and play back
-and edit them. The vi macros are stored in macros.xml, this file can be edited
-and saved as well.
 
 <p>
 You can view a file in hex format by double clicking the file type pane
@@ -111,13 +108,16 @@ It has the next features:
 <li> Find marked text using Ctrl 9 and Ctrl 0 keys.
 <li> You can double click on the status bar pane file type to change the current
      file type.
+<li> You can double click on the status bar pane lexer to change the
+     default lexer for this file. You can also right double click the lexer 
+     pane, to be able to change the syntax colouring for this lexer.
 </ul>
 
 <hr>
 <a NAME="VI"></a><b>vi mode</b>
 <p>
 In vi mode you can perform vi like navigating and editing. Almost all vi keys
-are supported, including yanking, ranges, substituting and markers. 
+are supported, including yanking, ranges, substituting, macros and markers. 
 </p>
 
 <p>
@@ -185,8 +185,8 @@ are supported, including yanking, ranges, substituting and markers.
 <tr><td>ctrl q</td><td>scroll down</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">double char commands</td></tr>
-<tr><td>cw</td><td>change word</td></tr>
 <tr><td>cc</td><td>change line</td></tr>
+<tr><td>cw</td><td>change word</td></tr>
 <tr><td>dd</td><td>delete line</td></tr>
 <tr><td>d0</td><td>delete line left</td></tr>
 <tr><td>d$</td><td>delete line right</td></tr>
@@ -194,7 +194,6 @@ are supported, including yanking, ranges, substituting and markers.
 <tr><td>f?</td><td>find next character</td></tr>
 <tr><td>F?</td><td>find previous character</td></tr>
 <tr><td>m?</td><td>mark line</td></tr>
-<tr><td>*J</td><td>join lines</td></tr>
 <tr><td>qx</td><td>record macro x</td></tr>
 <tr><td>qX</td><td>record macro x (appends to x)</td></tr>
 <tr><td>@x</td><td>plays back macro x</td></tr>
@@ -251,52 +250,34 @@ It has the next features:
 
 <ul>
 <li> Synchronizes if a list item is changed from outside.
-<li> Columns<br>
-All lists have at least the following columns:
-<ul>
-<li> Name
-<li> Type<br>
-For folders this field holds the pattern that was specified during 
-adding the folder.
-<li> Modified<br>
-<li> In Folder
-<li> Size<br>
-For folders this field is not used.
-</ul>
 <li> 'Find In ...' is available that allows you
-to find text in all files in your project. If items are selected in
-the project, then searching is limited to these files.
+     to find text in all files in your project. If items are selected in
+     the project, then searching is limited to these files.
 <li> The list can be sorted on each of its columns by
-clicking on the column header.
-You also have an Automatic Sort option for the project. If set, then
-your project is automatically sorted ascending or descending
-(depending on your SortMethod) and resorted whenever
-one of the files in the project is synchronized.
+     clicking on the column header.
+     You also have an Automatic Sort option for the project. If set, then
+     your project is automatically sorted ascending or descending
+     (depending on your SortMethod) and resorted whenever
+     one of the files in the project is synchronized.
 <li> An item on the list can be opened by double clicking.
 <li> List items can be copied to the clipboard as
-ascii text with columns separated by tabs, and then pasted on other lists,
-or into an edit window.
+     ascii text with columns separated by tabs, and then pasted on other lists,
+     or into an edit window.
 <li> You can compare items with each other, or with a base version from
-a version list. A version list can be created from an item if the item
-is part of a directory structure where the same item appears in
-another directory as well where that directory 
-matches the [0-9]*\\.[0-9]*.*" regular expression.
+     a version list. A version list can be created from an item if the item
+     is part of a directory structure where the same item appears in
+     another directory as well where that directory 
+     matches the [0-9]*\\.[0-9]*.*" regular expression.
 </ul>
 
 <p>
 The project files are stored as XML files containing the full paths of all items.
 You can edit it using 'File Open As Text' in order to replace or change items.
 
-<p>
-File attributes like modification times and access rights are 
-not stored in this file,
-they are read from disk each time you open the file.
-
-
 <hr>
 <a NAME="VCS"></a><b>Version Control Systems</b>
 <p>
-Support for VCS is configured by the vcs.xml file. 
+Support for VCS is configured by the vcss.xml file. 
 At this moment there is support for 
 Bazaar, CVS, GIT, Mercurial, SCCS and SVN. 
 Others should be not to difficult to add.
@@ -341,9 +322,8 @@ files selected.
 
 <p>
 Finally you can configure auto VCS to be used, in that case 
-syncped checks for each file whether there is an admin dir 
-according to the information in vcs.xml and and
-uses that one.
+syncped determines for each file which vcs is most appropriate and
+uses the one chosen.
 
 </body>
 </html>
