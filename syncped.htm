@@ -13,12 +13,13 @@ Copyright: (c) 2012 Anton van Wezenbeek
 </head>
 
 <body>
+
 <style type="text/css">
 .TableStyle
 {
 <!-- font-family: Verdana; -->
 font-weight: normal;
-font-size: 9px;
+font-size: 10px;
 color: #404040;
 background-color: #fafafa;
 border: 1px #6699CC solid;
@@ -32,45 +33,41 @@ languages, is available under Windows, Linux, Mac OS 10.4,
 has a vi compatibility mode, and
 can be configured to work with most version control systems.
 
-<p>
+<ul>
+<li> 
 syncped has automatic synchronizing for all its
 <a HREF="#EDIT">editor windows</a> and its <a HREF="#LIST">list windows</a>.
 
-<p>
+<li> 
 Several themes are supported, changing a theme is done by double
 clicking on the status bar theme pane.
 You can add new themes, or change existing ones by editing
 the lexers.xml file, opened by right double clicking on the
 status bar theme pane.
 
-<p>
+<li> 
 It can be configured to work with most 
 <a HREF="#VCS">version control systems</a>. 
 
-<p>
+<li> 
 You can use <a HREF="#VI">vi</a> keys for navigating and editing by setting 
 the vi Mode in the options.
 
-<p>
+<li> 
 You can view a file in hex format by double clicking the file type pane
 on the status bar. You can also set the Hex 
 checkbox on the toolbar, then files are directly opened in hex mode.
 
-<p>
+<li> 
 The configuration is read when starting up and saved when closing down.
 all data is read and saved from the same directory as your executable is in 
 (for Microsoft Windows). For Linux the data is in your .syncped home directory.
 
-<p>
+<li> 
 You can specify on the command line the file(s) to open, 
 wildcards * and ? are allowed.
-You can also drop files from windows explorer to syncped, these are opened
-automatically.
-
-<p>
-You can select and run a process using Process Select and Process Execute.
-The output (stdout and stderr) of the process is logged into the output
-list 'Process Output'.
+You can also drop files from windows explorer to syncped.
+</ul>
 
 <hr>
 <a NAME="EDIT"></a><b>Editor</b>
@@ -79,22 +76,17 @@ This is an MDI notebook editor implemented using a
 <a HREF="http://www.scintilla.org">scintilla</a> component.
 
 <p>
-It has the next features:
 <ul>
 <li> Synchronizes if the file is changed from outside. Can be used for
      viewing log files: If you're on the last position in a log file
      and the log file is synchronized, then only new data is added to the
      file, and your position is restored to the end of file. 
      This also works in hex mode.
-     You can also right double click the notebook tab pane,
-     this shows the recently opened file menu.
 <li> All scintilla lexers are supported, the colouring and 
      keywords are read from lexers.xml, editable by right double clicking on 
      the status bar lexer pane.
      Editing this file and saving it directly shows
      colouring style changes on all open editors.
-     You can left double click on the status bar pane lexer to change the 
-     current lexer.
 <li> Fast searching by selecting text and pressing F3 or F4.
 <li> If you select several lines, you can sort the selection using
      any sort position in the selection. The default sort position
@@ -111,17 +103,20 @@ It has the next features:
 <li> You can double click on the status bar pane lexer to change the
      default lexer for this file. You can also right double click the lexer 
      pane, to be able to change the syntax colouring for this lexer.
+<li> You can also right double click the notebook tab pane,
+     this shows the recently opened file menu.
 </ul>
 
 <hr>
 <a NAME="VI"></a><b>vi mode</b>
 <p>
-In vi mode you can perform vi like navigating and editing. Almost all vi keys
-are supported, including yanking, ranges, substituting, macros and markers. 
-</p>
 
-<p>
-<table border="1">
+<!-- Main Table -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td width="33%" valign="top">
+
+<table border="1" valign="top" class="TableStyle">
 <tr bgcolor="#9acd32">
   <th align="left">key</th>
   <th align="left">action</th>
@@ -176,6 +171,16 @@ are supported, including yanking, ranges, substituting, macros and markers.
 <tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
 <tr><td>*</td><td>next occurrence of word under cursor</td></tr>
 
+</table>
+
+</td>
+<td width="33%" valign="top">
+
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
 <tr><td colspan="2" bgcolor="#9acd32">control char commands</td></tr>
 <tr><td>ctrl b</td><td>page up</td></tr>
 <tr><td>ctrl e</td><td>increment word under caret</td></tr>
@@ -211,6 +216,16 @@ are supported, including yanking, ranges, substituting, macros and markers.
 <tr><td>&gt;&gt;</td><td>increase indent</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
 
+</table>
+
+</td>
+<td width="33%" valign="top">
+
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
 <tr><td colspan="2" bgcolor="#9acd32">colon commands</td></tr>
 <tr><td>:.=        </td><td>current line</td></tr>
 <tr><td>:$         </td><td>goto end of document</td></tr>
@@ -241,6 +256,8 @@ are supported, including yanking, ranges, substituting, macros and markers.
 
 </table>
 
+</table>
+
 <p>
 When substituting you can use &amp; to represent the target, and &#92;U to
 convert to uppercase and &#92;L to convert to lowercase.
@@ -264,7 +281,6 @@ The output lists and the projects are implemented using a MDI notebook using a
 standard list control component.
 
 <p>
-It has the next features:
 
 <ul>
 <li> Synchronizes if a list item is changed from outside.
@@ -295,7 +311,7 @@ You can edit it using 'File Open As Text' in order to replace or change items.
 <hr>
 <a NAME="VCS"></a><b>Version Control Systems</b>
 <p>
-Support for VCS is configured by the vcss.xml file. 
+Support for VCS is configured by the vcs.xml file. 
 At this moment there is support for 
 Bazaar, CVS, GIT, Mercurial, SCCS and SVN. 
 Others should be not to difficult to add.
