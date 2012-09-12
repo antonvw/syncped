@@ -93,6 +93,7 @@ This is an MDI notebook editor implemented using a
 <li> Links are navigated using the popup menu on a Link.
 <li> Zoom in and out using Ctrl - and Ctrl = keys.
 <li> Find marked text using Ctrl 9 and Ctrl 0 keys.
+<li> You can right click on the first line to show current properties.
 <li> You can double click on the status bar pane file type to change the current
      file type.
 <li> You can double click on the status bar pane lexer to change the
@@ -177,9 +178,9 @@ This is an MDI notebook editor implemented using a
 </tr>
 <tr><td colspan="2" bgcolor="#9acd32">control char commands</td></tr>
 <tr><td>ctrl b</td><td>page up</td></tr>
-<tr><td>ctrl e</td><td>increment word under caret</td></tr>
+<tr><td>ctrl e</td><td>increment word under cursor</td></tr>
 <tr><td>ctrl f</td><td>page down</td></tr>
-<tr><td>ctrl j</td><td>decrement word under caret</td></tr>
+<tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
 <tr><td>ctrl p</td><td>scroll up</td></tr>
 <tr><td>ctrl q</td><td>scroll down</td></tr>
 
@@ -196,7 +197,7 @@ This is an MDI notebook editor implemented using a
 <tr><td>qx</td><td>record macro x</td></tr>
 <tr><td>qX</td><td>record macro x (appends to x)</td></tr>
 <tr><td>@x</td><td>plays back macro x (one char)</td></tr>
-<tr><td>@x@</td><td>plays back macro x (several characters)</td></tr>
+<tr><td>@xx@</td><td>plays back macro xx (several characters)</td></tr>
 <tr><td>@@</td><td>plays back last macro</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
 <tr><td>yw</td><td>yank word</td></tr>
@@ -227,20 +228,20 @@ This is an MDI notebook editor implemented using a
 <tr><td>:[address]&lt;</td><td>decrease indent</td></tr>
 <tr><td>:close     </td><td>closes current document</td></tr>
 <tr><td>:[address]d</td><td>delete</td></tr>
-<tr><td>:e         </td><td>edit</td></tr>
-<tr><td>:e *       </td><td>edit *</td></tr>
+<tr><td>:e         </td><td>edit (show select file dialog)</td></tr>
+<tr><td>:e *       </td><td>edit file *</td></tr>
 <tr><td>:[address]m dest </td><td>move dest</td></tr>
 <tr><td>:g         </td><td>global command</td></tr>
 <tr><td>:n         </td><td>next</td></tr>
 <tr><td>:prev      </td><td>previous</td></tr>
 <tr><td>:q         </td><td>quit unless modified</td></tr>
 <tr><td>:q!        </td><td>quit forced</td></tr>
-<tr><td>:r *       </td><td>read file *</td></tr>
+<tr><td>:r *       </td><td>insert contents of file * below cursor</td></tr>
 <tr><td>:[address]s/p/r/</td><td>substitute p by r (always global)</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
-<tr><td>:w *       </td><td>save *</td></tr>
+<tr><td>:w *       </td><td>save to file *</td></tr>
 <tr><td>:x         </td><td>save and quit</td></tr>
-<tr><td>:y         </td><td>yank</td></tr>
+<tr><td>:y         </td><td>yank current line</td></tr>
 <tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
