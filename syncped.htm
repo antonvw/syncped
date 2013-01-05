@@ -2,7 +2,7 @@
 Name:      syncped.htm
 Purpose:   Users guide for syncped
 Author:    Anton van Wezenbeek
-Copyright: (c) 2012 Anton van Wezenbeek
+Copyright: (c) 2013 Anton van Wezenbeek
 -->
 
 <html>
@@ -216,7 +216,7 @@ This is an MDI notebook editor implemented using a
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker</td></tr>
-<tr><td>"?</td><td>inserts contents of register</td></tr>
+<tr><td>"?</td><td>prepares register to receive contents of yy or dd</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
 
@@ -247,6 +247,7 @@ This is an MDI notebook editor implemented using a
 <tr><td>:q!        </td><td>quit forced</td></tr>
 <tr><td>:r *       </td><td>insert contents of file * below cursor</td></tr>
 <tr><td>:r !<i>command</i></td><td>executes <i>command</i> and inserts output below cursor</td></tr>
+<tr><td>:reg       </td><td>shows registers </td></tr>
 <tr><td>:[address]s/p/r/</td><td>substitute p by r (always global)</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save to file *</td></tr>
