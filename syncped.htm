@@ -101,7 +101,7 @@ This is an MDI notebook editor implemented using a
      pane, to be able to change the syntax colouring for this lexer.
 <li> You can click on the macro bar pane to playback a macro.
      You can also right click the macro 
-     pane, to be able to edit macros.
+     pane, to be able to edit macros (vi mode should be set).
 <li> You can also right click the notebook tab pane,
      this shows the recently opened file menu.
 </ul>
@@ -216,7 +216,7 @@ This is an MDI notebook editor implemented using a
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker</td></tr>
-<tr><td>"?</td><td>prepares register to receive contents of yy or dd</td></tr>
+<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
 
@@ -265,8 +265,8 @@ This is an MDI notebook editor implemented using a
 </table>
 
 <p>
-When substituting you can use &amp; to represent the target, and &#92;U to
-convert to uppercase and &#92;L to convert to lowercase.
+When substituting you can use &amp; or &#92;0 to represent the target, 
+and &#92;U to convert to uppercase and &#92;L to convert to lowercase.
 
 <p>
 Most commands can be prefixed with a multidigit number, that takes care of
