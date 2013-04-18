@@ -19,7 +19,7 @@ Copyright: (c) 2013 Anton van Wezenbeek
 {
 <!-- font-family: Verdana; -->
 font-weight: normal;
-font-size: 10px;
+font-size: 11px;
 color: #404040;
 background-color: #fafafa;
 border: 1px #6699CC solid;
@@ -50,7 +50,7 @@ It can be configured to work with most
 <a HREF="#VCS">version control systems</a>. 
 
 <li> 
-You can use <a HREF="#VI">vi</a> keys for navigating and editing by setting 
+You can use <a HREF="#VI">vi keys</a> for navigating and editing by setting 
 the vi Mode in the options.
 
 <li> 
@@ -86,7 +86,6 @@ This is an MDI notebook editor implemented using a
 <li> If you select several lines, you can sort the selection using
      any sort position in the selection. The default sort position
      is the cursor position at the last line of the selection.
-<li> You can set the position of the edge column.
 <li> You can set rectangular selection by pressing ALT before selecting.
 <li> When the mouse is on a hex number the decimal number is
      shown as a tooltip by pressing Ctrl D.
@@ -107,20 +106,19 @@ This is an MDI notebook editor implemented using a
 </ul>
 
 <hr>
-<a NAME="VI"></a><b>vi mode</b>
+<a NAME="VI"></a><b>vi keys</b>
 <p>
 
 <!-- Main Table -->
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
 <tr>
-<td width="33%" valign="top">
 
+<td width="33%" valign="top">
 <table border="1" valign="top" class="TableStyle">
 <tr bgcolor="#9acd32">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-
 <tr><td colspan="2" bgcolor="#9acd32">single char commands</td></tr>
 <tr><td>a</td><td>insert after cursor</td></tr>
 <tr><td>b</td><td>left one word</td></tr>
@@ -170,12 +168,10 @@ This is an MDI notebook editor implemented using a
 <tr><td>*</td><td>next occurrence of word under cursor</td></tr>
 <tr><td>+</td><td>down one line, goto home</td></tr>
 <tr><td>-</td><td>up one line, goto home</td></tr>
-
 </table>
-
 </td>
-<td width="33%" valign="top">
 
+<td width="33%" valign="top">
 <table border="1" valign="top" class="TableStyle">
 <tr bgcolor="#9acd32">
   <th align="left">key</th>
@@ -219,12 +215,10 @@ This is an MDI notebook editor implemented using a
 <tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
-
 </table>
-
 </td>
-<td width="33%" valign="top">
 
+<td width="33%" valign="top">
 <table border="1" valign="top" class="TableStyle">
 <tr bgcolor="#9acd32">
   <th align="left">key</th>
@@ -259,7 +253,6 @@ This is an MDI notebook editor implemented using a
 <tr><td>:g/pattern/d</td><td>delete pattern</td></tr>
 <tr><td>:g/pattern/p</td><td>print pattern</td></tr>
 <tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
-
 </table>
 
 </table>
@@ -326,12 +319,11 @@ Others should be not to difficult to add.
 e.g. the next svn commands are supported:
 
 <p>
-<table border="1">
+<table border="1" valign="top" class="TableStyle">
 <tr bgcolor="#9acd32">
   <th align="left">svn command</th>
   <th align="left">action</th>
 </tr>
-
 <tr><td>add     </td><td>invokes svn add</td></tr>
 <tr><td>blame   </td><td>asks for revision and shows revision with blame info in editor window</</td></tr>
 <tr><td>cat     </td><td>asks for revision and shows revision in editor window</td></tr>
@@ -346,7 +338,6 @@ e.g. the next svn commands are supported:
 <tr><td>propset </td><td>sets svn properties</td></tr>
 <tr><td>stat    </td><td>shows svn stat</td></tr>
 <tr><td>update  </td><td>updates svn</td></tr>
-
 </table>
 
 <p>
