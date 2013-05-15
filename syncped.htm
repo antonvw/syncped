@@ -242,6 +242,11 @@ This is an MDI notebook editor implemented using a
 <tr><td>:r *       </td><td>insert contents of file * below cursor</td></tr>
 <tr><td>:r !<i>command</i></td><td>executes <i>command</i> and inserts output below cursor</td></tr>
 <tr><td>:reg       </td><td>shows registers </td></tr>
+<tr><td>:set ts no </td><td>sets tabstop at every no</td></tr>
+<tr><td>:set nu    </td><td>shows line numbers</td></tr>
+<tr><td>:set nu!   </td><td>hides line numbers</td></tr>
+<tr><td>:set list  </td><td>shows whitespace</td></tr>
+<tr><td>:set list! </td><td>hides whitespace</td></tr>
 <tr><td>:[address]s/p/r/</td><td>substitute p by r (always global)</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save to file *</td></tr>
@@ -250,8 +255,8 @@ This is an MDI notebook editor implemented using a
 <tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
-<tr><td>:g/pattern/d</td><td>delete pattern</td></tr>
-<tr><td>:g/pattern/p</td><td>print pattern</td></tr>
+<tr><td>:g/pattern/d</td><td>delete lines containing pattern</td></tr>
+<tr><td>:g/pattern/p</td><td>print lines containing pattern</td></tr>
 <tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
 </table>
 
