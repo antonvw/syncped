@@ -134,9 +134,10 @@ This is an MDI notebook editor implemented using a
 <tr><td>p</td><td>put after cursor</td></tr>
 <tr><td>q</td><td>stop macro recording</td></tr>
 <tr><td>u</td><td>undo</td></tr>
+<tr><td>v</td><td>enter visual mode</td></tr>
 <tr><td>w</td><td>right one word</td></tr>
-<tr><td>y</td><td>yank selection</td></tr>
 <tr><td>x</td><td>delete</td></tr>
+<tr><td>y</td><td>yank selection</td></tr>
 <tr><td><i>space</i></td><td>right one character</td></tr>
 
 <tr><td>A</td><td>insert after end of line</td></tr>
@@ -228,7 +229,7 @@ This is an MDI notebook editor implemented using a
 <tr><td>:.=        </td><td>current line</td></tr>
 <tr><td>:$         </td><td>goto end of document</td></tr>
 <tr><td>:[address]&gt;</td><td>increase indent</td></tr>
-<tr><td>:[address]&lt;</td><chtd>decrease indent</td></tr>
+<tr><td>:[address]&lt;</td><td>decrease indent</td></tr>
 <tr><td>:close     </td><td>closes current document</td></tr>
 <tr><td>:[address]d</td><td>delete</td></tr>
 <tr><td>:e         </td><td>edit (show select file dialog)</td></tr>
@@ -248,8 +249,8 @@ This is an MDI notebook editor implemented using a
 <tr><td>:set list! </td><td>hides whitespace</td></tr>
 <tr><td>:set nu    </td><td>shows line numbers</td></tr>
 <tr><td>:set nu!   </td><td>hides line numbers</td></tr>
-<tr><td>:set ts no </td><td>sets tabstop at every no</td></tr>
-<tr><td>:[address]s/p/r/</td><td>substitute p by r (always global)</td></tr>
+<tr><td>:set ts=no </td><td>sets tabstop at every no</td></tr>
+<tr><td>:[address]s/p/r/f</td><td>substitute p by r using flags f (i, c, g)</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save to file *</td></tr>
 <tr><td>:x         </td><td>save and quit</td></tr>
