@@ -36,7 +36,7 @@ can be configured to work with most version control systems.
 <ul>
 <li> 
 syncped has automatic synchronizing for all its
-<a HREF="#EDIT">editor windows</a> and its <a HREF="#LIST">list windows</a>.
+<a HREF="#EDIT">editor tabs</a> and its <a HREF="#LIST">list tabs</a>.
 
 <li> 
 Several themes are supported, changing a theme is done by 
@@ -52,13 +52,13 @@ It can be configured to work with most
 You can specify on the command line the file(s) to open, 
 wildcards * and ? are allowed.
 You can also drop files from windows explorer to syncped.
+
+<li> Right click the notebook tab pane to show the recently opened file menu.
 </ul>
 
 <hr>
-<a NAME="EDIT"></a><b>Editor</b>
+<a NAME="EDIT"></a><b>Editor tab</b>
 <p>
-This is an MDI notebook editor implemented using a
-<a HREF="http://www.scintilla.org">scintilla</a> component.
 
 <p>
 <ul>
@@ -67,7 +67,8 @@ This is an MDI notebook editor implemented using a
      and the log file is synchronized, then only new data is added to the
      file, and your position is restored to the end of file. 
      This also works in hex mode.
-<li> All scintilla lexers are supported, the colouring and 
+<li> All <a HREF="http://www.scintilla.org">scintilla</a> lexers are supported, 
+     the colouring and 
      keywords are read from lexers.xml, editable by right clicking on 
      the status bar lexer pane.
      Editing this file and saving it directly shows
@@ -90,7 +91,6 @@ This is an MDI notebook editor implemented using a
      Right click the lexer pane to change the syntax colouring for this lexer.
 <li> Click on the macro bar pane to playback a macro.
      Right click the macro pane to edit macros (vi mode should be set).
-<li> Right click the notebook tab pane to show the recently opened file menu.
 <li> View a file in hex format by clicking the file type pane
      on the status bar. If the Hex 
      checkbox on the toolbar is set, then files are directly opened in hex mode.
@@ -100,7 +100,7 @@ This is an MDI notebook editor implemented using a
 <hr>
 <a NAME="VI"></a><b>vi keys</b>
 <p>
-Use <a HREF="#VI">vi keys</a> for navigating and editing by setting 
+The following vi keys are supported for navigating and editing, after setting 
 the vi Mode in the options.
 
 <p>
@@ -282,11 +282,7 @@ You can also record and playback macros from the menu bar. In that
 case macro names are not limited to one character.
 
 <hr>
-<a NAME="LIST"></a><b>List</b>
-<p>
-The output lists and the projects are implemented using a MDI notebook using a
-standard list control component.
-
+<a NAME="LIST"></a><b>List tab</b>
 <p>
 
 <ul>
