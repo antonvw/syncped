@@ -50,12 +50,10 @@ can be configured to work with most version control systems.
      the status bar lexer pane.
      Editing this file and saving it directly shows
      colouring style changes on all open editors.
-<li> 
-Several themes are supported, changing a theme is done by 
-clicking on the status bar theme pane. <br>
-Right clicking this pane
-opens the lexers.xml file to add new themes, or change existing ones.
-
+<li> Several themes are supported, changing a theme is done by 
+     clicking on the status bar theme pane. <br>
+     Right clicking this pane
+     opens the lexers.xml file to add new themes, or change existing ones.
 <li> Fast searching by selecting text and pressing F3 or F4.
 <li> If you select several lines, you can sort the selection using
      any sort position in the selection. The default sort position
@@ -76,7 +74,6 @@ opens the lexers.xml file to add new themes, or change existing ones.
      Right click the lexer pane to change the syntax colouring for this lexer.
 <li> Click on the status bar macro pane to playback a macro.
      Right click the macro pane to edit macros (vi mode should be set).
-
 </ul>
 
 <hr>
@@ -190,7 +187,7 @@ vi Mode in the options.
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker</td></tr>
-<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
+<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$, variable</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
 </table>
@@ -240,6 +237,21 @@ vi Mode in the options.
 <tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
 </table>
 
+</table>
+  
+<p>
+[address]
+
+<p>
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">chars</th>
+  <th align="left">range</th>
+</tr>
+<tr><td>%</td><td>entire document</td></tr>
+<tr><td>*</td><td>visible area</td></tr>
+<tr><td>.</td><td>current line</td></tr>
+<tr><td>x,y</td><td>line x to y</td></tr>
 </table>
 
 <p>
