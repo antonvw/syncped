@@ -261,12 +261,13 @@ vi Mode in the options.
 <tr bgcolor="#9acd32">
   <th align="left">name</th>
   <th align="left">purpose</th>
+  <th align="left">explanation</th>
 </tr>
-<tr><td>%</td><td>filename register</td></tr>
-<tr><td>_</td><td>black hole register</td></tr>
-<tr><td>0</td><td>put register</td></tr>
-<tr><td>1 - 9</td><td>delete registers</td></tr>
-<tr><td>a - z</td><td>standard register</td></tr>
+<tr><td>%</td><td>filename register</td><td>current filename</td></tr>
+<tr><td>_</td><td>black hole register</td><td>anything written to it is not kept</td></tr>
+<tr><td>0</td><td>yank register</td><td>last yank value</td></tr>
+<tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
+<tr><td>a - z</td><td>standard register</td><td>normal register</td></tr>
 </table>
 
 <p>
