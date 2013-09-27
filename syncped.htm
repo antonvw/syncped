@@ -108,7 +108,7 @@ vi Mode in the options.
 <tr><td>p</td><td>put after cursor</td></tr>
 <tr><td>q</td><td>stop macro recording</td></tr>
 <tr><td>u</td><td>undo</td></tr>
-<tr><td>v</td><td>enter visual mode</td></tr>
+<tr><td>v</td><td>enter visual mode (same as visual line mode)</td></tr>
 <tr><td>w</td><td>right one word</td></tr>
 <tr><td>x</td><td>delete</td></tr>
 <tr><td>y</td><td>yank selection</td></tr>
@@ -127,6 +127,7 @@ vi Mode in the options.
 <tr><td>O</td><td>insert before line</td></tr>
 <tr><td>P</td><td>put before cursor</td></tr>
 <tr><td>R</td><td>replace many chars, enters overtype mode</td></tr>
+<tr><td>V</td><td>enter visual line mode</td></tr>
 <tr><td>X</td><td>delete backwards</td></tr>
 
 <tr><td>/</td><td>next occurrence</td></tr>
@@ -172,7 +173,7 @@ vi Mode in the options.
 <tr><td>dw</td><td>delete word</td></tr>
 <tr><td>f?</td><td>find next character</td></tr>
 <tr><td>F?</td><td>find previous character</td></tr>
-<tr><td>m?</td><td>mark line</td></tr>
+<tr><td>m?</td><td>mark current line (one letter marker)</td></tr>
 <tr><td>qx</td><td>record macro x</td></tr>
 <tr><td>qX</td><td>record macro x (appends to x)</td></tr>
 <tr><td>@x</td><td>plays back macro x (one char)</td></tr>
@@ -187,7 +188,7 @@ vi Mode in the options.
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker</td></tr>
-<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$, variable</td></tr>
+<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
 </table>
@@ -224,7 +225,7 @@ vi Mode in the options.
 <tr><td>:set nu    </td><td>shows line numbers</td></tr>
 <tr><td>:set nu!   </td><td>hides line numbers</td></tr>
 <tr><td>:set ts=no </td><td>sets tabstop at every no</td></tr>
-<tr><td>:[address]s/p/r/f</td><td>substitute p by r using flags f (i, c, g)</td></tr>
+<tr><td>:[address]s/p/r/[flags]</td><td>substitute p by r using flags</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save to file *</td></tr>
 <tr><td>:x         </td><td>save and quit</td></tr>
@@ -241,7 +242,6 @@ vi Mode in the options.
   
 <p>
 [address]
-
 <p>
 <table border="1" valign="top" class="TableStyle">
 <tr bgcolor="#9acd32">
@@ -250,6 +250,7 @@ vi Mode in the options.
 </tr>
 <tr><td>%</td><td>entire document</td></tr>
 <tr><td>*</td><td>visible area</td></tr>
+<tr><td>'&lt;,'&gt;</td><td>visual (selected) area</td></tr>
 <tr><td>.</td><td>current line</td></tr>
 <tr><td>x,y</td><td>line x to y</td></tr>
 </table>
@@ -268,6 +269,19 @@ vi Mode in the options.
 <tr><td>0</td><td>yank register</td><td>last yank value</td></tr>
 <tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
 <tr><td>a - z</td><td>standard register</td><td>normal register</td></tr>
+</table>
+
+<p>
+[flags]
+<p>
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">char</th>
+  <th align="left">purpose</th>
+</tr>
+<tr><td>i</td><td>ignore case</td></tr>
+<tr><td>c</td><td>ask for confirmation</td></tr>
+<tr><td>g</td><td>global, otherwise only first match on line</td></tr>
 </table>
 
 <p>
