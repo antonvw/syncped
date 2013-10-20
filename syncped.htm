@@ -108,7 +108,7 @@ vi Mode in the options.
 <tr><td>p</td><td>put after cursor</td></tr>
 <tr><td>q</td><td>stop macro recording</td></tr>
 <tr><td>u</td><td>undo</td></tr>
-<tr><td>v</td><td>enter visual mode (same as visual line mode)</td></tr>
+<tr><td>v</td><td>enter visual mode</td></tr>
 <tr><td>w</td><td>right one word</td></tr>
 <tr><td>x</td><td>delete</td></tr>
 <tr><td>y</td><td>yank selection</td></tr>
@@ -144,7 +144,7 @@ vi Mode in the options.
 <tr><td>*</td><td>next occurrence of word under cursor</td></tr>
 <tr><td>+</td><td>down one line, goto home</td></tr>
 <tr><td>-</td><td>up one line, goto home</td></tr>
-<tr><td>ESC<td><td>escape deselects, goes back to normal mode</td></tr>
+<tr><td>ESC</td><td>escape deselects, goes back to normal mode</td></tr>
 </table>
 </td>
 
@@ -190,8 +190,8 @@ vi Mode in the options.
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker</td></tr>
 <tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
-<tr><td>&gt;&gt;</td><td>increase indent</td></tr>
-<tr><td>&lt;&lt;</td><td>decrease indent</td></tr>
+<tr><td>&gt;&gt;</td><td>increase indent for current line, selection or visual area</td></tr>
+<tr><td>&lt;&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
 </table>
 </td>
 
@@ -204,21 +204,22 @@ vi Mode in the options.
 <tr><td colspan="2" bgcolor="#9acd32">colon commands</td></tr>
 <tr><td>:.=         </td><td>current line</td></tr>
 <tr><td>:$          </td><td>goto end of document</td></tr>
-<tr><td>:[range]&gt;</td><td>increase indent for range</td></tr>
-<tr><td>:[range]&lt;</td><td>decrease indent for range</td></tr>
 <tr><td>:close      </td><td>closes current document</td></tr>
-<tr><td>:[range]d   </td><td>delete range</td></tr>
-<tr><td>:[range]!c  </td><td>filters range, range is used as input for process, output replaces range</td></tr>
+<tr><td>:d         </td><td>delete current line</td></tr>
 <tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
 <tr><td>:e *        </td><td>edit file *</td></tr>
-<tr><td>:[range]m dest </td><td>move range to dest</td></tr>
-<tr><td>:g          </td><td>global command</td></tr>
 <tr><td>:n          </td><td>next</td></tr>
 <tr><td>:prev       </td><td>previous</td></tr>
 <tr><td>:q          </td><td>quit unless modified</td></tr>
 <tr><td>:q!         </td><td>quit forced</td></tr>
 <tr><td>:r *        </td><td>insert contents of file * below cursor</td></tr>
 <tr><td>:r !<i>command</i></td><td>executes <i>command</i> and inserts output below cursor</td></tr>
+<tr><td>:[range]&gt;</td><td>increase indent for range</td></tr>
+<tr><td>:[range]&lt;</td><td>decrease indent for range</td></tr>
+<tr><td>:[range]d   </td><td>delete range</td></tr>
+<tr><td>:[range]m dest </td><td>move range to dest</td></tr>
+<tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
+<tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
 <tr><td>:reg       </td><td>shows registers </td></tr>
 <tr><td>:set ic    </td><td>sets ignore case</td></tr>
 <tr><td>:set ic!   </td><td>sets mat case</td></tr>
@@ -227,14 +228,13 @@ vi Mode in the options.
 <tr><td>:set nu    </td><td>shows line numbers</td></tr>
 <tr><td>:set nu!   </td><td>hides line numbers</td></tr>
 <tr><td>:set ts=no </td><td>sets tabstop at every no</td></tr>
-<tr><td>:[range]s/p/r/[flags]</td><td>substitute in range p by r using flags</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save to file *</td></tr>
 <tr><td>:x         </td><td>save and quit</td></tr>
 <tr><td>:y         </td><td>yank current line</td></tr>
 <tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
-<tr><td colspan="2" bgcolor="#9acd32">globy,al commands</td></tr>
+<tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
 <tr><td>:g/pattern/d</td><td>delete lines containing pattern</td></tr>
 <tr><td>:g/pattern/p</td><td>print lines containing pattern</td></tr>
 <tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
@@ -254,7 +254,7 @@ vi Mode in the options.
 <tr><td>*</td><td>visible area</td></tr>
 <tr><td>'&lt;,'&gt;</td><td>visual (selected) area</td></tr>
 <tr><td>.</td><td>current line only</td></tr>
-<tr><td>x,y</td><td>line x to y (x can be a ., $ or marker, or line no)</td></tr>
+<tr><td>x,y</td><td>line x to y (x can be a ., $, marker, or line no)</td></tr>
 </table>
 
 <p>
