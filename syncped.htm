@@ -34,9 +34,7 @@ has a vi compatibility mode, and
 can be configured to work with most version control systems.
 
 <hr>
-<a NAME="EDIT"></a><b>Editor Tab</b>
-<p>
-
+<b>Editor Tab</b>
 <p>
 <ul>
 <li> Synchronizes if the file is changed from outside. Can be used for
@@ -44,16 +42,6 @@ can be configured to work with most version control systems.
      and the log file is synchronized, then only new data is added to the
      file, and your position is restored to the end of file. 
      This also works in hex mode.
-<li> All <a HREF="http://www.scintilla.org">scintilla</a> lexers are supported, 
-     the colouring and 
-     keywords are read from lexers.xml, editable by right clicking on 
-     the status bar lexer pane.
-     Editing this file and saving it directly shows
-     colouring style changes on all open editors.
-<li> Several themes are supported, changing a theme is done by 
-     clicking on the status bar theme pane. <br>
-     Right clicking this pane
-     opens the lexers.xml file to add new themes, or change existing ones.
 <li> Fast searching by selecting text and pressing F3 or F4.
 <li> If you select several lines, you can sort the selection using
      any sort position in the selection. The default sort position
@@ -65,19 +53,33 @@ can be configured to work with most version control systems.
 <li> Zoom in and out using Ctrl - and Ctrl = keys.
 <li> Find marked text using Ctrl 9 and Ctrl 0 keys.
 <li> Click on the first line to show current properties.
-<li> Click on the status bar file type pane to change the current
-     file type, or to view a file in hex format. 
-     If the Hex 
-     checkbox on the toolbar is set, then files are directly opened in hex mode.
-<li> Click on the status bar lexer pane to change the
-     default lexer for this file. 
-     Right click the lexer pane to change the syntax colouring for this lexer.
-<li> Click on the status bar macro pane to playback a macro.
-     Right click the macro pane to edit macros (vi mode should be set).
+<li> If the Hex checkbox on the toolbar is set, then files are directly 
+     opened in hex mode.
 </ul>
 
 <hr>
-<a NAME="VI"></a><b>vi keys</b>
+<b>Status Bar</b>
+<p>
+<ul>
+<li> Click on the file type pane to change the current
+     file type, or to view a file in hex format. 
+<li> Click on the lines pane to goto a line. 
+<li> Click on the lexer pane to change the lexer for this file. 
+     Right click this pane to change the syntax colouring for this lexer.
+     All <a HREF="http://www.scintilla.org">scintilla</a> lexers are supported.
+     Editing this file and saving it directly shows
+     colouring style changes on all open editors.
+<li> Click on the theme pane to change a theme.
+     Right click this pane to add new themes, 
+     or change existing ones.
+<li> Click on the VCS pane to run VCS commands. 
+     Right click this pane to add VCS commands.
+<li> Click on the macro pane to playback a macro.
+     Right click this pane to edit macros (vi mode should be set).
+</ul>
+
+<hr>
+<b>vi keys</b>
 <p>
 The following vi keys are supported for navigating and editing, after setting 
 vi Mode in the options.
@@ -111,7 +113,6 @@ vi Mode in the options.
 <tr><td>v</td><td>enter visual mode</td></tr>
 <tr><td>w</td><td>right one word</td></tr>
 <tr><td>x</td><td>delete</td></tr>
-<tr><td>y</td><td>yank selection</td></tr>
 <tr><td><i>space</i></td><td>right one character</td></tr>
 
 <tr><td>A</td><td>insert after end of line</td></tr>
@@ -137,13 +138,15 @@ vi Mode in the options.
 <tr><td>~</td><td>toggle case</td></tr>
 <tr><td>$</td><td>end of line</td></tr>
 <tr><td>0,^</td><td>begin of line</td></tr>
-<tr><td>{</td><td>paragraph up</td></tr>
-<tr><td>}</td><td>paragraph down</td></tr>
+<tr><td>{</td><td>paragraph up, in visual mode adds to selection</td></tr>
+<tr><td>}</td><td>paragraph down, in visual mode adds to selection</td></tr>
 <tr><td>%</td><td>matching brace, in visual mode selects with matching brace</td></tr>
 <tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
 <tr><td>*</td><td>next occurrence of word under cursor</td></tr>
 <tr><td>+</td><td>down one line, goto home</td></tr>
 <tr><td>-</td><td>up one line, goto home</td></tr>
+<tr><td>tab</td><td>indents selection</td></tr>
+<tr><td>TAB</td><td>dedents selection</td></tr>
 <tr><td>ESC</td><td>escape deselects, goes back to normal mode</td></tr>
 </table>
 </td>
@@ -158,16 +161,19 @@ vi Mode in the options.
 <tr><td>ctrl b</td><td>page up</td></tr>
 <tr><td>ctrl e</td><td>increment word under cursor</td></tr>
 <tr><td>ctrl f</td><td>page down</td></tr>
+<tr><td>ctrl g</td><td>shows filename and state</td></tr>
 <tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
 <tr><td>ctrl p</td><td>scroll up</td></tr>
 <tr><td>ctrl q</td><td>scroll down</td></tr>
-<tr><td>ctrl r?</td><td>inserts contents of register</td></tr>
+<tr><td>ctrl r?</td><td>inserts contents of register if in insert mode</td></tr>
+<tr><td>ctrl r%</td><td>inserts contents of % register, or copies contents to 
+clipboard if not in insert mode</td></tr>
 <tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">double or more char commands</td></tr>
 <tr><td>cc</td><td>change line</td></tr>
 <tr><td>cw</td><td>change word</td></tr>
-<tr><td>dd</td><td>delete line</td></tr>
+<tr><td>dd</td><td>delete line or selection</td></tr>
 <tr><td>de</td><td>delete word (to end of word)</td></tr>
 <tr><td>d0</td><td>delete line left</td></tr>
 <tr><td>d$</td><td>delete line right</td></tr>
@@ -182,7 +188,7 @@ vi Mode in the options.
 <tr><td>@@</td><td>plays back last macro</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
 <tr><td>yw</td><td>yank word</td></tr>
-<tr><td>yy</td><td>yank line</td></tr>
+<tr><td>yy</td><td>yank line or selection</td></tr>
 <tr><td>ZZ</td><td>save and quit</td></tr>
 <tr><td>zc</td><td>fold close</td></tr>
 <tr><td>zo</td><td>fold open</td></tr>
@@ -217,17 +223,18 @@ vi Mode in the options.
 <tr><td>:[range]&gt;</td><td>increase indent for range</td></tr>
 <tr><td>:[range]&lt;</td><td>decrease indent for range</td></tr>
 <tr><td>:[range]d   </td><td>delete range</td></tr>
-<tr><td>:[range]m dest </td><td>move range to dest</td></tr>
+<tr><td>:[range]mx </td><td>move range to destination address x</td></tr>
 <tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
 <tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
 <tr><td>:reg       </td><td>shows registers </td></tr>
 <tr><td>:set ic    </td><td>sets ignore case</td></tr>
-<tr><td>:set ic!   </td><td>sets mat case</td></tr>
+<tr><td>:set ic!   </td><td>sets match case</td></tr>
 <tr><td>:set list  </td><td>shows whitespace</td></tr>
 <tr><td>:set list! </td><td>hides whitespace</td></tr>
 <tr><td>:set nu    </td><td>shows line numbers</td></tr>
 <tr><td>:set nu!   </td><td>hides line numbers</td></tr>
 <tr><td>:set ts=no </td><td>sets tabstop at every no</td></tr>
+<tr><td>:set tabstop=no </td><td>sets tabstop at every no</td></tr>
 <tr><td>:w         </td><td>save</td></tr>
 <tr><td>:w *       </td><td>save to file *</td></tr>
 <tr><td>:x         </td><td>save and quit</td></tr>
@@ -254,7 +261,8 @@ vi Mode in the options.
 <tr><td>*</td><td>visible area</td></tr>
 <tr><td>'&lt;,'&gt;</td><td>visual (selected) area</td></tr>
 <tr><td>.</td><td>current line only</td></tr>
-<tr><td>x,y</td><td>line x to y (x can be a ., $, marker, or line no)</td></tr>
+<tr><td><i>x</i>,<i>y</i></td><td>line <i>x</i> to <i>y</i> 
+(<i>x</i>,<i>y</i> can be a ., $, marker, or line no)</td></tr>
 </table>
 
 <p>
@@ -268,6 +276,7 @@ vi Mode in the options.
 </tr>
 <tr><td>%</td><td>filename register</td><td>current filename</td></tr>
 <tr><td>_</td><td>black hole register</td><td>anything written to it is not kept</td></tr>
+<tr><td>"</td><td>clipboard register</td><td>contents of clipboard</td></tr>
 <tr><td>0</td><td>yank register</td><td>last yank value</td></tr>
 <tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
 <tr><td>a - z</td><td>standard register</td><td>normal register</td></tr>
@@ -308,7 +317,7 @@ You can also record and playback macros from the menu bar. In that
 case macro names are not limited to one character.
 
 <hr>
-<a NAME="LIST"></a><b>List Tab</b>
+<b>List Tab</b>
 <p>
 
 <ul>
@@ -333,7 +342,7 @@ The project files are stored as XML files containing the full paths of all items
 Edit it using 'File Open As Text' in order to replace or change items.
 
 <hr>
-<a NAME="VCS"></a><b>Version Control Systems</b>
+<b>Version Control Systems</b>
 <p>
 Support for VCS is configured by the vcs.xml file. 
 At this moment there is support for 
@@ -365,15 +374,17 @@ e.g. the next svn commands are supported:
 </table>
 
 <p>
-The VCS submenu is shown when right clicking on an editor window, and 
-the associated file is within a folder that is under version control.
-It is also shown when you click on the status bar VCS pane.
+The VCS submenu is shown:
 
-<p>
-On a project window and the explorer window there is also a VCS submenu
-if appropriate for the current file or folder.
-You can also select multiple files and do a VCS command over all 
-files selected.
+<ul>
+<li> When right clicking on an editor window, and 
+     the associated file is within a folder that is under version control.
+<li> On a project window and the explorer window
+     if appropriate for the current file or folder.
+     You can also select multiple files and do a VCS command over all 
+     files selected.
+<li> When you click on the status bar VCS pane.
+</ul>
 
 <p>
 Finally you can configure auto VCS to be used, in that case 
