@@ -55,6 +55,9 @@ can be configured to work with most version control systems.
 <li> Click on the first line to show current properties.
 <li> If the Hex checkbox on the toolbar is set, then files are directly 
      opened in hex mode.
+<li> The tab can be split using Window Split, as many times as you want.
+     This causes the tab, and splitted tab to be unsynced.
+     To resync, you should uncheck and check the Sync checkbox.
 </ul>
 
 <hr>
@@ -187,6 +190,8 @@ clipboard if not in insert mode</td></tr>
 <tr><td>@xx@</td><td>plays back macro xx (several characters)</td></tr>
 <tr><td>@@</td><td>plays back last macro</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
+<tr><td>t?</td><td>find next character, caret before pos</td></tr>
+<tr><td>T?</td><td>find previous character, caret before pos</td></tr>
 <tr><td>yw</td><td>yank word</td></tr>
 <tr><td>yy</td><td>yank line or selection</td></tr>
 <tr><td>ZZ</td><td>save and quit</td></tr>
@@ -242,8 +247,11 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
+<tr><td>:g//</td><td>remove all markers</td></tr>
 <tr><td>:g/pattern/d</td><td>delete lines containing pattern</td></tr>
-<tr><td>:g/pattern/p</td><td>print lines containing pattern</td></tr>
+<tr><td>:g/pattern/</td><td>mark lines containing pattern</td></tr>
+<tr><td>:g/pattern/p</td><td>print lines containing pattern, the lines are put on
+a new tab pane called Print</td></tr>
 <tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
 </table>
 
@@ -315,6 +323,20 @@ e.g. create header files.
 <p>
 You can also record and playback macros from the menu bar. In that
 case macro names are not limited to one character.
+
+<p>
+You might add a macro to do a substitute on all open pages by
+pressing 
+qa
+:s/xxx/YYY/gc
+:n
+q
+
+Then, after pressing 100@a, this macro is run 100 times, to
+to substitute in 100 open files, it stops at the last tab.
+
+<p>
+You can also add a macro to update column numbers.
 
 <hr>
 <b>List Tab</b>
