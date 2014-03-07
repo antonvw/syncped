@@ -15,15 +15,15 @@ Copyright: (c) 2014 Anton van Wezenbeek
 <body>
 
 <style type="text/css">
-.TableStyle
-{
-<!-- font-family: Verdana; -->
-font-weight: normal;
-font-size: 11px;
-color: #404040;
-background-color: #fafafa;
-border: 1px #6699CC solid;
-}
+  .TableStyle
+  {
+    <!-- font-family: Verdana; -->
+    font-weight: normal;
+    font-size: 11px;
+    color: #404040;
+    background-color: #fafafa;
+    border: 1px #6699CC solid;
+  }
 </style>
   
 <p>
@@ -33,8 +33,20 @@ languages, is available under Windows, Linux, Mac OS 10.4,
 has a vi compatibility mode, and
 can be configured to work with most version control systems.
 
+<div id="nav">
+  <ul>
+    <li><a href="#vikeys">vi keys</a></li>
+    <li><a href="#vimacros">vi macros</a></li>
+    <li><a href="#editortab">editor tab</a></li>
+    <li><a href="#statusbar">status bar</a></li>
+    <li><a href="#listtab">list tab</a></li>
+    <li><a href="#vcs">VCS</a></li>
+  </ul>
+</div>
+
 <hr>
-<b>vi keys</b>
+<a id="vikeys">
+<b>vi keys</b></a>
 <p>
 The following vi keys are supported for navigating and editing, after setting 
 vi Mode in the options.
@@ -170,7 +182,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:close      </td><td>closes current document</td></tr>
 <tr><td>:d         </td><td>delete current line</td></tr>
 <tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
-<tr><td>:e *        </td><td>edit file *</td></tr>
+<tr><td>:e *        </td><td>edit file * (with tab expansion)</td></tr>
 <tr><td>:n          </td><td>next</td></tr>
 <tr><td>:prev       </td><td>previous</td></tr>
 <tr><td>:q          </td><td>quit unless modified</td></tr>
@@ -264,7 +276,7 @@ Most commands can be prefixed with a multidigit number, that takes care of
 repeating that command the number specified.
 
 <hr>
-<b>vi Macros</b>
+<a id="vimacros"><b>vi Macros</b></a>
 <p>
 Some special macro variables exist as well, see the macros.xml file.
 These variables can be used inside macros, or entered on the vi bar.
@@ -300,6 +312,7 @@ to substitute in (at most) 100 open files, it stops at the last tab.
 <p>
 You can also add a macro to update column numbers. If you have the following
 columns:
+
 <p>
 <code>
 age   income<br>
@@ -310,8 +323,24 @@ age   income<br>
 24    1040<br>
 </code>
 
+<p>
+The next macro increments each income with 100:
+  
+<p>
+<code>
+qb<br>
+w<br>
+"x<br>
+yw<br>
+bwcw<br>
+^R=^Rx + 100<br>
+ESCAPE<br>
+0j<br>
+</code>
+
 <hr>
-<b>Editor Tab</b>
+<a id="editortab">
+<b>Editor Tab</b></a>
 <p>
 <ul>
 <li> Synchronizes if the file is changed from outside. Can be used for
@@ -339,7 +368,8 @@ age   income<br>
 </ul>
 
 <hr>
-<b>Status Bar</b>
+<a id="statusbar">
+<b>Status Bar</b></a>
 <p>
 <ul>
 <li> Click on the file type pane to change the current
@@ -360,7 +390,8 @@ age   income<br>
 </ul>
 
 <hr>
-<b>List Tab</b>
+<a id="listtab">
+<b>List Tab</b></a>
 <p>
 
 <ul>
@@ -385,7 +416,8 @@ The project files are stored as XML files containing the full paths of all items
 Edit it using 'File Open As Text' in order to replace or change items.
 
 <hr>
-<b>Version Control Systems</b>
+<a id="vcs">
+<b>Version Control Systems</b></a>
 <p>
 Support for VCS is configured by the vcs.xml file. 
 At this moment there is support for 
