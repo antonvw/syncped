@@ -27,12 +27,22 @@ Copyright: (c) 2014 Anton van Wezenbeek
 </style>
   
 <p>
+<table border="0" valign="top">
+<tr>
+  <th align="left"></th>
+  <th align="left"></th>
+</tr>
+<tr>
+<td>
+<big>
 syncped is a <b>SYNC</b>hronizing <b>P</b>ortable <b>ED</b>itor
 supporting more than 100 programming
-languages, is available under Windows, Linux, Mac OS 10.4, 
+languages.
+<p>
+It is available under Windows, Linux, Mac OS 10.4, 
 has a vi compatibility mode, and
 can be configured to work with most version control systems.
-
+</big>
 <div id="nav">
   <ul>
     <li><a href="#vikeys">vi keys</a></li>
@@ -43,6 +53,12 @@ can be configured to work with most version control systems.
     <li><a href="#vcs">VCS</a></li>
   </ul>
 </div>
+</td>
+<td>
+<img src="sswindows7.png">
+</td>
+</tr>
+</table>
 
 <hr>
 <a id="vikeys">
@@ -324,7 +340,8 @@ age   income<br>
 </code>
 
 <p>
-The next macro increments each income with 100:
+The next macro increments the income on current line with 100,
+and moves to the next line:
   
 <p>
 <code>
@@ -332,10 +349,11 @@ qb<br>
 w<br>
 "x<br>
 yw<br>
-bwcw<br>
-^R=^Rx + 100<br>
+cw<br>
+^R=^Rx+100<br>
 ESCAPE<br>
 0j<br>
+q<br>
 </code>
 
 <hr>
