@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>vi Keys</title>
+</head>
+
+<body>
+
+<a id="vikeys">
+<b>vi Keys</b></a>
+<p>
+The following vi keys are supported for navigating and editing, after setting 
+vi Mode in the options.
+
+<p>
+<!-- Main Table -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tr>
+
+<td width="33%" valign="top">
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
+<tr><td colspan="2" bgcolor="#9acd32">single char commands</td></tr>
+<tr><td>a</td><td>insert after cursor</td></tr>
+<tr><td>b</td><td>left one word</td></tr>
+<tr><td>e</td><td>word right end</td></tr>
+<tr><td>g</td><td>start of document</td></tr>
+<tr><td>h</td><td>left one character</td></tr>
+<tr><td>i</td><td>insert before cursor</td></tr>
+<tr><td>j</td><td>down one line</td></tr>
+<tr><td>k</td><td>up one line</td></tr>
+<tr><td>l</td><td>right one character</td></tr>
+<tr><td>n</td><td>repeat the most recent search, in the same direction</td></tr>
+<tr><td>o</td><td>insert after line</td></tr>
+<tr><td>p</td><td>put after cursor</td></tr>
+<tr><td>q</td><td>stop macro recording</td></tr>
+<tr><td>u</td><td>undo</td></tr>
+<tr><td>v</td><td>enter visual mode</td></tr>
+<tr><td>w</td><td>right one word</td></tr>
+<tr><td>x</td><td>delete</td></tr>
+<tr><td><i>space</i></td><td>right one character</td></tr>
+
+<tr><td>A</td><td>insert after end of line</td></tr>
+<tr><td>C</td><td>change to end of line</td></tr>
+<tr><td>D</td><td>delete line right</td></tr>
+<tr><td>G</td><td>goto end or line number if prefixed</td></tr>
+<tr><td>H</td><td>goto first line of the screen</td></tr>
+<tr><td>I</td><td>insert at begin</td></tr>
+<tr><td>J</td><td>join lines</td></tr>
+<tr><td>L</td><td>goto last line of the screen</td></tr>
+<tr><td>M</td><td>goto middle line of the screen</td></tr>
+<tr><td>N</td><td>repeat the most recent search, in the opposite  direction</td></tr>
+<tr><td>O</td><td>insert before line</td></tr>
+<tr><td>P</td><td>put before cursor</td></tr>
+<tr><td>R</td><td>replace many chars, enters overtype mode</td></tr>
+<tr><td>V</td><td>enter visual line mode</td></tr>
+<tr><td>X</td><td>delete backwards</td></tr>
+
+<tr><td>/</td><td>next occurrence</td></tr>
+<tr><td>?</td><td>previous occurrence</td></tr>
+<tr><td>.</td><td>repeat last action</td></tr>
+<tr><td>;</td><td>repeat last find char</td></tr>
+<tr><td>~</td><td>toggle case</td></tr>
+<tr><td>$</td><td>end of line</td></tr>
+<tr><td>0,^</td><td>begin of line</td></tr>
+<tr><td>{</td><td>paragraph up, in visual mode adds to selection</td></tr>
+<tr><td>}</td><td>paragraph down, in visual mode adds to selection</td></tr>
+<tr><td>%</td><td>matching brace, in visual mode selects with matching brace</td></tr>
+<tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
+<tr><td>*</td><td>next occurrence of word under cursor</td></tr>
+<tr><td>+</td><td>down one line, goto home</td></tr>
+<tr><td>-</td><td>up one line, goto home</td></tr>
+<tr><td>tab</td><td>indents selection</td></tr>
+<tr><td>TAB</td><td>dedents selection</td></tr>
+<tr><td>ESC</td><td>escape deselects, goes back to normal mode</td></tr>
+</table>
+</td>
+
+<td width="33%" valign="top">
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
+<tr><td colspan="2" bgcolor="#9acd32">control char commands</td></tr>
+<tr><td>ctrl b</td><td>page up</td></tr>
+<tr><td>ctrl e</td><td>increment word under cursor</td></tr>
+<tr><td>ctrl f</td><td>page down</td></tr>
+<tr><td>ctrl g</td><td>shows filename and state</td></tr>
+<tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
+<tr><td>ctrl p</td><td>scroll up</td></tr>
+<tr><td>ctrl q</td><td>scroll down</td></tr>
+<tr><td>ctrl r?</td><td>inserts contents of register if in insert mode</td></tr>
+<tr><td>ctrl r%</td><td>inserts contents of % register, or copies contents to 
+clipboard if not in insert mode</td></tr>
+<tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
+
+<tr><td colspan="2" bgcolor="#9acd32">double or more char commands</td></tr>
+<tr><td>cc</td><td>change line</td></tr>
+<tr><td>cw</td><td>change word</td></tr>
+<tr><td>dd</td><td>delete line or selection</td></tr>
+<tr><td>de</td><td>delete word (to end of word)</td></tr>
+<tr><td>d0</td><td>delete line left</td></tr>
+<tr><td>d$</td><td>delete line right</td></tr>
+<tr><td>dw</td><td>delete word</td></tr>
+<tr><td>f?</td><td>find next character</td></tr>
+<tr><td>F?</td><td>find previous character</td></tr>
+<tr><td>m?</td><td>mark current line (one letter marker)</td></tr>
+<tr><td>qx</td><td>record macro x</td></tr>
+<tr><td>qX</td><td>record macro x (appends to x)</td></tr>
+<tr><td>@x</td><td>plays back macro x (one char)</td></tr>
+<tr><td>@xx@</td><td>plays back macro xx (several characters)</td></tr>
+<tr><td>@@</td><td>plays back last macro</td></tr>
+<tr><td>r?</td><td>replace current character only</td></tr>
+<tr><td>t?</td><td>find next character, caret before pos</td></tr>
+<tr><td>T?</td><td>find previous character, caret before pos</td></tr>
+<tr><td>yw</td><td>yank word</td></tr>
+<tr><td>yy</td><td>yank line or selection</td></tr>
+<tr><td>ZZ</td><td>save and quit</td></tr>
+<tr><td>zc</td><td>fold close</td></tr>
+<tr><td>zo</td><td>fold open</td></tr>
+<tr><td>zE</td><td>fold disable</td></tr>
+<tr><td>zf</td><td>fold enable</td></tr>
+<tr><td>'?</td><td>goto marker</td></tr>
+<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
+<tr><td>&gt;&gt;</td><td>increase indent for current line, selection or visual area</td></tr>
+<tr><td>&lt;&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
+</table>
+</td>
+
+<td width="33%" valign="top">
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
+<tr><td colspan="2" bgcolor="#9acd32">colon commands</td></tr>
+<tr><td>:.=         </td><td>current line</td></tr>
+<tr><td>:$          </td><td>goto end of document</td></tr>
+<tr><td>:close      </td><td>closes current document</td></tr>
+<tr><td>:d         </td><td>delete current line</td></tr>
+<tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
+<tr><td>:e *        </td><td>edit file * (with tab expansion)</td></tr>
+<tr><td>:n          </td><td>next</td></tr>
+<tr><td>:prev       </td><td>previous</td></tr>
+<tr><td>:q          </td><td>quit unless modified</td></tr>
+<tr><td>:q!         </td><td>quit forced</td></tr>
+<tr><td>:r *        </td><td>insert contents of file * below cursor</td></tr>
+<tr><td>:r !<i>command</i></td><td>executes <i>command</i> and inserts output below cursor</td></tr>
+<tr><td>:[range]&gt;</td><td>increase indent for range</td></tr>
+<tr><td>:[range]&lt;</td><td>decrease indent for range</td></tr>
+<tr><td>:[range]d   </td><td>delete range</td></tr>
+<tr><td>:[range]mx </td><td>move range to destination address x</td></tr>
+<tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
+<tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
+<tr><td>:reg       </td><td>shows registers </td></tr>
+<tr><td>:set ic    </td><td>sets ignore case</td></tr>
+<tr><td>:set ic!   </td><td>sets match case</td></tr>
+<tr><td>:set list  </td><td>shows whitespace</td></tr>
+<tr><td>:set list! </td><td>hides whitespace</td></tr>
+<tr><td>:set nu    </td><td>shows line numbers</td></tr>
+<tr><td>:set nu!   </td><td>hides line numbers</td></tr>
+<tr><td>:set ts=no </td><td>sets tabstop at every no</td></tr>
+<tr><td>:set tabstop=no </td><td>sets tabstop at every no</td></tr>
+<tr><td>:w         </td><td>save</td></tr>
+<tr><td>:w *       </td><td>save to file *</td></tr>
+<tr><td>:x         </td><td>save and quit</td></tr>
+<tr><td>:y         </td><td>yank current line</td></tr>
+<tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
+
+<tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
+<tr><td>:g//</td><td>remove all markers</td></tr>
+<tr><td>:g/pattern/d</td><td>delete lines containing pattern</td></tr>
+<tr><td>:g/pattern/</td><td>mark lines containing pattern</td></tr>
+<tr><td>:g/pattern/p</td><td>print lines containing pattern, the lines are put on
+a new tab pane called Print</td></tr>
+<tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
+</table>
+
+</table>
+  
+<p>
+[range]
+<p>
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">chars</th>
+  <th align="left">range</th>
+</tr>
+<tr><td>%</td><td>entire document</td></tr>
+<tr><td>*</td><td>visible area</td></tr>
+<tr><td>'&lt;,'&gt;</td><td>visual (selected) area</td></tr>
+<tr><td>.</td><td>current line only</td></tr>
+<tr><td><i>x</i>,<i>y</i></td><td>line <i>x</i> to <i>y</i> 
+(<i>x</i>,<i>y</i> can be a ., $, marker, or line no)</td></tr>
+</table>
+
+<p>
+[register]
+<p>
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">name</th>
+  <th align="left">purpose</th>
+  <th align="left">explanation</th>
+</tr>
+<tr><td>%</td><td>filename register</td><td>current filename</td></tr>
+<tr><td>_</td><td>black hole register</td><td>anything written to it is not kept</td></tr>
+<tr><td>"</td><td>clipboard register</td><td>contents of clipboard</td></tr>
+<tr><td>0</td><td>yank register</td><td>last yank value</td></tr>
+<tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
+<tr><td>a - z</td><td>standard register</td><td>normal register</td></tr>
+</table>
+
+<p>
+[flags]
+<p>
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">char</th>
+  <th align="left">purpose</th>
+</tr>
+<tr><td>i</td><td>ignore case</td></tr>
+<tr><td>c</td><td>ask for confirmation</td></tr>
+<tr><td>g</td><td>global, otherwise only first match on line</td></tr>
+</table>
+
+<p>
+When substituting you can use &amp; or &#92;0 to represent the target, 
+and &#92;U to convert to uppercase and &#92;L to convert to lowercase.
+
+<p>
+Most commands can be prefixed with a multidigit number, that takes care of
+repeating that command the number specified.
+
+</body>
+</html>
