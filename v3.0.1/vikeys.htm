@@ -43,8 +43,10 @@ vi Mode in the options.
 <tr><td><i>space</i></td><td>right one character</td></tr>
 
 <tr><td>A</td><td>insert after end of line</td></tr>
+<tr><td>B</td><td>left one word (same as b)</td></tr>
 <tr><td>C</td><td>change to end of line</td></tr>
 <tr><td>D</td><td>delete line right</td></tr>
+<tr><td>E</td><td>word right end (same as e)</td></tr>
 <tr><td>G</td><td>goto end or line number if prefixed</td></tr>
 <tr><td>H</td><td>goto first line of the screen</td></tr>
 <tr><td>I</td><td>insert at begin</td></tr>
@@ -56,6 +58,7 @@ vi Mode in the options.
 <tr><td>P</td><td>put before cursor</td></tr>
 <tr><td>R</td><td>replace many chars, enters overtype mode</td></tr>
 <tr><td>V</td><td>enter visual line mode</td></tr>
+<tr><td>W</td><td>right one word (same as w)</td></tr>
 <tr><td>X</td><td>delete backwards</td></tr>
 
 <tr><td>/</td><td>next occurrence</td></tr>
@@ -67,6 +70,8 @@ vi Mode in the options.
 <tr><td>0,^</td><td>begin of line</td></tr>
 <tr><td>{</td><td>paragraph up, in visual mode adds to selection</td></tr>
 <tr><td>}</td><td>paragraph down, in visual mode adds to selection</td></tr>
+<tr><td>(</td><td>paragraph up, in visual mode adds to selection (same as {)</td></tr>
+<tr><td>)</td><td>paragraph down, in visual mode adds to selection (same as })</td></tr>
 <tr><td>%</td><td>matching brace, in visual mode selects with matching brace</td></tr>
 <tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
 <tr><td>*</td><td>next occurrence of word under cursor</td></tr>
@@ -140,7 +145,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:.=         </td><td>current line</td></tr>
 <tr><td>:$          </td><td>goto end of document</td></tr>
 <tr><td>:close      </td><td>closes current document</td></tr>
-<tr><td>:d         </td><td>delete current line</td></tr>
+<tr><td>:d          </td><td>delete current line</td></tr>
 <tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
 <tr><td>:e *        </td><td>edit file * (with tab expansion)</td></tr>
 <tr><td>:n          </td><td>next</td></tr>
@@ -152,22 +157,22 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:[range]&gt;</td><td>increase indent for range</td></tr>
 <tr><td>:[range]&lt;</td><td>decrease indent for range</td></tr>
 <tr><td>:[range]d   </td><td>delete range</td></tr>
-<tr><td>:[range]mx </td><td>move range to destination address x</td></tr>
+<tr><td>:[range]mx  </td><td>move range to destination address x</td></tr>
 <tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
 <tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
-<tr><td>:reg       </td><td>shows registers </td></tr>
-<tr><td>:set ic    </td><td>sets ignore case</td></tr>
-<tr><td>:set ic!   </td><td>sets match case</td></tr>
-<tr><td>:set list  </td><td>shows whitespace</td></tr>
-<tr><td>:set list! </td><td>hides whitespace</td></tr>
-<tr><td>:set nu    </td><td>shows line numbers</td></tr>
-<tr><td>:set nu!   </td><td>hides line numbers</td></tr>
-<tr><td>:set ts=no </td><td>sets tabstop at every no</td></tr>
+<tr><td>:reg        </td><td>shows registers </td></tr>
+<tr><td>:set ic     </td><td>sets ignore case</td></tr>
+<tr><td>:set ic!    </td><td>sets match case</td></tr>
+<tr><td>:set list   </td><td>shows whitespace</td></tr>
+<tr><td>:set list!  </td><td>hides whitespace</td></tr>
+<tr><td>:set nu     </td><td>shows line numbers</td></tr>
+<tr><td>:set nu!    </td><td>hides line numbers</td></tr>
+<tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
 <tr><td>:set tabstop=no </td><td>sets tabstop at every no</td></tr>
-<tr><td>:w         </td><td>save</td></tr>
-<tr><td>:w *       </td><td>save to file *</td></tr>
-<tr><td>:x         </td><td>save and quit</td></tr>
-<tr><td>:y         </td><td>yank current line</td></tr>
+<tr><td>:w          </td><td>save</td></tr>
+<tr><td>:w *        </td><td>save to file *</td></tr>
+<tr><td>:x          </td><td>save and quit</td></tr>
+<tr><td>:y          </td><td>yank current line</td></tr>
 <tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
 <tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
