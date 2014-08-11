@@ -238,6 +238,9 @@ a new tab pane called Print</td></tr>
 <p>
 When substituting you can use &amp; or &#92;0 to represent the target, 
 and &#92;U to convert to uppercase and &#92;L to convert to lowercase.
+You can use a $ to match a line end, e.g. %s/$/EOL appends the string EOL 
+at the end of each line. Merging is not yet possible using a \n target,
+you can create a macro for that.
 
 <p>
 Most commands can be prefixed with a multidigit number, that takes care of
