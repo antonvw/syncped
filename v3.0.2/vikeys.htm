@@ -120,8 +120,8 @@ clipboard if not in insert mode</td></tr>
 <tr><td>m?</td><td>mark current line (one letter marker)</td></tr>
 <tr><td>qx</td><td>record macro x</td></tr>
 <tr><td>qX</td><td>record macro x (appends to x)</td></tr>
-<tr><td>@x</td><td>plays back macro x (one char)</td></tr>
-<tr><td>@xx@</td><td>plays back macro xx (several characters)</td></tr>
+<tr><td>@x</td><td>plays back macro x (register)</td></tr>
+<tr><td>@Xx@</td><td>plays back macro Xx (several characters)</td></tr>
 <tr><td>@@</td><td>plays back last macro</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
 <tr><td>t?</td><td>find next character, caret before pos</td></tr>
@@ -134,7 +134,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker</td></tr>
-<tr><td>"?</td><td>prepares register to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
+<tr><td>"x</td><td>prepares register x to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent for current line, selection or visual area</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
 </table>
@@ -250,6 +250,36 @@ you can create a macro for that.
 <p>
 Most commands can be prefixed with a multidigit number, that takes care of
 repeating that command the number specified.
+
+<p>
+Replace uses regular expressions from scintilla:
+
+In a regular expression, special characters interpreted are:
+
+<table border="1" valign="top" class="TableStyle">
+<tr bgcolor="#9acd32">
+  <th align="left">char</th>
+  <th align="left">purpose</th>
+</tr>
+<tr><td>.	</td><td>Matches any character</td></tr>
+<tr><td>\(	</td><td>This marks the start of a region for tagging a match.</td></tr>
+<tr><td>\)	</td><td>This marks the end of a tagged region.</td></tr>
+<tr><td>\n	</td><td>Where n is 1 through 9 refers to the first through ninth tagged region when replacing. For example, if the search string was Fred\([1-9]\)XXX and the replace string was Sam\1YYY, when applied to Fred2XXX this would generate Sam2YYY. \0 refers to all of the matching text.</td></tr>
+<tr><td>\<	</td><td>This matches the start of a word using Scintilla's definitions of words.</td></tr>
+<tr><td>\>	</td><td>This matches the end of a word using Scintilla's definition of words.</td></tr>
+<tr><td>\x	</td><td>This allows you to use a character x that would otherwise have a special meaning. For example, \[ would be interpreted as [ and not as the start of a character set.</td></tr>
+<tr><td>[...]	</td><td>This indicates a set of characters, for example, [abc] means any of the characters a, b or c. You can also use ranges, for example [a-z] for any lower case character.</td></tr>
+<tr><td>[^...]	</td><td>The complement of the characters in the set. For example, [^A-Za-z] means any character except an alphabetic character.</td></tr>
+<tr><td>^	</td><td>This matches the start of a line (unless used inside a set, see above).</td></tr>
+<tr><td>$	</td><td>This matches the end of a line.</td></tr>
+<tr><td>*	</td><td>This matches 0 or more times. For example, Sa*m matches Sm, Sam, Saam, Saaam and so on.</td></tr>
+<tr><td>+	</td><td>This matches 1 or more times. For example, Sa+m matches Sam, Saam, Saaam and so on.</td></tr>
+</table>
+
+<p>
+Regular expressions will only match ranges within a single line, never matching over multiple lines.
+
+</p>
 
 </body>
 </html>
