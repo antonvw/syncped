@@ -100,7 +100,7 @@ vi Mode in the options.
 <tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
 <tr><td>ctrl p</td><td>scroll up</td></tr>
 <tr><td>ctrl q</td><td>scroll down</td></tr>
-<tr><td>ctrl r?</td><td>inserts contents of register ? if in insert mode</td></tr>
+<tr><td>ctrl r?</td><td>inserts contents of register ?</td></tr>
 <tr><td>ctrl r%</td><td>inserts contents of % register, or copies contents to 
 clipboard if not in insert mode</td></tr>
 <tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
@@ -134,7 +134,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>'?</td><td>goto marker ?</td></tr>
-<tr><td>"x</td><td>prepares register x to receive contents of yy, yw, de, dd, dw, d0, d$</td></tr>
+<tr><td>"x</td><td>prepares register x for p, yy, yw, de, dd, dw, d0, d$</td></tr>
 <tr><td>"X</td><td>appends contents of yy, yw, de, dd, dw, d0, d$ to register x</td></tr>
 <tr><td>&gt;&gt;</td><td>increase indent for current line, selection or visual area</td></tr>
 <tr><td>&lt;&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
@@ -220,6 +220,7 @@ a new tab pane called Print</td></tr>
   <th align="left">purpose</th>
   <th align="left">explanation</th>
 </tr>
+<tr><td>.</td><td>insert register</td><td>last inserted text</td></tr>
 <tr><td>0</td><td>yank register</td><td>last yank value</td></tr>
 <tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
 <tr><td>a - z</td><td>standard registers</td><td>normal register</td></tr>
