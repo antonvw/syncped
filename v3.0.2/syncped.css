@@ -1,3 +1,8 @@
+body
+{
+  background-color: #EEF0F0;
+}
+
 table
 {
   /* font-family: Verdana */
@@ -16,4 +21,11 @@ p
 ul
 {
   max-width: 20cm;
+}
+
+#main 
+{
+    position: absolute;
+    left: 25%;
+    right: 25%;
 }
