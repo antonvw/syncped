@@ -13,19 +13,9 @@ table
   border: 1px #6699CC solid;
 }
 
-p
-{
-  max-width: 20cm;
-}
-
-ul
-{
-  max-width: 20cm;
-}
-
 #main 
 {
-    position: absolute;
-    left: 25%;
-    right: 25%;
+  position: absolute;
+  left: 20%;
+  right: 20%;
 }
