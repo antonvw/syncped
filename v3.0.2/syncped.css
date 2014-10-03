@@ -11,6 +11,17 @@ table
   color: #404040;
   background-color: #fafafa;
   border: 1px #6699CC solid;
+  vertical-align: top;
+}
+
+td
+{
+  vertical-align: top;
+}
+
+#header
+{
+  background-color: #9acd32;
 }
 
 #main 

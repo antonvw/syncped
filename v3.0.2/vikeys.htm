@@ -1,48 +1,52 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="syncped.css" />
+<link rel="stylesheet" type="text/css" href="syncped.css"></link>
 <title>vi Keys</title>
 </head>
 
 <body>
+
 <center>
 <a id="vikeys">
-<b>vi Keys</b></a>
+<b>vi Keys</b>
+</a>
 </center>
-<p>
   
 <div id="main">
-The following vi keys are supported for navigating and editing, after setting 
-vi Mode in the options.
 
 <p>
+The following vi keys are supported for navigating and editing, after setting 
+vi Mode in the options.
+</p>
+
 <!-- Main Table -->
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
+
 <tr>
 
-<td width="33%" valign="top">
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<td width="33%">
+<table border="1">
+<tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td colspan="2" bgcolor="#9acd32">single char commands</td></tr>
+<tr><td id="header" colspan="2">single char commands</td></tr>
 <tr><td>a</td><td>insert after cursor</td></tr>
-<tr><td>b</td><td>left one word</td></tr>
-<tr><td>e</td><td>word right end</td></tr>
+<tr><td>b</td><td>move left one word</td></tr>
+<tr><td>e</td><td>move word right end</td></tr>
 <tr><td>g</td><td>start of document</td></tr>
-<tr><td>h</td><td>left one character</td></tr>
+<tr><td>h</td><td>move left</td></tr>
 <tr><td>i</td><td>insert before cursor</td></tr>
-<tr><td>j</td><td>down one line</td></tr>
-<tr><td>k</td><td>up one line</td></tr>
-<tr><td>l</td><td>right one character</td></tr>
+<tr><td>j</td><td>move down</td></tr>
+<tr><td>k</td><td>move up</td></tr>
+<tr><td>l</td><td>move right</td></tr>
 <tr><td>n</td><td>repeat the most recent search, in the same direction</td></tr>
 <tr><td>o</td><td>insert after line</td></tr>
 <tr><td>p</td><td>put after cursor</td></tr>
 <tr><td>q</td><td>stop macro recording</td></tr>
 <tr><td>u</td><td>undo</td></tr>
 <tr><td>v</td><td>enter visual mode</td></tr>
-<tr><td>w</td><td>right one word</td></tr>
+<tr><td>w</td><td>move right one word</td></tr>
 <tr><td>x</td><td>delete</td></tr>
 <tr><td><i>space</i></td><td>right one character</td></tr>
 
@@ -76,13 +80,13 @@ vi Mode in the options.
 <tr><td>}</td><td>paragraph down, in visual mode adds to selection</td></tr>
 <tr><td>(</td><td>paragraph up, in visual mode adds to selection (same as {)</td></tr>
 <tr><td>)</td><td>paragraph down, in visual mode adds to selection (same as })</td></tr>
-<tr><td>[</td><td>move to previous "{...}" section
-<tr><td>]</td><td>move to next "{...}" section
+<tr><td>[</td><td>move to previous "{...}" section</td></tr>
+<tr><td>]</td><td>move to next "{...}" section</td></tr>
 <tr><td>%</td><td>matching brace, in visual mode selects with matching brace</td></tr>
 <tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
 <tr><td>*</td><td>next occurrence of word under cursor</td></tr>
-<tr><td>+</td><td>down one line, goto home</td></tr>
-<tr><td>-</td><td>up one line, goto home</td></tr>
+<tr><td>+</td><td>move to first character on the next line</td></tr>
+<tr><td>-</td><td>move to first character on the previous line</td></tr>
 <tr><td>|</td><td>goto column number specified by prefix</td></tr>
 <tr><td>tab</td><td>indents selection</td></tr>
 <tr><td>TAB</td><td>dedents selection</td></tr>
@@ -90,13 +94,13 @@ vi Mode in the options.
 </table>
 </td>
 
-<td width="33%" valign="top">
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<td width="33%">
+<table border="1">
+<tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td colspan="2" bgcolor="#9acd32">control char commands</td></tr>
+<tr><td id="header" colspan="2">control char commands</td></tr>
 <tr><td>ctrl b</td><td>page up</td></tr>
 <tr><td>ctrl e</td><td>increment word under cursor</td></tr>
 <tr><td>ctrl f</td><td>page down</td></tr>
@@ -109,7 +113,7 @@ vi Mode in the options.
 clipboard if not in insert mode</td></tr>
 <tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
 
-<tr><td colspan="2" bgcolor="#9acd32">double or more char commands</td></tr>
+<tr><td id="header" colspan="2">double or more char commands</td></tr>
 <tr><td>cc</td><td>change line</td></tr>
 <tr><td>cw</td><td>change word</td></tr>
 <tr><td>dd</td><td>delete line or selection</td></tr>
@@ -146,13 +150,13 @@ clipboard if not in insert mode</td></tr>
 </table>
 </td>
 
-<td width="33%" valign="top">
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<td width="33%">
+<table border="1">
+<tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td colspan="2" bgcolor="#9acd32">colon commands</td></tr>
+<tr><td id="header" colspan="2">colon commands</td></tr>
 <tr><td>:.=         </td><td>current line</td></tr>
 <tr><td>:$          </td><td>goto end of document</td></tr>
 <tr><td>:close      </td><td>closes current document</td></tr>
@@ -189,7 +193,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:y          </td><td>yank current line</td></tr>
 <tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
 
-<tr><td colspan="2" bgcolor="#9acd32">global commands</td></tr>
+<tr><td id="header" colspan="2">global commands</td></tr>
 <tr><td>:g//</td><td>remove all markers</td></tr>
 <tr><td>:g/pattern/d</td><td>delete lines containing pattern</td></tr>
 <tr><td>:g/pattern/</td><td>mark lines containing pattern</td></tr>
@@ -197,14 +201,18 @@ clipboard if not in insert mode</td></tr>
 a new tab pane called Print</td></tr>
 <tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
 </table>
+</td>
+
+</tr>
 
 </table>
-  
+
 <p>
 [range]
+</p>
 <p>
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<table border="1">
+<tr id="header">
   <th align="left">chars</th>
   <th align="left">range</th>
 </tr>
@@ -215,12 +223,14 @@ a new tab pane called Print</td></tr>
 <tr><td><i>x</i>,<i>y</i></td><td>line <i>x</i> to <i>y</i> 
 (<i>x</i>,<i>y</i> can be a ., $, marker, or line no)</td></tr>
 </table>
+</p>
 
 <p>
 [register]
+</p>
 <p>
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<table border="1">
+<tr id="header">
   <th align="left">name</th>
   <th align="left">purpose</th>
   <th align="left">explanation</th>
@@ -233,12 +243,14 @@ a new tab pane called Print</td></tr>
 <tr><td>%</td><td>filename register</td><td>current filename</td></tr>
 <tr><td>_</td><td>black hole register</td><td>anything written to it is not kept</td></tr>
 </table>
+</p>
 
 <p>
 [flags]
+</p>
 <p>
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<table border="1">
+<tr id="header">
   <th align="left">char</th>
   <th align="left">purpose</th>
 </tr>
@@ -246,6 +258,7 @@ a new tab pane called Print</td></tr>
 <tr><td>c</td><td>ask for confirmation</td></tr>
 <tr><td>g</td><td>global, otherwise only first match on line</td></tr>
 </table>
+</p>
 
 <p>
 When substituting you can use &amp; or &#92;0 to represent the target, 
@@ -254,41 +267,43 @@ You can use a $ to match a line end, e.g. %s/$/EOL appends the string EOL
 at the end of each line. Merging is not yet possible using a \n target,
 you can create a macro for that.
 You can use ~ to match against a previous replacement string.
+</p>
 
 <p>
 Most commands can be prefixed with a multidigit number, that takes care of
 repeating that command the number specified.
+</p>
 
 <p>
 Replace uses regular expressions from scintilla:
+</p>
 
-In a regular expression, special characters interpreted are:
 <p>
-
-<table border="1" valign="top">
-<tr bgcolor="#9acd32">
+<table border="1">
+<tr id="header">
   <th align="left">char</th>
   <th align="left">purpose</th>
 </tr>
-<tr><td>.	</td><td>Matches any character</td></tr>
-<tr><td>\(	</td><td>This marks the start of a region for tagging a match.</td></tr>
-<tr><td>\)	</td><td>This marks the end of a tagged region.</td></tr>
-<tr><td>\n	</td><td>Where n is 1 through 9 refers to the first through ninth tagged region when replacing. For example, if the search string was Fred\([1-9]\)XXX and the replace string was Sam\1YYY, when applied to Fred2XXX this would generate Sam2YYY. \0 refers to all of the matching text.</td></tr>
-<tr><td>\<	</td><td>This matches the start of a word using Scintilla's definitions of words.</td></tr>
-<tr><td>\>	</td><td>This matches the end of a word using Scintilla's definition of words.</td></tr>
-<tr><td>\x	</td><td>This allows you to use a character x that would otherwise have a special meaning. For example, \[ would be interpreted as [ and not as the start of a character set.</td></tr>
-<tr><td>[...]	</td><td>This indicates a set of characters, for example, [abc] means any of the characters a, b or c. You can also use ranges, for example [a-z] for any lower case character.</td></tr>
-<tr><td>[^...] </td><td>The complement of the characters in the set. For example, [^A-Za-z] means any character except an alphabetic character.</td></tr>
-<tr><td>^	</td><td>This matches the start of a line (unless used inside a set, see above).</td></tr>
-<tr><td>$	</td><td>This matches the end of a line.</td></tr>
-<tr><td>*	</td><td>This matches 0 or more times. For example, Sa*m matches Sm, Sam, Saam, Saaam and so on.</td></tr>
-<tr><td>+	</td><td>This matches 1 or more times. For example, Sa+m matches Sam, Saam, Saaam and so on.</td></tr>
+<tr><td>.</td><td>Matches any character</td></tr>
+<tr><td>\(</td><td>This marks the start of a region for tagging a match.</td></tr>
+<tr><td>\)</td><td>This marks the end of a tagged region.</td></tr>
+<tr><td>\n</td><td>Where n is 1 through 9 refers to the first through ninth tagged region when replacing. For example, if the search string was Fred\([1-9]\)XXX and the replace string was Sam\1YYY, when applied to Fred2XXX this would generate Sam2YYY. \0 refers to all of the matching text.</td></tr>
+<tr><td>\<</td><td>This matches the start of a word using Scintilla's definitions of words.</td></tr>
+<tr><td>\></td><td>This matches the end of a word using Scintilla's definition of words.</td></tr>
+<tr><td>\x</td><td>This allows you to use a character x that would otherwise have a special meaning. For example, \[ would be interpreted as [ and not as the start of a character set.</td></tr>
+<tr><td>[...]</td><td>This indicates a set of characters, for example, [abc] means any of the characters a, b or c. You can also use ranges, for example [a-z] for any lower case character.</td></tr>
+<tr><td>[^...]</td><td>The complement of the characters in the set. For example, [^A-Za-z] means any character except an alphabetic character.</td></tr>
+<tr><td>^</td><td>This matches the start of a line (unless used inside a set, see above).</td></tr>
+<tr><td>$</td><td>This matches the end of a line.</td></tr>
+<tr><td>*</td><td>This matches 0 or more times. For example, Sa*m matches Sm, Sam, Saam, Saaam and so on.</td></tr>
+<tr><td>+</td><td>This matches 1 or more times. For example, Sa+m matches Sam, Saam, Saaam and so on.</td></tr>
 </table>
+</p>
 
 <p>
 Regular expressions will only match ranges within a single line, never matching over multiple lines.
-
 </p>
+
 </div>
 
 </body>
