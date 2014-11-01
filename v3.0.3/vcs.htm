@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>Version Control Systems</title>
+</head>
+
+<body>
+<center>
+<a id="vcs">
+<b>Version Control Systems</b></a>
+</center>
+<div id="main">
+<p>
+Support for VCS is configured by the vcs.xml file. 
+At this moment there is support for 
+Bazaar, CVS, GIT, Mercurial, SCCS and SVN. 
+
+<p>
+e.g. the next svn commands are supported:
+
+<p>
+<table border="1" valign="top">
+<tr bgcolor="#9acd32">
+  <th align="left">svn command</th>
+  <th align="left">action</th>
+</tr>
+<tr><td>add     </td><td>invokes svn add</td></tr>
+<tr><td>blame   </td><td>asks for revision and shows revision with blame info in editor window</</td></tr>
+<tr><td>cat     </td><td>asks for revision and shows revision in editor window</td></tr>
+<tr><td>commit  </td><td>asks for commit text and commits</td></tr>
+<tr><td>diff    </td><td>shows svn diff</td></tr>
+<tr><td>cleanup </td><td>invokes svn cleanup</td></tr>
+<tr><td>help    </td><td>invokes svn help</td></tr>
+<tr><td>info    </td><td>shows svn info</td></tr>
+<tr><td>log     </td><td>shows svn log</td></tr>
+<tr><td>ls      </td><td>invokes svn ls</td></tr>
+<tr><td>proplist</td><td>shows svn properties</td></tr>
+<tr><td>propset </td><td>sets svn properties</td></tr>
+<tr><td>stat    </td><td>shows svn stat</td></tr>
+<tr><td>update  </td><td>updates svn</td></tr>
+</table>
+
+<p>
+The VCS submenu is shown:
+
+<ul>
+<li> When right clicking on an editor window, and 
+     the associated file is within a folder that is under version control.
+<li> On a project window and the explorer window
+     if appropriate for the current file or folder.
+     You can also select multiple files and do a VCS command over all 
+     files selected.
+<li> When you click on the status bar VCS pane.
+</ul>
+
+<p>
+Finally you can configure auto VCS to be used, in that case 
+syncped checks for each file whether there is an admin dir 
+according to the information in vcs.xml and 
+uses that one.
+</div>
+</body>
+</html>
