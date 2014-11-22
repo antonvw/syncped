@@ -164,7 +164,9 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
 <tr><td>:e *        </td><td>edit file * (with tab expansion)</td></tr>
 <tr><td>:grep       </td><td>shows find in files dialog</td></tr>
-<tr><td>:grep t f e </td><td>greps t(ext) f(older) e(xtension)</td></tr>
+<tr><td>:grep h     </td><td>shows grep help</td></tr>
+<tr><td>:grep t f e /r</td><td>greps t(ext) f(older) e(xtension)</td></tr>
+<tr><td>:help       </td><td>shows help</td></tr>
 <tr><td>:n          </td><td>next</td></tr>
 <tr><td>:new        </td><td>new document</td></tr>
 <tr><td>:prev       </td><td>previous</td></tr>
@@ -179,15 +181,32 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
 <tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
 <tr><td>:reg        </td><td>shows registers </td></tr>
+<tr><td>:sed        </td><td>shows replace in files dialog</td></tr>
+<tr><td>:set        </td><td>shows options dialog</td></tr>
+<tr><td>:set h      </td><td>shows set help</td></tr>
+<tr><td>:set ai     </td><td>sets auto indentation</td></tr>
+<tr><td>:set ai!    </td><td>unsets auto indentation</td></tr>
+<tr><td>:set ec=no  </td><td>sets edge column</td></tr>
+<tr><td>:set ac     </td><td>sets auto complete</td></tr>
+<tr><td>:set ac!    </td><td>unsets auto complete</td></tr>
+<tr><td>:set el     </td><td>sets edge line</td></tr>
+<tr><td>:set el!    </td><td>unsets edge line</td></tr>
 <tr><td>:set ic     </td><td>sets ignore case</td></tr>
-<tr><td>:set ic!    </td><td>sets match case</td></tr>
-<tr><td>:set list   </td><td>shows whitespace</td></tr>
-<tr><td>:set list!  </td><td>hides whitespace</td></tr>
-<tr><td>:set nu     </td><td>shows line numbers</td></tr>
-<tr><td>:set nu!    </td><td>hides line numbers</td></tr>
-<tr><td>:set syntax=lexer </td><td>sets lexer</td></tr>
+<tr><td>:set ic!    </td><td>unsets ignore case</td></tr>
+<tr><td>:set ln     </td><td>shows line numbers</td></tr>
+<tr><td>:set ln!    </td><td>hides line numbers</td></tr>
+<tr><td>:set mw     </td><td>sets match words</td></tr>
+<tr><td>:set mw!    </td><td>unsets match words</td></tr>
+<tr><td>:set re     </td><td>sets regular expression</td></tr>
+<tr><td>:set re!    </td><td>unsets regular expression</td></tr>
+<tr><td>:set ut     </td><td>sets use tabs</td></tr>
+<tr><td>:set ut!    </td><td>unsets use tabs</td></tr>
+<tr><td>:set wl     </td><td>sets wrap line</td></tr>
+<tr><td>:set wl!    </td><td>unsets wrap line</td></tr>
+<tr><td>:set ws     </td><td>shows whitespace</td></tr>
+<tr><td>:set ws!    </td><td>hides whitespace</td></tr>
+<tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
 <tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
-<tr><td>:set tabstop=no </td><td>sets tabstop at every no</td></tr>
 <tr><td>:syntax on  </td><td>use syntax highlighting</td></tr>
 <tr><td>:syntax off </td><td>stops syntax highlighting</td></tr>
 <tr><td>:w          </td><td>save</td></tr>
