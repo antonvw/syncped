@@ -55,6 +55,7 @@ vi Mode in the options.
 <tr><td>C</td><td>change to end of line</td></tr>
 <tr><td>D</td><td>delete line right</td></tr>
 <tr><td>E</td><td>word right end (same as e)</td></tr>
+<tr><td>F</td><td>enter visual rectangular mode</td></tr>
 <tr><td>G</td><td>goto end or line number if prefixed</td></tr>
 <tr><td>H</td><td>goto first line of the screen</td></tr>
 <tr><td>I</td><td>insert at begin</td></tr>
@@ -68,7 +69,6 @@ vi Mode in the options.
 <tr><td>V</td><td>enter visual line mode</td></tr>
 <tr><td>W</td><td>right one word (same as w)</td></tr>
 <tr><td>X</td><td>delete backwards</td></tr>
-<tr><td>Z</td><td>enter visual rectangular mode</td></tr>
 
 <tr><td>/</td><td>find next word</td></tr>
 <tr><td>?</td><td>find previous word</td></tr>
@@ -119,11 +119,15 @@ clipboard if not in insert mode</td></tr>
 <tr><td>cw</td><td>change word</td></tr>
 <tr><td>dd</td><td>delete line or selection</td></tr>
 <tr><td>de</td><td>delete word (to end of word)</td></tr>
+<tr><td>dh</td><td>delete char left</td></tr>
+<tr><td>dj</td><td>delete line up</td></tr>
+<tr><td>dk</td><td>delete line down</td></tr>
+<tr><td>dl</td><td>delete char right</td></tr>
+<tr><td>dw</td><td>delete word</td></tr>
+<tr><td>dG</td><td>delete from current line until end of the file</td></tr>
 <tr><td>d0</td><td>delete line left</td></tr>
 <tr><td>d$</td><td>delete line right</td></tr>
 <tr><td>dgg</td><td>delete from start of the file until current line</td></tr>
-<tr><td>dG</td><td>delete from current line until end of the file</td></tr>
-<tr><td>dw</td><td>delete word</td></tr>
 <tr><td>f?</td><td>find next character</td></tr>
 <tr><td>F?</td><td>find previous character</td></tr>
 <tr><td>gg</td><td>goto begin</td></tr>
@@ -136,13 +140,20 @@ clipboard if not in insert mode</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
 <tr><td>t?</td><td>find next character, caret before pos</td></tr>
 <tr><td>T?</td><td>find previous character, caret before pos</td></tr>
+<tr><td>ye</td><td>yank word</td></tr>
+<tr><td>yh</td><td>yank char left</td></tr>
+<tr><td>yj</td><td>yank line down</td></tr>
+<tr><td>yk</td><td>yank line up</td></tr>
+<tr><td>yl</td><td>yank char right</td></tr>
 <tr><td>yw</td><td>yank word</td></tr>
 <tr><td>yy</td><td>yank line or selection</td></tr>
-<tr><td>ZZ</td><td>save and quit</td></tr>
+<tr><td>y0</td><td>yank line left</td></tr>
+<tr><td>y$</td><td>yank line right</td></tr>
 <tr><td>zc</td><td>fold close</td></tr>
 <tr><td>zo</td><td>fold open</td></tr>
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
+<tr><td>ZZ</td><td>save and quit</td></tr>
 <tr><td>'?</td><td>goto marker ?</td></tr>
 <tr><td>"x</td><td>prepares register x for p, yy, yw, de, dd, dw, d0, d$</td></tr>
 <tr><td>"X</td><td>appends contents of yy, yw, de, dd, dw, d0, d$ to register x</td></tr>
@@ -183,6 +194,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:[range]d   </td><td>delete range</td></tr>
 <tr><td>:[range]mx  </td><td>move range to destination address x</td></tr>
 <tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
+<tr><td>:[range]S[r][x,y]</td><td>sorts range by lines, reverse if r, by columns if x, y specified</td></tr>
 <tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
 <tr><td>:reg        </td><td>shows registers </td></tr>
 <tr><td>:sed        </td><td>shows replace in files dialog</td></tr>
@@ -203,13 +215,13 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:set mw!    </td><td>unsets match words</td></tr>
 <tr><td>:set re     </td><td>sets regular expression</td></tr>
 <tr><td>:set re!    </td><td>unsets regular expression</td></tr>
+<tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
 <tr><td>:set ut     </td><td>sets use tabs</td></tr>
 <tr><td>:set ut!    </td><td>unsets use tabs</td></tr>
 <tr><td>:set wl     </td><td>sets wrap line</td></tr>
 <tr><td>:set wl!    </td><td>unsets wrap line</td></tr>
 <tr><td>:set ws     </td><td>shows whitespace</td></tr>
 <tr><td>:set ws!    </td><td>hides whitespace</td></tr>
-<tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
 <tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
 <tr><td>:syntax on  </td><td>use syntax highlighting</td></tr>
 <tr><td>:syntax off </td><td>stops syntax highlighting</td></tr>
