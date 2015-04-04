@@ -91,7 +91,7 @@ vi Mode in the options.
 <tr><td>|</td><td>goto column number specified by prefix</td></tr>
 <tr><td>tab</td><td>indents selection</td></tr>
 <tr><td>TAB</td><td>dedents selection</td></tr>
-<tr><td>ESC</td><td>escape deselects, goes back to normal mode</td></tr>
+<tr><td>ESC</td><td>escape goes back to normal mode</td></tr>
 </table>
 </td>
 
@@ -177,7 +177,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
 <tr><td>:e *        </td><td>edit file * (with tab expansion)</td></tr>
 <tr><td>:grep       </td><td>shows find in files dialog</td></tr>
-<tr><td>:grep t f e /r /h</td><td>greps t(ext) f(older) e(xtension)</td></tr>
+<tr><td>:grep t f e /r /h</td><td>greps t(ext) f(older) e(xtension), recursive if r</td></tr>
 <tr><td>:help       </td><td>shows help</td></tr>
 <tr><td>:n          </td><td>next</td></tr>
 <tr><td>:new        </td><td>new document (dialog)</td></tr>
@@ -194,7 +194,7 @@ clipboard if not in insert mode</td></tr>
 <tr><td>:[range]d   </td><td>delete range</td></tr>
 <tr><td>:[range]mx  </td><td>move range to destination address x</td></tr>
 <tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
-<tr><td>:[range]S[r][x,y]</td><td>sorts range by lines, reverse if r, by columns if x, y specified</td></tr>
+<tr><td>:[range]S[r][u][x,y]</td><td>sorts range by lines, unique if u, reverse if r, by columns if x, y specified</td></tr>
 <tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
 <tr><td>:reg        </td><td>shows registers </td></tr>
 <tr><td>:sed        </td><td>shows replace in files dialog</td></tr>
