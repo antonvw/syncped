@@ -24,7 +24,7 @@ vi Mode in the options.
 
 <tr>
 
-<td width="33%">
+<td width="25%">
 <table border="1">
 <tr id="header">
   <th align="left">key</th>
@@ -95,7 +95,7 @@ vi Mode in the options.
 </table>
 </td>
 
-<td width="33%">
+<td width="25%">
 <table border="1">
 <tr id="header">
   <th align="left">key</th>
@@ -162,82 +162,73 @@ clipboard if not in insert mode</td></tr>
 </table>
 </td>
 
-<td width="33%">
+<td width="50%">
 <table border="1">
 <tr id="header">
-  <th align="left">key</th>
+  <th align="left">command</th>
+  <th align="left">keys</th>
   <th align="left">action</th>
 </tr>
-<tr><td id="header" colspan="2">colon commands</td></tr>
-<tr><td>:.=         </td><td>current line</td></tr>
-<tr><td>:$          </td><td>goto end of document</td></tr>
-<tr><td>:about       </td><td>shows about dialog</td></tr>
-<tr><td>:close      </td><td>closes current document</td></tr>
-<tr><td>:d          </td><td>delete current line</td></tr>
-<tr><td>:e          </td><td>edit (show select file dialog)</td></tr>
-<tr><td>:e *        </td><td>edit file * (with tab expansion)</td></tr>
-<tr><td>:grep       </td><td>shows find in files dialog</td></tr>
-<tr><td>:grep t f e /r /h</td><td>greps t(ext) f(older) e(xtension), recursive if r</td></tr>
-<tr><td>:help       </td><td>shows help</td></tr>
-<tr><td>:n          </td><td>next</td></tr>
-<tr><td>:new        </td><td>new document (dialog)</td></tr>
-<tr><td>:new *      </td><td>new document *</td></tr>
-<tr><td>:prev       </td><td>previous</td></tr>
-<tr><td>:print      </td><td>shows print dialog</td></tr>
-<tr><td>:print x    </td><td>prints document</td></tr>
-<tr><td>:q          </td><td>quit unless modified</td></tr>
-<tr><td>:q!         </td><td>quit forced</td></tr>
-<tr><td>:r *        </td><td>insert contents of file * below cursor</td></tr>
-<tr><td>:r !<i>command</i></td><td>executes <i>command</i> and inserts output below cursor</td></tr>
-<tr><td>:[range]&gt;</td><td>increase indent for range</td></tr>
-<tr><td>:[range]&lt;</td><td>decrease indent for range</td></tr>
-<tr><td>:[range]d   </td><td>delete range</td></tr>
-<tr><td>:[range]mx  </td><td>move range to destination address x</td></tr>
-<tr><td>:[range]s/p/r/[flags]</td><td>substitutes in range p by r using flags</td></tr>
-<tr><td>:[range]S[r][u][x,y]</td><td>sorts range by lines, unique if u, reverse if r, by columns if x, y specified</td></tr>
-<tr><td>:[range]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
-<tr><td>:reg        </td><td>shows registers </td></tr>
-<tr><td>:sed        </td><td>shows replace in files dialog</td></tr>
-<tr><td>:set        </td><td>shows options dialog</td></tr>
-<tr><td>:set h      </td><td>shows set help</td></tr>
-<tr><td>:set ai     </td><td>sets auto indentation (all set commands can be entered as modeline</td></tr>
-<tr><td>:set ai!    </td><td>unsets auto indentation</td></tr>
-<tr><td>:set ac     </td><td>sets auto complete</td></tr>
-<tr><td>:set ac!    </td><td>unsets auto complete</td></tr>
-<tr><td>:set ec=no  </td><td>sets edge column</td></tr>
-<tr><td>:set el     </td><td>sets edge line</td></tr>
-<tr><td>:set el!    </td><td>unsets edge line</td></tr>
-<tr><td>:set ic     </td><td>sets ignore case</td></tr>
-<tr><td>:set ic!    </td><td>unsets ignore case</td></tr>
-<tr><td>:set ln     </td><td>shows line numbers</td></tr>
-<tr><td>:set ln!    </td><td>hides line numbers</td></tr>
-<tr><td>:set mw     </td><td>sets match words</td></tr>
-<tr><td>:set mw!    </td><td>unsets match words</td></tr>
-<tr><td>:set re     </td><td>sets regular expression</td></tr>
-<tr><td>:set re!    </td><td>unsets regular expression</td></tr>
-<tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
-<tr><td>:set ut     </td><td>sets use tabs</td></tr>
-<tr><td>:set ut!    </td><td>unsets use tabs</td></tr>
-<tr><td>:set wl     </td><td>sets wrap line</td></tr>
-<tr><td>:set wl!    </td><td>unsets wrap line</td></tr>
-<tr><td>:set ws     </td><td>shows whitespace</td></tr>
-<tr><td>:set ws!    </td><td>hides whitespace</td></tr>
-<tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
-<tr><td>:syntax on  </td><td>use syntax highlighting</td></tr>
-<tr><td>:syntax off </td><td>stops syntax highlighting</td></tr>
-<tr><td>:w          </td><td>save</td></tr>
-<tr><td>:w *        </td><td>save to file *</td></tr>
-<tr><td>:x          </td><td>save and quit</td></tr>
-<tr><td>:y          </td><td>yank current line</td></tr>
-<tr><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
-
-<tr><td id="header" colspan="2">global commands</td></tr>
-<tr><td>:g//</td><td>remove all markers</td></tr>
-<tr><td>:g/pattern/d</td><td>delete lines containing pattern</td></tr>
-<tr><td>:g/pattern/</td><td>mark lines containing pattern</td></tr>
-<tr><td>:g/pattern/p</td><td>print lines containing pattern, the lines are put on
-a new tab pane called Print</td></tr>
-<tr><td>:g/pattern/s/replacement</td><td>substitute pattern by replacement</td></tr>
+<tr><td id="header" colspan="3">colon commands</td></tr>
+<tr><td>abbreviate  </td><td>:ab x y     </td><td>abbreviate x for y</td></tr>
+<tr><td>append      </td><td>:[1addr]a     </td><td>append text</td></tr>
+<tr><td>change      </td><td>:[2addr]c     </td><td>the input text shall replace the specified lines</td></tr>
+<tr><td>close       </td><td>:close      </td><td>closes current document</td></tr>
+<tr><td>copy        </td><td>:[2addr]t[1addr]</td><td>Copy the specified lines after the specified destination line</td></tr>
+<tr><td>delete      </td><td>:[2addr]d          </td><td>delete range</td></tr>
+<tr><td>edit        </td><td>:e [file] </td><td>edit (show select file dialog), or edit file</td></tr>
+<tr><td>escape      </td><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
+<tr><td>exit        </td><td>:x          </td><td>save and quit</td></tr>
+<tr><td>filter      </td><td>:[2addr]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
+<tr><td>global      </td><td>:[2addr]g/pattern/[commands]</td><td>remove all markers, mark lines containing pattern</td></tr>
+<tr><td>goto        </td><td>:[1addr]          </td><td>goto address</td></tr>
+<tr><td>grep        </td><td>:grep       </td><td>shows find in files dialog, greps t(ext) f(older) e(xtension), recursive if r</td></tr>
+<tr><td>help        </td><td>:help       </td><td>shows help</td></tr>
+<tr><td>indent      </td><td>:[2addr][&gt;|&lt;]</td><td>increase, decrease indent for range</td></tr>
+<tr><td>insert      </td><td>:[1addr]i     </td><td>Enter ex text input mode; the input text shall be placed before the specified line.</td></tr>
+<tr><td>join        </td><td>:[2addr]j</td><td>joins lines</td></tr>
+<tr><td>mark        </td><td>:[2addr]k  </td><td>move range to destination address x</td></tr>
+<tr><td>move        </td><td>:[2addr]mx  </td><td>move range to destination address x</td></tr>
+<tr><td>new         </td><td>:new        </td><td>new document (dialog)</td></tr>
+<tr><td>print       </td><td>:[2addr]p, :print, :print x</td><td>write the addressed lines, shows print dialogprints document</td></tr>
+<tr><td>quit        </td><td>:q, :q!           </td><td>quit unless modified, quit forced</td></tr>
+<tr><td>read        </td><td>:r *, :r !        </td><td>insert contents of file * below cursor, and inserts output below cursor</td></tr>
+<tr><td>register    </td><td>:reg        </td><td>shows registers </td></tr>
+<tr><td>sed         </td><td>:sed        </td><td>shows replace in files dialog</td></tr>
+<tr><td>set         </td><td>:set        </td><td>shows options dialog</td></tr>
+<tr><td>            </td><td>:set h      </td><td>shows set help</td></tr>
+<tr><td>            </td><td>:set ai     </td><td>sets auto indentation (all set commands can be entered as modeline</td></tr>
+<tr><td>            </td><td>:set ai!    </td><td>unsets auto indentation</td></tr>
+<tr><td>            </td><td>:set ac     </td><td>sets auto complete</td></tr>
+<tr><td>            </td><td>:set ac!    </td><td>unsets auto complete</td></tr>
+<tr><td>            </td><td>:set ec=no  </td><td>sets edge column</td></tr>
+<tr><td>            </td><td>:set el     </td><td>sets edge line</td></tr>
+<tr><td>            </td><td>:set el!    </td><td>unsets edge line</td></tr>
+<tr><td>            </td><td>:set ic     </td><td>sets ignore case</td></tr>
+<tr><td>            </td><td>:set ic!    </td><td>unsets ignore case</td></tr>
+<tr><td>            </td><td>:set nu     </td><td>shows line numbers</td></tr>
+<tr><td>            </td><td>:set nu!    </td><td>hides line numbers</td></tr>
+<tr><td>            </td><td>:set mw     </td><td>sets match words</td></tr>
+<tr><td>            </td><td>:set mw!    </td><td>unsets match words</td></tr>
+<tr><td>            </td><td>:set re     </td><td>sets regular expression</td></tr>
+<tr><td>            </td><td>:set re!    </td><td>unsets regular expression</td></tr>
+<tr><td>            </td><td>:set sy=lexer </td><td>sets lexer</td></tr>
+<tr><td>            </td><td>:set ut     </td><td>sets use tabs</td></tr>
+<tr><td>            </td><td>:set ut!    </td><td>unsets use tabs</td></tr>
+<tr><td>            </td><td>:set wl     </td><td>sets wrap line</td></tr>
+<tr><td>            </td><td>:set wl!    </td><td>unsets wrap line</td></tr>
+<tr><td>            </td><td>:set ws     </td><td>shows whitespace</td></tr>
+<tr><td>            </td><td>:set ws!    </td><td>hides whitespace</td></tr>
+<tr><td>            </td><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
+<tr><td>sort        </td><td>:[2addr]S[r][u][x,y]</td><td>sorts range by lines, unique if u, reverse if r, by columns if x, y specified</td></tr>
+<tr><td>tab         </td><td>:n or :prev         </td><td>next or previous</td></tr>
+<tr><td>substitute  </td><td>:[2addr]s/p/r/[flags], :[2addr]&[flags], :[2addr]~[flags]</td><td>substitutes in range p by r using flags</td></tr>
+<tr><td>syntax      </td><td>:syntax [on|off]  </td><td>use syntax highlighting</td></tr>
+<tr><td>unabbreviate</td><td>:una x      </td><td>unabbreviate x</td></tr>
+<tr><td>version     </td><td>:ve         </td><td>shows about dialog</td></tr>
+<tr><td>write       </td><td>:[2addr]w          </td><td>save</td></tr>
+<tr><td>write line  </td><td>:[1addr]=         </td><td>current line</td></tr>
+<tr><td>yank        </td><td>:[2addr]y          </td><td>yank current line</td></tr>
 </table>
 </td>
 
@@ -246,7 +237,7 @@ a new tab pane called Print</td></tr>
 </table>
 
 <p>
-[range]
+[2addr]
 </p>
 <p>
 <table border="1">
