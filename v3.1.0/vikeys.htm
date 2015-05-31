@@ -3,7 +3,6 @@
 <link rel="stylesheet" type="text/css" href="syncped.css"></link>
 <title>vi Keys</title>
 </head>
-
 <body>
 
 <center>
@@ -26,11 +25,11 @@ vi Mode in the options.
 
 <td width="25%">
 <table border="1">
+<tr><td id="header" colspan="2">single char commands</td></tr>
 <tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td id="header" colspan="2">single char commands</td></tr>
 <tr><td>a</td><td>insert after cursor</td></tr>
 <tr><td>b</td><td>move left one word</td></tr>
 <tr><td>e</td><td>move word right end</td></tr>
@@ -97,11 +96,11 @@ vi Mode in the options.
 
 <td width="25%">
 <table border="1">
+<tr><td id="header" colspan="2">control char commands</td></tr>
 <tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td id="header" colspan="2">control char commands</td></tr>
 <tr><td>ctrl b</td><td>page up</td></tr>
 <tr><td>ctrl e</td><td>increment word under cursor</td></tr>
 <tr><td>ctrl f</td><td>page down</td></tr>
@@ -164,82 +163,298 @@ clipboard if not in insert mode</td></tr>
 
 <td width="50%">
 <table border="1">
+<!-- http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ex.html -->
+<tr><td id="header" colspan="3">colon commands</td></tr>
 <tr id="header">
   <th align="left">command</th>
   <th align="left">keys</th>
   <th align="left">action</th>
 </tr>
-<tr><td id="header" colspan="3">colon commands</td></tr>
-<tr><td>abbreviate  </td><td>:ab x y     </td><td>abbreviate x for y</td></tr>
-<tr><td>append      </td><td>:[1addr]a     </td><td>append text</td></tr>
-<tr><td>change      </td><td>:[2addr]c     </td><td>the input text shall replace the specified lines</td></tr>
-<tr><td>close       </td><td>:close      </td><td>closes current document</td></tr>
-<tr><td>copy        </td><td>:[2addr]t[1addr]</td><td>Copy the specified lines after the specified destination line</td></tr>
-<tr><td>delete      </td><td>:[2addr]d          </td><td>delete range</td></tr>
-<tr><td>edit        </td><td>:e [file] </td><td>edit (show select file dialog), or edit file</td></tr>
-<tr><td>escape      </td><td>:!<i>command</i></td><td>executes <i>command</i> and shows output</td></tr>
-<tr><td>exit        </td><td>:x          </td><td>save and quit</td></tr>
-<tr><td>filter      </td><td>:[2addr]!<i>command</i>  </td><td>filters range, range is used as input for <i>command</i>, output replaces range</td></tr>
-<tr><td>global      </td><td>:[2addr]g/pattern/[commands]</td><td>remove all markers, mark lines containing pattern</td></tr>
-<tr><td>goto        </td><td>:[1addr]          </td><td>goto address</td></tr>
-<tr><td>grep        </td><td>:grep       </td><td>shows find in files dialog, greps t(ext) f(older) e(xtension), recursive if r</td></tr>
-<tr><td>help        </td><td>:help       </td><td>shows help</td></tr>
-<tr><td>indent      </td><td>:[2addr][&gt;|&lt;]</td><td>increase, decrease indent for range</td></tr>
-<tr><td>insert      </td><td>:[1addr]i     </td><td>Enter ex text input mode; the input text shall be placed before the specified line.</td></tr>
-<tr><td>join        </td><td>:[2addr]j</td><td>joins lines</td></tr>
-<tr><td>mark        </td><td>:[2addr]k  </td><td>move range to destination address x</td></tr>
-<tr><td>move        </td><td>:[2addr]mx  </td><td>move range to destination address x</td></tr>
-<tr><td>new         </td><td>:new        </td><td>new document (dialog)</td></tr>
-<tr><td>print       </td><td>:[2addr]p, :print, :print x</td><td>write the addressed lines, shows print dialogprints document</td></tr>
-<tr><td>quit        </td><td>:q, :q!           </td><td>quit unless modified, quit forced</td></tr>
-<tr><td>read        </td><td>:r *, :r !        </td><td>insert contents of file * below cursor, and inserts output below cursor</td></tr>
-<tr><td>register    </td><td>:reg        </td><td>shows registers </td></tr>
-<tr><td>sed         </td><td>:sed        </td><td>shows replace in files dialog</td></tr>
-<tr><td>set         </td><td>:set        </td><td>shows options dialog</td></tr>
-<tr><td>            </td><td>:set h      </td><td>shows set help</td></tr>
-<tr><td>            </td><td>:set ai     </td><td>sets auto indentation (all set commands can be entered as modeline</td></tr>
-<tr><td>            </td><td>:set ai!    </td><td>unsets auto indentation</td></tr>
-<tr><td>            </td><td>:set ac     </td><td>sets auto complete</td></tr>
-<tr><td>            </td><td>:set ac!    </td><td>unsets auto complete</td></tr>
-<tr><td>            </td><td>:set ec=no  </td><td>sets edge column</td></tr>
-<tr><td>            </td><td>:set el     </td><td>sets edge line</td></tr>
-<tr><td>            </td><td>:set el!    </td><td>unsets edge line</td></tr>
-<tr><td>            </td><td>:set ic     </td><td>sets ignore case</td></tr>
-<tr><td>            </td><td>:set ic!    </td><td>unsets ignore case</td></tr>
-<tr><td>            </td><td>:set nu     </td><td>shows line numbers</td></tr>
-<tr><td>            </td><td>:set nu!    </td><td>hides line numbers</td></tr>
-<tr><td>            </td><td>:set mw     </td><td>sets match words</td></tr>
-<tr><td>            </td><td>:set mw!    </td><td>unsets match words</td></tr>
-<tr><td>            </td><td>:set re     </td><td>sets regular expression</td></tr>
-<tr><td>            </td><td>:set re!    </td><td>unsets regular expression</td></tr>
-<tr><td>            </td><td>:set sy=lexer </td><td>sets lexer</td></tr>
-<tr><td>            </td><td>:set ut     </td><td>sets use tabs</td></tr>
-<tr><td>            </td><td>:set ut!    </td><td>unsets use tabs</td></tr>
-<tr><td>            </td><td>:set wl     </td><td>sets wrap line</td></tr>
-<tr><td>            </td><td>:set wl!    </td><td>unsets wrap line</td></tr>
-<tr><td>            </td><td>:set ws     </td><td>shows whitespace</td></tr>
-<tr><td>            </td><td>:set ws!    </td><td>hides whitespace</td></tr>
-<tr><td>            </td><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
-<tr><td>sort        </td><td>:[2addr]S[r][u][x,y]</td><td>sorts range by lines, unique if u, reverse if r, by columns if x, y specified</td></tr>
-<tr><td>tab         </td><td>:n or :prev         </td><td>next or previous</td></tr>
-<tr><td>substitute  </td><td>:[2addr]s/p/r/[flags], :[2addr]&[flags], :[2addr]~[flags]</td><td>substitutes in range p by r using flags</td></tr>
-<tr><td>syntax      </td><td>:syntax [on|off]  </td><td>use syntax highlighting</td></tr>
-<tr><td>unabbreviate</td><td>:una x      </td><td>unabbreviate x</td></tr>
-<tr><td>version     </td><td>:ve         </td><td>shows about dialog</td></tr>
-<tr><td>write       </td><td>:[2addr]w          </td><td>save</td></tr>
-<tr><td>write line  </td><td>:[1addr]=         </td><td>current line</td></tr>
-<tr><td>yank        </td><td>:[2addr]y          </td><td>yank current line</td></tr>
+<tr>
+  <td width="10%">abbreviate</td>
+  <td width="35%">:ab [<i>lhs rhs</i>] </td>
+  <td width="55%">Abbreviate lhs for rhs</td>
+</tr>
+<tr>
+  <td>adjust window</td>
+  <td>:[1addr]z[<i>type</i>][<i>count</i>][<i>flags</i>]</td>
+  <td>
+  Print the specified line with context. If count is not specified, it
+  default is 2. Type can be:<br>
+  - : The specified line shall be decremented by the following value:
+      (((number of "-" characters) x count) -1)<br>
+  + : The specified line shall be incremented by the following value:
+      (((number of "+" characters) -1) x count) +<br>
+  ^ : The specified line shall be decremented by the following value:
+      (((number of "^" characters) +1) x count) -1 <br>
+  = : Embed context into lines of 40 - characters, with 
+      (count -1) /2 around match<br>
+  . : show context with (count -1) /2 around match
+  </td>
+</tr>
+<tr>
+  <td>append</td>
+  <td>:[1addr]a</td>
+  <td>Enter ex text input mode; the input text is placed after the specified line. </td>
+</tr>
+<tr>
+  <td>change</td>
+  <td>:[2addr]c</td>
+  <td>The input text replaces the specified lines</td>
+</tr>
+<tr>
+  <td>close</td>
+  <td>:close</td>
+  <td>Closes current document</td>
+</tr>
+<tr>
+  <td>copy</td>
+  <td>:[2addr]t 1addr</td>
+  <td>Copy the specified lines after the specified destination line</td>
+</tr>
+<tr>
+  <td>delete</td>
+  <td>:[2addr]d[<i>buffer</i>]</td>
+  <td>Delete the specified lines into a buffer (defaulting to the unnamed buffer)</td>
+</tr>
+<tr>
+  <td>edit</td>
+  <td>:e [<i>file</i>]</td>
+  <td>If no file is specified shows select file dialog, otherwise edits file</td>
+</tr>
+<tr>
+  <td>escape</td>
+  <td>
+  :!<i>command</i><br>
+  :[2addr]!<i>command</i><br>  
+  </td>
+  <td>If no lines are specified executes command and shows output.
+  If lines are specified, they are passed to the program as standard input, 
+  and the standard output and standard error of the program replaces those 
+  lines in the edit buffer.
+  </td>
+</tr>
+<tr>
+  <td>global</td>
+  <td>
+  :[2addr]g/<i>pattern</i>/[<i>commands</i>]<br>
+  :[2addr]v/<i>pattern</i>/[<i>commands</i>]
+  </td>
+  <td>
+  If pattern and commands are empty: remove all markers<br>
+  otherwise if commands are empty: mark lines containing pattern <br>
+  otherwise executes all commands for each line matching pattern, 
+  commands separated by |, or (for g) executes all commands for 
+  each line not matching pattern
+  </td>
+</tr>
+<tr>
+  <td>goto</td>
+  <td>:[1addr]</td>
+  <td>Goto specified address</td>
+</tr>
+<tr>
+  <td>grep</td>
+  <td>:grep [<i>text</i>][<i>folder</i>][<i>extensions</i>][<i>options</i>]</td>
+  <td>If nothing specified shows find in files dialog, 
+  otherwise greps for text in folder matching file extension using options:<br>
+  /r: recursive
+  </td>
+</tr>
+<tr>
+  <td>help</td>
+  <td>:help</td>
+  <td>Shows help</td>
+</tr>
+<tr>
+  <td>indent</td>
+  <td>:[2addr][&gt;|&lt;]</td>
+  <td>Increase, decrease indent for range</td>
+</tr>
+<tr>
+  <td>insert</td>
+  <td>:[1addr]i</td>
+  <td>Enter ex text input mode; the input text is placed 
+  before the specified line.</td>
+</tr>
+<tr>
+  <td>join</td>
+  <td>:[2addr]j</td>
+  <td>Joins lines</td>
+</tr>
+<tr>
+  <td>mark</td>
+  <td>:[1addr]k<i>character</i></td>
+  <td>Marks address with character</td>
+</tr>
+<tr>
+  <td>move</td>
+  <td>:[2addr]m 1addr</td>
+  <td>Move the specified lines after the specified destination line x</td>
+</tr>
+<tr>
+  <td>new</td>
+  <td>:new</td>
+  <td>New document (dialog)</td>
+</tr>
+<tr>
+  <td>print</td>
+  <td>
+    :[2addr]p[<i>flags</i>]<br>
+    :print [<i>file</i>]<br>
+  </td>
+  <td>Write the addressed lines<br>
+  If the # flag is specified, each line is preceded by line number.<br> 
+  The second synopsis shows print dialog if file is not spcified, 
+  otherwise prints file.
+  </td>
+</tr>
+<tr>
+  <td>put</td>
+  <td>:[1addr]pu[<i>buffer</i>]</td>
+  <td>Append text from the specified buffer (by default, the unnamed buffer) 
+  to the specified line</td>
+</tr>
+<tr>
+  <td>quit</td>
+  <td>:q [!]</td>
+  <td>Quit unless modified, quit forced</td>
+</tr>
+<tr>
+  <td>read</td>
+  <td>:[1addr]r [!][<i>file</i>] </td>
+  <td>If ! not specified insert contents of file below cursor, 
+  otherwise inserts output or running file command below cursor</td>
+</tr>
+<tr>
+  <td>register</td>
+  <td>:reg</td>
+  <td>Shows registers (buffers)</td>
+</tr>
+<tr>
+  <td>sed</td>
+  <td>:sed</td>
+  <td>Shows replace in files dialog</td>
+</tr>
+<tr>
+  <td>set</td>
+  <td>:set [<i>options</i>]</td>
+  <td>If options not specified shows options dialog, otherwise sets specified options</td>
+  </tr>
+<tr>
+  <td>sort</td>
+  <td>:[2addr]S[<i>options</i>]</td>
+  <td>Sorts range by lines using options:<br>
+  r: reverse<br>
+  u: unique<br>
+  x,y: use columns
+  </td>
+</tr>
+<tr>
+  <td>source</td>
+  <td>:so <i>file</i></td>
+  <td>Executes all commands from file</td>
+</tr>
+<tr>
+  <td>substitute</td>
+  <td>
+  :[2addr]s/<i>pattern</i>/<i>repl</i>/[<i>options</i>]<br>
+  :[2addr]&amp;[<i>options</i>]<br>
+  :[2addr]~[<i>options</i>]<br>
+  </td>
+  <td>
+  Replace the first instance of the pattern pattern by the string repl on each 
+  specified line. If both pattern and repl are not specified or are empty 
+  (for example, "//" ), the last s command is repeated. If only pattern is 
+  not specified or is empty, the last regular expression used in the editor is 
+  used as the pattern.<br>
+  Supported options:<br>
+  i: ignore case<br>
+  c: ask for confirmation<br>
+  g: global, otherwise only first match on line<br>
+  When substituting you can use &amp; or &#92;0 to represent the target, 
+  and &#92;U to convert to uppercase and &#92;L to convert to lowercase.
+  You can use a $ to match a line end, e.g. %s/$/EOL appends the string EOL 
+  at the end of each line. Merging is not yet possible using a \n target,
+  you can create a macro for that.
+  You can use ~ to match against a previous replacement string.
+  </td>
+</tr>
+<tr>
+  <td>syntax</td>
+  <td>:syntax <i>options</i></td>
+  <td>Use syntax highlighting, options are on or off</td>
+</tr>
+<tr>
+  <td>tab</td>
+  <td>
+  :n<br>
+  :prev
+  </td>
+  <td>Next or previous</td>
+</tr>
+<tr>
+  <td>unabbreviate</td>
+  <td>:una lhs</td>
+  <td>Unabbreviate lhs</td>
+</tr>
+<tr>
+  <td>version</td>
+  <td>:ve</td>
+  <td>Shows version</td>
+</tr>
+<tr>
+  <td>write</td>
+  <td>:[2addr]w [&gt;&gt;][<i>file</i>]</td>
+  <td>If no lines are specified, the entire file is used. 
+  If the &gt;&gt; argument is specified, and the file already exists, the lines are
+  appended to the file instead of replacing its contents.</td>
+</tr>
+<tr>
+  <td>write and exit</td>
+  <td>:x</td>
+  <td>Save and quit</td>
+</tr>
+<tr>
+  <td>write line</td>
+  <td>:[1addr]=</td>
+  <td>Shows line number</td>
+</tr>
+<tr>
+  <td>yank</td>
+  <td>:[2addr]y[<i>buffer</i>] </td>
+  <td>Copy the specified lines to the specified buffer (by default, the unnamed buffer)</td>
+</tr>
 </table>
 </td>
 
 </tr>
-
 </table>
+
+where:
+
+<p>
+[1addr]
+</p>
+<p>
+A single line address
+<table border="1">
+<tr id="header">
+  <th align="left">chars</th>
+  <th align="left">range</th>
+</tr>
+<tr><td>.</td><td>current line</td></tr>
+<tr><td>$</td><td>last line</td></tr>
+<tr><td>'character<td>line that contains mark character</td></tr>
+<tr><td>line no</td><td>line number</td></tr>
+</table>
+</p>
 
 <p>
 [2addr]
 </p>
 <p>
+Two addresses specifying an inclusive range of lines.  
 <table border="1">
 <tr id="header">
   <th align="left">chars</th>
@@ -248,9 +463,27 @@ clipboard if not in insert mode</td></tr>
 <tr><td>%</td><td>entire document</td></tr>
 <tr><td>*</td><td>visible area</td></tr>
 <tr><td>'&lt;,'&gt;</td><td>visual (selected) area</td></tr>
-<tr><td>.</td><td>current line only</td></tr>
-<tr><td><i>x</i>,<i>y</i></td><td>line <i>x</i> to <i>y</i> 
-(<i>x</i>,<i>y</i> can be a ., $, marker, or line no)</td></tr>
+<tr><td><i>[1addr]</i>,<i>[1addr]</i></td><td>inclusive range of lines</td></tr>
+</table>
+</p>
+
+<p>
+[buffer]
+</p>
+<p>
+<table border="1">
+<tr id="header">
+  <th align="left">name</th>
+  <th align="left">purpose</th>
+  <th align="left">explanation</th>
+</tr>
+<tr><td>.</td><td>insert register</td><td>last inserted text</td></tr>
+<tr><td>0</td><td>yank register (or unnamed buffer)</td><td>last yank value</td></tr>
+<tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
+<tr><td>a - z</td><td>standard registers</td><td>normal register</td></tr>
+<tr><td>*</td><td>clipboard register</td><td>contents of clipboard</td></tr>
+<tr><td>%</td><td>filename register</td><td>current filename</td></tr>
+<tr><td>_</td><td>black hole register</td><td>anything written to it is not kept</td></tr>
 </table>
 </p>
 
@@ -282,47 +515,40 @@ parenthesis to group expressions.
 </p>
 
 <p>
-[register]
+[Edit Options]
 </p>
 <p>
+all set commands can be entered as modeline as well
 <table border="1">
 <tr id="header">
-  <th align="left">name</th>
-  <th align="left">purpose</th>
-  <th align="left">explanation</th>
-</tr>
-<tr><td>.</td><td>insert register</td><td>last inserted text</td></tr>
-<tr><td>0</td><td>yank register</td><td>last yank value</td></tr>
-<tr><td>1 - 9</td><td>delete registers</td><td>queue of 9 last deleted values</td></tr>
-<tr><td>a - z</td><td>standard registers</td><td>normal register</td></tr>
-<tr><td>*</td><td>clipboard register</td><td>contents of clipboard</td></tr>
-<tr><td>%</td><td>filename register</td><td>current filename</td></tr>
-<tr><td>_</td><td>black hole register</td><td>anything written to it is not kept</td></tr>
-</table>
-</p>
-
-<p>
-[flags]
-</p>
-<p>
-<table border="1">
-<tr id="header">
-  <th align="left">char</th>
+  <th align="left">command</th>
   <th align="left">purpose</th>
 </tr>
-<tr><td>i</td><td>ignore case</td></tr>
-<tr><td>c</td><td>ask for confirmation</td></tr>
-<tr><td>g</td><td>global, otherwise only first match on line</td></tr>
+<tr><td>:set h      </td><td>shows set help</td></tr>
+<tr><td>:set ai     </td><td>sets auto indentation</td></tr>
+<tr><td>:set ai!    </td><td>unsets auto indentation</td></tr>
+<tr><td>:set ac     </td><td>sets auto complete</td></tr>
+<tr><td>:set ac!    </td><td>unsets auto complete</td></tr>
+<tr><td>:set ec=no  </td><td>sets edge column</td></tr>
+<tr><td>:set el     </td><td>sets edge line</td></tr>
+<tr><td>:set el!    </td><td>unsets edge line</td></tr>
+<tr><td>:set ic     </td><td>sets ignore case</td></tr>
+<tr><td>:set ic!    </td><td>unsets ignore case</td></tr>
+<tr><td>:set nu     </td><td>shows line numbers</td></tr>
+<tr><td>:set nu!    </td><td>hides line numbers</td></tr>
+<tr><td>:set mw     </td><td>sets match words</td></tr>
+<tr><td>:set mw!    </td><td>unsets match words</td></tr>
+<tr><td>:set re     </td><td>sets regular expression</td></tr>
+<tr><td>:set re!    </td><td>unsets regular expression</td></tr>
+<tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
+<tr><td>:set ut     </td><td>sets use tabs</td></tr>
+<tr><td>:set ut!    </td><td>unsets use tabs</td></tr>
+<tr><td>:set wl     </td><td>sets wrap line</td></tr>
+<tr><td>:set wl!    </td><td>unsets wrap line</td></tr>
+<tr><td>:set ws     </td><td>shows whitespace</td></tr>
+<tr><td>:set ws!    </td><td>hides whitespace</td></tr>
+<tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
 </table>
-</p>
-
-<p>
-When substituting you can use &amp; or &#92;0 to represent the target, 
-and &#92;U to convert to uppercase and &#92;L to convert to lowercase.
-You can use a $ to match a line end, e.g. %s/$/EOL appends the string EOL 
-at the end of each line. Merging is not yet possible using a \n target,
-you can create a macro for that.
-You can use ~ to match against a previous replacement string.
 </p>
 
 <p>
