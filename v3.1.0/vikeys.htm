@@ -5,166 +5,160 @@
 </head>
 <body>
 
-<center>
-<a id="vikeys">
-<b>vi Keys</b>
-</a>
-</center>
+<center> <a id="vikeys"> <b>vi Keys</b> </a> </center>
 
 <div id="main">
 
 <p>
 The following vi keys are supported for navigating and editing, after setting 
-vi Mode in the options.
+vi Mode in the options. Most keys follow the open group specications for
+<a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/vi.html">vi</a> 
+and 
+<a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ex.html">ex</a> 
 </p>
 
 <!-- Main Table -->
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
 
 <tr>
-
-<td width="25%">
+<td width="15%">
 <table border="1">
-<tr><td id="header" colspan="2">single char commands</td></tr>
+<tr><td id="header" colspan="2">motion commands</td></tr>
 <tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td>a</td><td>insert after cursor</td></tr>
 <tr><td>b</td><td>move left one word</td></tr>
 <tr><td>e</td><td>move word right end</td></tr>
-<tr><td>g</td><td>start of document</td></tr>
+<tr><td>f</td><td>find char</td></tr>
 <tr><td>h</td><td>move left</td></tr>
-<tr><td>i</td><td>insert before cursor</td></tr>
 <tr><td>j</td><td>move down</td></tr>
 <tr><td>k</td><td>move up</td></tr>
 <tr><td>l</td><td>move right</td></tr>
 <tr><td>n</td><td>repeat the most recent search, in the same direction</td></tr>
-<tr><td>o</td><td>insert after line</td></tr>
-<tr><td>p</td><td>put after cursor</td></tr>
-<tr><td>q</td><td>stop macro recording</td></tr>
-<tr><td>u</td><td>undo</td></tr>
-<tr><td>v</td><td>enter visual mode</td></tr>
+<tr><td>t</td><td>find char, no selection</td></tr>
 <tr><td>w</td><td>move right one word</td></tr>
-<tr><td>x</td><td>delete</td></tr>
-<tr><td><i>space</i></td><td>right one character</td></tr>
-
-<tr><td>A</td><td>insert after end of line</td></tr>
 <tr><td>B</td><td>left one word (same as b)</td></tr>
-<tr><td>C</td><td>change to end of line</td></tr>
-<tr><td>D</td><td>delete line right</td></tr>
 <tr><td>E</td><td>word right end (same as e)</td></tr>
-<tr><td>F</td><td>enter visual rectangular mode</td></tr>
+<tr><td>F</td><td>find char backwards</td></tr>
 <tr><td>G</td><td>goto end or line number if prefixed</td></tr>
 <tr><td>H</td><td>goto first line of the screen</td></tr>
-<tr><td>I</td><td>insert at begin</td></tr>
-<tr><td>J</td><td>join lines</td></tr>
 <tr><td>L</td><td>goto last line of the screen</td></tr>
 <tr><td>M</td><td>goto middle line of the screen</td></tr>
-<tr><td>N</td><td>repeat the most recent search, in the opposite direction from original search</td></tr>
-<tr><td>O</td><td>insert before line</td></tr>
-<tr><td>P</td><td>put before cursor</td></tr>
-<tr><td>R</td><td>replace many chars, enters overtype mode</td></tr>
-<tr><td>V</td><td>enter visual line mode</td></tr>
+<tr><td>N</td><td>repeat the most recent search, in the same direction</td></tr>
+<tr><td>T</td><td>find char backwards, no selection</td></tr>
 <tr><td>W</td><td>right one word (same as w)</td></tr>
-<tr><td>X</td><td>delete backwards</td></tr>
-
 <tr><td>/</td><td>find next word</td></tr>
 <tr><td>?</td><td>find previous word</td></tr>
-<tr><td>.</td><td>repeat last action</td></tr>
-<tr><td>;</td><td>repeat last find char</td></tr>
-<tr><td>~</td><td>toggle case</td></tr>
-<tr><td>$</td><td>end of line</td></tr>
-<tr><td>0,^</td><td>begin of line</td></tr>
-<tr><td>{</td><td>paragraph up, in visual mode adds to selection</td></tr>
-<tr><td>}</td><td>paragraph down, in visual mode adds to selection</td></tr>
-<tr><td>(</td><td>paragraph up, in visual mode adds to selection (same as {)</td></tr>
-<tr><td>)</td><td>paragraph down, in visual mode adds to selection (same as })</td></tr>
+<tr><td>'?</td><td>goto marker ?</td></tr>
+<tr><td>,</td><td>repeat last find char in the reverse direction</td></tr>
+<tr><td><i>space</i></td><td>right one character</td></tr>
+<tr><td>0</td><td>begin of line</td></tr>
 <tr><td>[</td><td>move to previous "{...}" section</td></tr>
 <tr><td>]</td><td>move to next "{...}" section</td></tr>
-<tr><td>%</td><td>matching brace, in visual mode selects with matching brace</td></tr>
-<tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
-<tr><td>*</td><td>next occurrence of word under cursor</td></tr>
+<tr><td>(</td><td>paragraph up, in visual mode adds to selection (same as {)</td></tr>
+<tr><td>)</td><td>paragraph down, in visual mode adds to selection (same as })</td></tr>
+<tr><td>{</td><td>paragraph up, in visual mode adds to selection</td></tr>
+<tr><td>}</td><td>paragraph down, in visual mode adds to selection</td></tr>
+<tr><td>^</td><td>begin of line</td></tr>
 <tr><td>+</td><td>move to first character on the next line</td></tr>
-<tr><td>-</td><td>move to first character on the previous line</td></tr>
 <tr><td>|</td><td>goto column number specified by prefix</td></tr>
-<tr><td>tab</td><td>indents selection</td></tr>
-<tr><td>TAB</td><td>dedents selection</td></tr>
-<tr><td>ESC</td><td>escape goes back to normal mode</td></tr>
+<tr><td>-</td><td>move to first character on the previous line</td></tr>
+<tr><td>$</td><td>end of line</td></tr>
+<tr><td>%</td><td>matching brace, in visual mode selects with matching brace</td></tr>
+<tr><td>_</td><td>next line</td></tr>
+<tr><td>;</td><td>repeat last find char</td></tr>
+<tr><td>ctrl b</td><td>page up</td></tr>
+<tr><td>ctrl f</td><td>page down</td></tr>
+<tr><td>ctrl p</td><td>scroll up</td></tr>
+<tr><td>ctrl q</td><td>scroll down</td></tr>
 </table>
 </td>
-
-<td width="25%">
+          
+<td width="15%">
 <table border="1">
-<tr><td id="header" colspan="2">control char commands</td></tr>
+<tr><td id="header" colspan="2">other commands</td></tr>
 <tr id="header">
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
-<tr><td>ctrl b</td><td>page up</td></tr>
-<tr><td>ctrl e</td><td>increment word under cursor</td></tr>
-<tr><td>ctrl f</td><td>page down</td></tr>
-<tr><td>ctrl g</td><td>shows filename and state</td></tr>
-<tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
-<tr><td>ctrl p</td><td>scroll up</td></tr>
-<tr><td>ctrl q</td><td>scroll down</td></tr>
-<tr><td>ctrl r?</td><td>inserts contents of register ?</td></tr>
-<tr><td>ctrl r%</td><td>inserts contents of % register, or copies contents to 
-clipboard if not in insert mode</td></tr>
-<tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
-
-<tr><td id="header" colspan="2">double or more char commands</td></tr>
-<tr><td>cc</td><td>change line</td></tr>
-<tr><td>cw</td><td>change word</td></tr>
-<tr><td>dd</td><td>delete line or selection</td></tr>
-<tr><td>de</td><td>delete word (to end of word)</td></tr>
-<tr><td>dh</td><td>delete char left</td></tr>
-<tr><td>dj</td><td>delete line up</td></tr>
-<tr><td>dk</td><td>delete line down</td></tr>
-<tr><td>dl</td><td>delete char right</td></tr>
-<tr><td>dw</td><td>delete word</td></tr>
-<tr><td>dG</td><td>delete from current line until end of the file</td></tr>
-<tr><td>d0</td><td>delete line left</td></tr>
-<tr><td>d$</td><td>delete line right</td></tr>
-<tr><td>dgg</td><td>delete from start of the file until current line</td></tr>
-<tr><td>f?</td><td>find next character</td></tr>
-<tr><td>F?</td><td>find previous character</td></tr>
-<tr><td>gg</td><td>goto begin</td></tr>
 <tr><td>m?</td><td>mark current line (one letter marker)</td></tr>
+<tr><td>p</td><td>put after cursor</td></tr>
+<tr><td>q</td><td>stop macro recording</td></tr>
 <tr><td>qx</td><td>record macro x</td></tr>
 <tr><td>qX</td><td>record macro x (appends to x)</td></tr>
-<tr><td>@x</td><td>plays back macro x (register)</td></tr>
-<tr><td>@Xx@</td><td>plays back macro Xx (several characters)</td></tr>
-<tr><td>@@</td><td>plays back last macro</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
-<tr><td>t?</td><td>find next character, caret before pos</td></tr>
-<tr><td>T?</td><td>find previous character, caret before pos</td></tr>
-<tr><td>ye</td><td>yank word</td></tr>
-<tr><td>yh</td><td>yank char left</td></tr>
-<tr><td>yj</td><td>yank line down</td></tr>
-<tr><td>yk</td><td>yank line up</td></tr>
-<tr><td>yl</td><td>yank char right</td></tr>
-<tr><td>yw</td><td>yank word</td></tr>
+<tr><td>u</td><td>undo</td></tr>
+<tr><td>x</td><td>delete</td></tr>
+<tr><td>D</td><td>delete line right</td></tr>
+<tr><td>J</td><td>join lines</td></tr>
+<tr><td>N</td><td>repeat the most recent search, in the opposite direction from original search</td></tr>
+<tr><td>P</td><td>put before cursor</td></tr>
+<tr><td>X</td><td>delete backwards</td></tr>
+<tr><td>Y</td><td>yank current line</td></tr>
+<tr><td>dd</td><td>delete line or selection</td></tr>
+<tr><td>dgg</td><td>delete from start of the file until current line</td></tr>
+<tr><td>gg</td><td>goto begin</td></tr>
 <tr><td>yy</td><td>yank line or selection</td></tr>
-<tr><td>y0</td><td>yank line left</td></tr>
-<tr><td>y$</td><td>yank line right</td></tr>
 <tr><td>zc</td><td>fold close</td></tr>
 <tr><td>zo</td><td>fold open</td></tr>
 <tr><td>zE</td><td>fold disable</td></tr>
 <tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>ZZ</td><td>save and quit</td></tr>
-<tr><td>'?</td><td>goto marker ?</td></tr>
-<tr><td>"x</td><td>prepares register x for p, yy, yw, de, dd, dw, d0, d$</td></tr>
-<tr><td>"X</td><td>appends contents of yy, yw, de, dd, dw, d0, d$ to register x</td></tr>
-<tr><td>&gt;&gt;</td><td>increase indent for current line, selection or visual area</td></tr>
-<tr><td>&lt;&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
+<tr><td>.</td><td>repeat last action</td></tr>
+<tr><td>~</td><td>toggle case</td></tr>
+<tr><td>*</td><td>next occurrence of word under cursor</td></tr>
+<tr><td>#</td><td>previous occurrence of word under cursor</td></tr>
+<tr><td>&gt;</td><td>increase indent for current line, selection or visual area</td></tr>
+<tr><td>&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
+<tr><td>tab</td><td>indents selection (if on pos 0)</td></tr>
+<tr><td>TAB</td><td>dedents selection</td></tr>
+<tr><td>@x</td><td>plays back macro x (register)</td></tr>
+<tr><td>@@</td><td>plays back last macro</td></tr>
+<tr><td>@Xx@</td><td>plays back macro Xx (several characters)</td></tr>
+<tr><td>"x</td><td>prepares register x for receiving clipboard for next command instead of unnamed register</td></tr>
+<tr><td>"X</td><td>see previous, now appends contents of clipboard to register x</td></tr>
 </table>
 </td>
 
-<td width="50%">
+<td width="15%">
 <table border="1">
-<!-- http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ex.html -->
-<tr><td id="header" colspan="3">colon commands</td></tr>
+<tr><td id="header" colspan="2">mode change commands</td></tr>
+<tr id="header">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
+<tr><td>a</td><td>insert after cursor</td></tr>
+<tr><td>i</td><td>insert before cursor</td></tr>
+<tr><td>o</td><td>insert after line</td></tr>
+<tr><td>v</td><td>enter visual mode</td></tr>
+<tr><td>A</td><td>insert after end of line</td></tr>
+<tr><td>C</td><td>change to end of line</td></tr>
+<tr><td>I</td><td>insert at begin</td></tr>
+<tr><td>K</td><td>enter visual rectangular mode</td></tr>
+<tr><td>O</td><td>insert before line</td></tr>
+<tr><td>R</td><td>replace many chars, enters overtype mode</td></tr>
+<tr><td>V</td><td>enter visual line mode</td></tr>
+<tr><td>ESC</td><td>escape goes back to normal mode</td></tr>
+
+<tr><td id="header" colspan="2">control char commands</td></tr>
+<tr id="header">
+  <th align="left">key</th>
+  <th align="left">action</th>
+</tr>
+<tr><td>ctrl e</td><td>increment word under cursor</td></tr>
+<tr><td>ctrl g</td><td>shows filename and state</td></tr>
+<tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
+<tr><td>ctrl r?</td><td>inserts contents of register ?</td></tr>
+<tr><td>ctrl r%</td><td>inserts contents of % register, or copies contents to 
+clipboard if not in insert mode</td></tr>
+<tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
+</table>
+</td>
+
+<td width="55%">
+<table border="1">
+<tr><td id="header" colspan="3">ex commands</td></tr>
 <tr id="header">
   <th align="left">command</th>
   <th align="left">keys</th>
@@ -255,9 +249,9 @@ clipboard if not in insert mode</td></tr>
 </tr>
 <tr>
   <td>grep</td>
-  <td>:grep [<i>text</i>][<i>folder</i>][<i>extensions</i>][<i>options</i>]</td>
+  <td>:grep [<i>match</i>][<i>extension</i>][<i>folder</i>][<i>options</i>]</td>
   <td>If nothing specified shows find in files dialog, 
-  otherwise greps for text in folder matching file extension using options:<br>
+  otherwise greps for match in folder matching file extension using options:<br>
   /r: recursive
   </td>
 </tr>
@@ -333,8 +327,11 @@ clipboard if not in insert mode</td></tr>
 </tr>
 <tr>
   <td>sed</td>
-  <td>:sed</td>
-  <td>Shows replace in files dialog</td>
+  <td>:sed [<i>match</i> <i>replace</i>][<i>extension</i>][<i>folder</i>][<i>options</i>]</td>
+  <td>If nothing specified shows replace in files dialog, 
+  otherwise replaces match by replace in folder matching file extension using options:<br>
+  /r: recursive
+  </td>
 </tr>
 <tr>
   <td>set</td>
@@ -431,7 +428,16 @@ clipboard if not in insert mode</td></tr>
 </tr>
 </table>
 
-where:
+<p>
+Each motion command can be prefixed with a multidigit number, that takes care of
+repeating that command the number specified,
+and by a c, d, y character that changes, deletes or
+yanks the specified motion.
+</p>
+
+<p>
+Where:
+</p>
 
 <p>
 [1addr]
@@ -525,35 +531,31 @@ all set commands can be entered as modeline as well
   <th align="left">purpose</th>
 </tr>
 <tr><td>:set h      </td><td>shows set help</td></tr>
-<tr><td>:set ai     </td><td>sets auto indentation</td></tr>
-<tr><td>:set ai!    </td><td>unsets auto indentation</td></tr>
 <tr><td>:set ac     </td><td>sets auto complete</td></tr>
 <tr><td>:set ac!    </td><td>unsets auto complete</td></tr>
+<tr><td>:set ai     </td><td>sets auto indentation</td></tr>
+<tr><td>:set ai!    </td><td>unsets auto indentation</td></tr>
 <tr><td>:set ec=no  </td><td>sets edge column</td></tr>
 <tr><td>:set el     </td><td>sets edge line</td></tr>
 <tr><td>:set el!    </td><td>unsets edge line</td></tr>
 <tr><td>:set ic     </td><td>sets ignore case</td></tr>
 <tr><td>:set ic!    </td><td>unsets ignore case</td></tr>
-<tr><td>:set nu     </td><td>shows line numbers</td></tr>
-<tr><td>:set nu!    </td><td>hides line numbers</td></tr>
+<tr><td>:set in=no  </td><td>sets indentation</td></tr>
 <tr><td>:set mw     </td><td>sets match words</td></tr>
 <tr><td>:set mw!    </td><td>unsets match words</td></tr>
+<tr><td>:set nu     </td><td>shows line numbers</td></tr>
+<tr><td>:set nu!    </td><td>hides line numbers</td></tr>
 <tr><td>:set re     </td><td>sets regular expression</td></tr>
 <tr><td>:set re!    </td><td>unsets regular expression</td></tr>
 <tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
+<tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
 <tr><td>:set ut     </td><td>sets use tabs</td></tr>
 <tr><td>:set ut!    </td><td>unsets use tabs</td></tr>
 <tr><td>:set wl     </td><td>sets wrap line</td></tr>
 <tr><td>:set wl!    </td><td>unsets wrap line</td></tr>
 <tr><td>:set ws     </td><td>shows whitespace</td></tr>
 <tr><td>:set ws!    </td><td>hides whitespace</td></tr>
-<tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
 </table>
-</p>
-
-<p>
-Most commands can be prefixed with a multidigit number, that takes care of
-repeating that command the number specified.
 </p>
 
 <p>
