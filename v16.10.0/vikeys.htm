@@ -11,7 +11,7 @@
 
 <p>
 The following vi keys are supported for navigating and editing, after setting 
-vi Mode in the options. Most keys follow the open group specications for
+vi Mode in the options. Most keys follow the open group specifations for
 <a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/vi.html">vi</a> 
 and 
 <a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ex.html">ex</a> 
@@ -101,9 +101,11 @@ and
 <tr><td>gg</td><td>goto begin</td></tr>
 <tr><td>yy</td><td>yank line or selection</td></tr>
 <tr><td>zc</td><td>fold close</td></tr>
+<tr><td>zf</td><td>fold enable</td></tr>
 <tr><td>zo</td><td>fold open</td></tr>
 <tr><td>zE</td><td>fold disable</td></tr>
-<tr><td>zf</td><td>fold enable</td></tr>
+<tr><td>zM</td><td>close all folds</td></tr>
+<tr><td>zR</td><td>open all folds</td></tr>
 <tr><td>ZZ</td><td>save and quit</td></tr>
 <tr><td>.</td><td>repeat last action</td></tr>
 <tr><td>~</td><td>toggle case</td></tr>
@@ -113,9 +115,9 @@ and
 <tr><td>&lt;</td><td>decrease indent for current line, selection or visual area</td></tr>
 <tr><td>tab</td><td>indents selection (if on pos 0)</td></tr>
 <tr><td>TAB</td><td>dedents selection</td></tr>
-<tr><td>@x</td><td>plays back macro x (register)</td></tr>
-<tr><td>@@</td><td>plays back last macro</td></tr>
-<tr><td>@Xx@</td><td>plays back macro Xx (several characters)</td></tr>
+<tr><td>@x</td><td>execute buffer: plays back macro x (register)</td></tr>
+<tr><td>@@</td><td>execute last buffer: plays back last macro</td></tr>
+<tr><td>@Xx@</td><td>plays back macro Xx (several characters, starting uppercase)</td></tr>
 <tr><td>"x</td><td>prepares register x for receiving clipboard for next command instead of unnamed register</td></tr>
 <tr><td>"X</td><td>see previous, now appends contents of clipboard to register x</td></tr>
 </table>
@@ -182,14 +184,19 @@ clipboard if not in insert mode</td></tr>
   ^ : The specified line shall be decremented by the following value:
       (((number of "^" characters) +1) x count) -1 <br>
   = : Embed context into lines of 40 - characters, with 
-      (count -1) /2 around match<br>
-  . : show context with (count -1) /2 around match
+      (count -1) / 2 around match<br>
+  . : show context with (count -1) / 2 around match
   </td>
 </tr>
 <tr>
   <td>append</td>
   <td>:[1addr]a</td>
   <td>Enter ex text input mode; the input text is placed after the specified line. </td>
+</tr>
+<tr>
+  <td>arguments</td>
+  <td>:ar</td>
+  <td>Shows command line arguments, if provided</td>
 </tr>
 <tr>
   <td>change</td>
@@ -540,13 +547,15 @@ all set commands can be entered as modeline as well
 <tr><td>:set el!    </td><td>unsets edge line</td></tr>
 <tr><td>:set ic     </td><td>sets ignore case</td></tr>
 <tr><td>:set ic!    </td><td>unsets ignore case</td></tr>
-<tr><td>:set in=no  </td><td>sets indentation</td></tr>
 <tr><td>:set mw     </td><td>sets match words</td></tr>
 <tr><td>:set mw!    </td><td>unsets match words</td></tr>
 <tr><td>:set nu     </td><td>shows line numbers</td></tr>
 <tr><td>:set nu!    </td><td>hides line numbers</td></tr>
 <tr><td>:set re     </td><td>sets regular expression</td></tr>
 <tr><td>:set re!    </td><td>unsets regular expression</td></tr>
+<tr><td>:set sm     </td><td>shows vi mode</td></tr>
+<tr><td>:set sm!    </td><td>hides vi mode</td></tr>
+<tr><td>:set sw=no  </td><td>sets indentation</td></tr>
 <tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
 <tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
 <tr><td>:set ut     </td><td>sets use tabs</td></tr>
