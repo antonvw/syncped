@@ -1,0 +1,32 @@
+body
+{
+  background-color: #EEF0F0;
+}
+
+table
+{
+  /* font-family: Verdana */
+  font-weight: normal;
+  font-size: 11px;
+  color: #404040;
+  background-color: #fafafa;
+  border: 1px #6699CC solid;
+  vertical-align: top;
+}
+
+td
+{
+  vertical-align: top;
+}
+
+#header
+{
+  background-color: #9acd32;
+}
+
+#main 
+{
+  position: absolute;
+  left: 5%;
+  right: 5%;
+}
