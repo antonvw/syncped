@@ -94,6 +94,8 @@ and
 <tr><td>J</td><td>join lines</td></tr>
 <tr><td>N</td><td>repeat the most recent search, in the opposite direction from original search</td></tr>
 <tr><td>P</td><td>put before cursor</td></tr>
+<tr><td>Q</td><td>find tag under cursor and open page</td></tr>
+<tr><td>S</td><td>go back to page active before Q</td></tr>
 <tr><td>X</td><td>delete backwards</td></tr>
 <tr><td>Y</td><td>yank current line</td></tr>
 <tr><td>dd</td><td>delete line or selection</td></tr>
@@ -252,7 +254,7 @@ clipboard if not in insert mode</td></tr>
   If pattern and commands are empty: remove all markers<br>
   otherwise if commands are empty: mark lines containing pattern <br>
   otherwise executes all commands for each line matching pattern, 
-  commands separated by |, or (for g) executes all commands for 
+  commands separated by |, or (for v) executes all commands for 
   each line not matching pattern
   </td>
 </tr>
@@ -543,32 +545,33 @@ parenthesis to group expressions.
 [Edit Options]
 </p>
 <p>
-all set commands can be entered as modeline as well
+all set commands can be entered as modeline as well, at begin or end of file
 <table border="1">
 <tr id="header">
   <th align="left">command</th>
   <th align="left">purpose</th>
 </tr>
-<tr><td>:set ac     </td><td>sets auto complete</td></tr>
-<tr><td>:set ai     </td><td>sets auto indentation</td></tr>
+<tr><td>:set ac     </td><td>toggles auto complete</td></tr>
+<tr><td>:set ai     </td><td>toggles auto indentation</td></tr>
+<tr><td>:set el     </td><td>toggles edge line</td></tr>
+<tr><td>:set ic     </td><td>toggles ignore case</td></tr>
+<tr><td>:set mw     </td><td>toggles match words</td></tr>
+<tr><td>:set nu     </td><td>toggles line numbers</td></tr>
+<tr><td>:set re     </td><td>toggles regular expression</td></tr>
+<tr><td>:set sm     </td><td>toggles showing vi mode</td></tr>
+<tr><td>:set ut     </td><td>toggles use tabs</td></tr>
+<tr><td>:set wl     </td><td>toggles wrap line</td></tr>
+<tr><td>:set ws     </td><td>toggles whitespace</td></tr>
 <tr><td>:set ec=no  </td><td>sets edge column</td></tr>
-<tr><td>:set el     </td><td>sets edge line</td></tr>
-<tr><td>:set ic     </td><td>sets ignore case</td></tr>
-<tr><td>:set mw     </td><td>sets match words</td></tr>
-<tr><td>:set nu     </td><td>shows line numbers</td></tr>
-<tr><td>:set re     </td><td>sets regular expression</td></tr>
-<tr><td>:set sm     </td><td>shows vi mode</td></tr>
 <tr><td>:set sw=no  </td><td>sets indentation</td></tr>
 <tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
 <tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
-<tr><td>:set ut     </td><td>sets use tabs</td></tr>
-<tr><td>:set wl     </td><td>sets wrap line</td></tr>
-<tr><td>:set ws     </td><td>shows whitespace</td></tr>
 </table>
 </p>
 
 <p>
-Replace uses regular expressions from scintilla:
+Replace uses regular expressions from std::regex or from scintilla (if compiler flag
+NO_CXX11_REGEX is defined, which is the default):
 </p>
 
 <p>
