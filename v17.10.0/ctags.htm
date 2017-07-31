@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>ctags</title>
+</head>
+
+<body>
+<center>
+  <a id="ctags">
+</center>
+
+<div id="main">
+  <p>
+    A ctags file "tags" is read if present in startup
+    or config directory, and allows you to jump
+    to tags in source file using vi keys.
+  </p>
+
+  <p>
+    <code>
+    ctags -f ~/.config/syncped -R /home/USER/wxExtension 
+    </code>
+  </p>
+
+  <p>
+    creates a ctags file and puts it as tags in your config directory,
+    using absolute paths.
+  </p>
+
+  <p>
+    When the cursor is on a word, pressing Q jumps to the
+    occurrence of that word, and pressing S jumps back.
+  </p>
+</div>
+</body>
+</html>
