@@ -11,11 +11,15 @@
 
 <div id="main">
   <p>
-    A ctags file "tags" is read if present in startup
+    A ctags file <code>tags</code> is read if present in startup
     or config directory, and allows you to jump
     to tags in source file using vi keys, and to
     autocomplete words in object orriented programming
     languages.
+  </p>
+
+  <p>
+    E.g.:
   </p>
 
   <p>
@@ -30,11 +34,17 @@
   </p>
 
   <p>
-    When the cursor is on a word, pressing Q (or ctrl-]) jumps to the
-    occurrence of that word, and pressing S jumps back.
+    When the cursor is on a word, pressing <code>Q</code>
+    (or <code>ctrl-]</code>) jumps to the
+    occurrence of that word, and pressing <code>S</code> jumps back.
     If there are more matches a dialog with all of them is shown,
-    and you can select whch file to open. Pressing ctrl-] then
-    jumps to next tag, and pressing ctrl-[ jumps to previous tag.
+    and you can select which file to open. Pressing <code>ctrl-]</code> then
+    jumps to next tag, and pressing <code>ctrl-[</code> jumps to previous tag.
+  </p>
+
+  <p>
+    You can also use more ctags files by specifying the ctags file to 
+    be used as commandline parameter option <code>-u</code>.
   </p>
 </div>
 </body>
