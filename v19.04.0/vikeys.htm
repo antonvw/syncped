@@ -155,7 +155,9 @@ and
   <th align="left">key</th>
   <th align="left">action</th>
 </tr>
+<tr><td>ctrl b</td><td>page backward</td></tr>
 <tr><td>ctrl e</td><td>increment word under cursor</td></tr>
+<tr><td>ctrl f</td><td>page forward</td></tr>
 <tr><td>ctrl g</td><td>shows filename and state</td></tr>
 <tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
 <tr><td>ctrl r?</td><td>inserts contents of register ?</td></tr>
@@ -595,18 +597,22 @@ all set commands can be entered as modeline as well, at begin or end of file
 </tr>
 <tr><td>:set ac     </td><td>toggles auto complete</td></tr>
 <tr><td>:set ai     </td><td>toggles auto indentation</td></tr>
+<tr><td>:set aw     </td><td>toggles auto write</td></tr>
 <tr><td>:set eb     </td><td>toggles error bells</td></tr>
 <tr><td>:set el     </td><td>toggles edge line</td></tr>
 <tr><td>:set ic     </td><td>toggles ignore case</td></tr>
 <tr><td>:set mw     </td><td>toggles match words</td></tr>
 <tr><td>:set nu     </td><td>toggles line numbers</td></tr>
-<tr><td>:set re     </td><td>toggles regular expression</td></tr>
-<tr><td>:set sm     </td><td>toggles showing vi mode</td></tr>
+<tr><td>:set readonly </td><td>toggles readonly</td></tr>
+<tr><td>:set showmode </td><td>toggles showing vi mode</td></tr>
+<tr><td>:set sm     </td><td>toggles show match</td></tr>
+<tr><td>:set sws    </td><td>toggles whitespace</td></tr>
 <tr><td>:set ut     </td><td>toggles use tabs</td></tr>
-<tr><td>:set wl     </td><td>toggles wrap line</td></tr>
-<tr><td>:set ws     </td><td>toggles whitespace</td></tr>
+<tr><td>:set wm     </td><td>toggles wrap margin</td></tr>
+<tr><td>:set ws     </td><td>toggles wrap scan</td></tr>
+<tr><td>:set dir=dir  </td><td>sets dir</td></tr>
 <tr><td>:set ec=no  </td><td>sets edge column</td></tr>
-<tr><td>:set rp=no  </td><td>sets reported lines</td></tr>
+<tr><td>:set report=no  </td><td>sets reported lines</td></tr>
 <tr><td>:set sw=no  </td><td>sets indentation</td></tr>
 <tr><td>:set sy=lexer </td><td>sets lexer</td></tr>
 <tr><td>:set ts=no  </td><td>sets tabstop at every no</td></tr>
@@ -614,8 +620,7 @@ all set commands can be entered as modeline as well, at begin or end of file
 </p>
 
 <p>
-Replace uses regular expressions from std::regex or from scintilla (if compiler flag
-NO_CXX11_REGEX is defined, which is the default):
+Replace uses regular expressions from std::regex
 </p>
 
 <p>
