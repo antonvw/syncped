@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>ctags</title>
+</head>
+
+<body>
+<center>
+  <a id="ctags">
+</center>
+
+<div id="main">
+  <p>
+    A ctags file <code>tags</code> is read if present in startup
+    or config directory, and allows you to jump
+    to tags in source file using vi keys, and to
+    autocomplete words in object orriented programming
+    languages.
+  </p>
+
+  <p>
+    E.g.:
+  </p>
+
+  <p>
+    <code>
+    ctags --languages=c,c++ --fields=+aiks -f ~/.config/syncped/tags -R /home/USER/wxExtension 
+    </code>
+  </p>
+
+  <p>
+    creates a ctags file and puts it as tags in your config directory,
+    using absolute paths.
+  </p>
+
+  <p>
+    When the cursor is on a word, pressing <code>Q</code>
+    (or <code>ctrl-]</code>) jumps to the
+    occurrence of that word, and pressing <code>S</code> jumps back.
+    If there are more matches a dialog with all of them is shown,
+    and you can select which file to open. Pressing <code>ctrl-]</code> then
+    jumps to next tag, and pressing <code>ctrl-[</code> jumps to previous tag.
+  </p>
+
+  <p>
+    You can also use more ctags files by specifying the ctags file to 
+    be used as commandline parameter option <code>-u</code>.
+  </p>
+</div>
+</body>
+</html>
