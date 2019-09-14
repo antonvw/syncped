@@ -38,7 +38,8 @@ and
 <tr><td>n</td><td>repeat the most recent search, in the same direction</td></tr>
 <tr><td>t</td><td>find char, no selection</td></tr>
 <tr><td>w</td><td>move right one word</td></tr>
-<tr><td>E</td><td>word right end (same as e)</td></tr>
+<tr><td>B</td><td>move left one big word</td></tr>
+<tr><td>E</td><td>word right end one big word</td></tr>
 <tr><td>F</td><td>find char backwards</td></tr>
 <tr><td>G</td><td>goto end or line number if prefixed</td></tr>
 <tr><td>H</td><td>goto first line of the screen</td></tr>
@@ -46,6 +47,7 @@ and
 <tr><td>M</td><td>goto middle line of the screen</td></tr>
 <tr><td>N</td><td>repeat the most recent search, in the same direction</td></tr>
 <tr><td>T</td><td>find char backwards, no selection</td></tr>
+<tr><td>W</td><td>move right one big word</td></tr>
 <tr><td>/</td><td>find next word</td></tr>
 <tr><td>?</td><td>find previous word</td></tr>
 <tr><td>'?</td><td>goto marker ?</td></tr>
@@ -67,10 +69,6 @@ and
 <tr><td>_</td><td>next line</td></tr>
 <tr><td>;</td><td>repeat last find char</td></tr>
 <tr><td>!</td><td>see ex :! command</td></tr>
-<tr><td>ctrl b</td><td>page up</td></tr>
-<tr><td>ctrl f</td><td>page down</td></tr>
-<tr><td>ctrl p</td><td>scroll up</td></tr>
-<tr><td>ctrl q</td><td>scroll down</td></tr>
 </table>
 </td>
           
@@ -87,17 +85,16 @@ and
 <tr><td>qx</td><td>record macro x</td></tr>
 <tr><td>qX</td><td>record macro x (appends to x)</td></tr>
 <tr><td>r?</td><td>replace current character only</td></tr>
+<tr><td>s</td><td>same as c'space'</td></tr>
 <tr><td>u</td><td>undo</td></tr>
 <tr><td>x</td><td>delete</td></tr>
-<tr><td>B</td><td>find previous tag and open page</td></tr>
 <tr><td>D</td><td>delete line right</td></tr>
 <tr><td>J</td><td>join lines</td></tr>
 <tr><td>N</td><td>repeat the most recent search, in the opposite direction from original search</td></tr>
 <tr><td>P</td><td>put before cursor</td></tr>
+<tr><td>S</td><td>same as c_</td></tr>
 <tr><td>Q</td><td>find tag under cursor (or next tag) and open page</td></tr>
-<tr><td>S</td><td>go back to page active before Q</td></tr>
 <tr><td>U</td><td>internet search of word under cursor, or selected text</td></tr>
-<tr><td>W</td><td>find next tag and open page</td></tr>
 <tr><td>X</td><td>delete backwards</td></tr>
 <tr><td>Y</td><td>yank current line</td></tr>
 <tr><td>d</td><td>delete selection</td></tr>
@@ -137,11 +134,11 @@ and
   <th align="left">action</th>
 </tr>
 <tr><td>a</td><td>insert after cursor</td></tr>
+<tr><td>c</td><td>changes selection</td></tr>
 <tr><td>i</td><td>insert before cursor</td></tr>
 <tr><td>o</td><td>insert after line</td></tr>
 <tr><td>v</td><td>enter visual mode</td></tr>
 <tr><td>A</td><td>insert after end of line</td></tr>
-<tr><td>c</td><td>changes selection</td></tr>
 <tr><td>C</td><td>change to end of line</td></tr>
 <tr><td>I</td><td>insert at begin</td></tr>
 <tr><td>K</td><td>enter visual rectangular mode</td></tr>
@@ -156,16 +153,25 @@ and
   <th align="left">action</th>
 </tr>
 <tr><td>ctrl b</td><td>page backward</td></tr>
-<tr><td>ctrl e</td><td>increment word under cursor</td></tr>
+<tr><td>ctrl d</td><td>page scroll down</td></tr>
+<tr><td>ctrl e</td><td>scroll down</td></tr>
 <tr><td>ctrl f</td><td>page forward</td></tr>
-<tr><td>ctrl g</td><td>shows filename and state</td></tr>
-<tr><td>ctrl j</td><td>decrement word under cursor</td></tr>
+<tr><td>ctrl g</td><td>display information</td></tr>
+<tr><td>ctrl h</td><td>delete back</td></tr>
+<tr><td>ctrl j</td><td>increment word under cursor</td></tr>
+<tr><td>ctrl l</td><td>decrement word under cursor</td></tr>
+<tr><td>ctrl m</td><td>line down</td></tr>
+<tr><td>ctrl p</td><td>line up</td></tr>
 <tr><td>ctrl r?</td><td>inserts contents of register ?</td></tr>
 <tr><td>ctrl r%</td><td>inserts contents of % register, or copies contents to 
 clipboard if not in insert mode</td></tr>
 <tr><td>ctrl r=</td><td>enters register calculation mode</td></tr>
-<tr><td>ctrl [</td><td>jumps to previous tag</td></tr>
-<tr><td>ctrl ]</td><td>jumps to the tag underneath the cursor, or next tag</td></tr>
+<tr><td>ctrl t</td><td>jumps to previous tag</td></tr>
+<tr><td>ctrl u</td><td>page scroll up</td></tr>
+<tr><td>ctrl v</td><td>find next tag and open page</td></tr>
+<tr><td>ctrl w</td><td>go back to page active before Q</td></tr>
+<tr><td>ctrl y</td><td>scroll up</td></tr>
+<tr><td>ctrl ]</td><td>as Q</td></tr>
 </table>
 </td>
 
@@ -180,7 +186,9 @@ clipboard if not in insert mode</td></tr>
 <tr>
   <td width="10%">abbreviate</td>
   <td width="35%">:ab [<i>lhs rhs</i>] </td>
-  <td width="55%">Abbreviate lhs for rhs</td>
+  <td width="55%">Abbreviate lhs for rhs, or shows current abbreviations.
+    An  abbreviation is used in insert-mode.
+  </td>
 </tr>
 <tr>
   <td>adjust window</td>
@@ -319,13 +327,16 @@ clipboard if not in insert mode</td></tr>
 </tr>
 <tr>
   <td>map</td>
-  <td>:map<i>[new</i><<i>command</i>]</td>
-  <td>Maps new command to command, or shows current maps.
+  <td>:map [<i>alias</i> <i>cmd</i>]</td>
+  <td>Maps <i>alias</i> to <i>cmd</i>, or shows current maps.
+  The <i>alias</i> is interpreted as follow:
   <ul>
-    <li>String map. Maps strings to other strings</li>
-    <li>Key map. Map an ascii key to a sequence</li>
-    <li>Alt key map. Map an alt key to a sequence</li>
-    <li>Control key map. Map a control key to a sequence, for control chars outside normal range</li>
+    <li>It is a number. Use to e.g. overwrite control keys,
+      <code>map 5 WWW</code> results in redefining ctrl-e as WWW.
+    </li>
+    <li>Otherwise. Maps strings to other strings, e.g.
+      <code>map :A :ab</code> results in showing abbreviations
+        after pressing :A.</li>
   </ul>
   </td>
 </tr>
@@ -570,15 +581,14 @@ Two addresses specifying an inclusive range of lines.
 <tr><td>-</td><td>subtract</td></tr>
 <tr><td>*</td><td>multiply</td> 
 <tr><td>/</td><td>divide </td>
-<tr><td>&lt;&lt;</td><td>shift left</td></tr>
-<tr><td>&gt;&gt;</td><td>shift right</td></tr>
+<tr><td>&lt;</td><td>shift left</td></tr>
+<tr><td>&gt;</td><td>shift right</td></tr>
 <tr><td>.</td><td>current line</td></tr>
 <tr><td>$</td><td>line count</td></tr>
 <tr><td>%</td><td>modulo</td></tr>
 <tr><td>|</td><td>bitwise or</td></tr>
 <tr><td>&</td><td>bitwise and</td></tr>
 <tr><td>^</td><td>bitwise xor</td></tr>
-<tr><td>XXX=2</td><td>assigns to variable XXX</td></tr>
 </table>
 
 You can also insert contents of markers, or of registers, or use

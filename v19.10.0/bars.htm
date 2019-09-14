@@ -55,12 +55,13 @@
 
       </p>
       <p>
-      Each pane on the statusbar can also be configured in the syncped.conf
-      setup file. The keys start with SBPane, followed by pane name,
-      followed by:
+      Each pane on the statusbar can also be configured in the syncped.json
+      setup file, using key Statusbar. This key contains an array of panes
+      where each item has 3 subitems:
       <ul>
-        <li> Width: This postfix sets the width of the pane </li>
-        <li> Style: This postfix sets the style of the pane: </li>
+        <li> Name: name of the pane</li>
+        <li> Width: width of the pane </li>
+        <li> Style: style of the pane: </li>
           <ul>
              <li>0: normal</li>
              <li>1: flat</li>
