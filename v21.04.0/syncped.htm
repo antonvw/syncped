@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>syncped help</title>
+<meta name="description" content="users guide for syncped"/>
+<meta name="keywords" content="syncped help"/>
+</head>
+
+<body>
+
+<p>
+  <big>
+    <center>
+    <img src="screenshot.png"/>
+    <hr></hr>
+
+    syncped is a <b>SYNC</b>hronizing <b>P</b>ortable <b>ED</b>itor
+    supporting more than 100 programming languages.
+    </center>
+  </big>
+</p>
+
+<div id="main">
+  <p>
+    It is available under Windows, Linux, Mac OS 10.15, 
+    has a vi compatibility mode, and
+    can be configured to work with most version control systems.
+  </p>
+
+  <p>
+    If one of its open files is changed by another application, it
+    is automatically synchronized (if the file was not changed).
+  </p>
+
+  <p>
+    <div id="nav">
+      <ul>
+        <li><a href="bars.htm">bars</a></li>
+        <li><a href="ctags.htm">ctags</a></li>
+        <li><a href="debug.htm">debug</a></li>
+        <li><a href="editortab.htm">editor tab</a></li>
+        <li><a href="listtab.htm">list tab</a></li>
+        <li><a href="vcs.htm">VCS</a></li>
+        <li><a href="vikeys.htm">vi keys</a></li>
+        <li><a href="vimacros.htm">vi macros</a></li>
+      </ul>
+    </div>
+  </p>
+
+  <p>
+    You can also enable verbose logging mode which allow
+    you to keep track of opening / saving files, and 
+    processes executed. The logging of these events can be
+    configured using a syncped.elp parameter file that
+    must be present in the config directory.
+    For the contents of this file see https://github.com/muflihun/easyloggingpp.
+  </p>
+      
+  <p>
+    The config is stored as syncped.json in the config directory,
+    but you can use a local json file by specifying the -j 
+    command line parameter.
+  </p>
+</div>
+
+</body>
+</html>
