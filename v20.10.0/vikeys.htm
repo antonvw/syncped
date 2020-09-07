@@ -100,7 +100,8 @@ and
 </div>
 <div class="dt-row">
 <div class="dt-cell">N</div>
-<div class="dt-cell">repeat the most recent search, in the same direction</div>
+<div class="dt-cell">repeat the most recent search, in the opposite direction from 
+                    original search</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">T</div>
@@ -247,11 +248,6 @@ and
 <div class="dt-row">
 <div class="dt-cell">J</div>
 <div class="dt-cell">join lines</div>
-</div>
-<div class="dt-row">
-<div class="dt-cell">N</div>
-<div class="dt-cell">repeat the most recent search, in the opposite direction from 
-                    original search</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">P</div>
@@ -425,8 +421,8 @@ and
 <div class="dt-cell">insert at begin</div>
 </div>
 <div class="dt-row">
-<div class="dt-cell">K</div>
-<div class="dt-cell">enter visual rectangular mode</div>
+<div class="dt-cell">K, ctrl v</div>
+<div class="dt-cell">enter visual block mode</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">O</div>
@@ -532,8 +528,9 @@ and
 </div>
 
 <p>Each <em>motion command</em> can be prefixed with a multidigit number, 
-      that takes care of repeating that command the number specified, and 
-      by a c, d, y character that changes, deletes or yanks the specified motion.</p>
+that takes care of repeating that command the number specified, and 
+by a c, d, y character that changes, deletes or yanks the specified motion.
+</p>
 
 <p>[buffer]</p>
 <div class="dt">
@@ -638,7 +635,7 @@ and
 </div>
 </div>
 <p>You can also insert contents of markers, or of registers, or use parenthesis 
-      to group expressions.</p>
+to group expressions.</p>
 <p>ex commands:</p>
 <div class="dt">
 <div class="dt-body">
@@ -866,9 +863,10 @@ and
 </div>
 <div class="dt-row">
 <div class="dt-cell">set</div>
-<div class="dt-cell">:set [<em>options</em>]</div>
-<div class="dt-cell">If options not specified shows options dialog, 
-            otherwise sets specified options</div>
+<div class="dt-cell">:set [<em>
+  option[=[value]] ...][nooption ...][option? ...][all]</em>]</div>
+<div class="dt-cell">If all specified shows all options, 
+            otherwise sets, unsets, or queries specified options</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">sort</div>
@@ -1017,7 +1015,11 @@ Merging is not yet possible using a \n target, you can create a macro for that.<
 </div>
 
 <p>Set Options</p>
-<p>all set commands can be entered as modeline as well, at begin or end of file</p>
+<p>all set commands can be entered as modeline as well, 
+   at begin or end of file, boolean options can be switched
+   off by prefixing the option with no, current value
+   can be queried by postfixing by a ?
+</p>
 <div class="dt">
 <div class="dt-body">
 <div class="dt-row">
@@ -1026,63 +1028,63 @@ Merging is not yet possible using a \n target, you can create a macro for that.<
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set ac</div>
-<div class="dt-cell">toggles auto complete</div>
+<div class="dt-cell">sets auto complete</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set ai</div>
-<div class="dt-cell">toggles auto indentation</div>
+<div class="dt-cell">sets auto indentation</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set aw</div>
-<div class="dt-cell">toggles auto write</div>
+<div class="dt-cell">sets auto write</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set eb</div>
-<div class="dt-cell">toggles error bells</div>
+<div class="dt-cell">sets error bells</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set el</div>
-<div class="dt-cell">toggles edge line</div>
+<div class="dt-cell">sets edge line</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set ic</div>
-<div class="dt-cell">toggles ignore case</div>
+<div class="dt-cell">sets ignore case</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set mw</div>
-<div class="dt-cell">toggles match words</div>
+<div class="dt-cell">sets match words</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set nu</div>
-<div class="dt-cell">toggles line numbers</div>
+<div class="dt-cell">sets line numbers</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set readonly</div>
-<div class="dt-cell">toggles readonly</div>
+<div class="dt-cell">sets readonly</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set showmode</div>
-<div class="dt-cell">toggles showing vi mode</div>
+<div class="dt-cell">sets showing vi mode</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set sm</div>
-<div class="dt-cell">toggles show match</div>
+<div class="dt-cell">sets show match</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set sws</div>
-<div class="dt-cell">toggles whitespace</div>
+<div class="dt-cell">sets whitespace</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set ut</div>
-<div class="dt-cell">toggles use tabs</div>
+<div class="dt-cell">sets use tabs</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set wm</div>
-<div class="dt-cell">toggles wrap margin</div>
+<div class="dt-cell">sets wrap margin</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set ws</div>
-<div class="dt-cell">toggles wrap scan</div>
+<div class="dt-cell">sets wrap scan</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set dir=dir</div>
@@ -1189,7 +1191,7 @@ Merging is not yet possible using a \n target, you can create a macro for that.<
 
 <p>
 Regular expressions will only match ranges within a single line, 
-        never matching over multiple lines.
+never matching over multiple lines.
 </p>
 
 </div>
