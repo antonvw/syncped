@@ -529,7 +529,8 @@ and
 
 <p>Each <em>motion command</em> can be prefixed with a multidigit number, 
 that takes care of repeating that command the number specified, and 
-by a c, d, y character that changes, deletes or yanks the specified motion.
+by a <em>c</em>, <em>d</em>, <em>y</em> character that changes, deletes or 
+  yanks the specified motion.
 </p>
 
 <p>[buffer]</p>
@@ -710,7 +711,9 @@ to group expressions.</p>
 <div class="dt-cell">:e [<em>+command</em>][<em>file</em>]</div>
 <div class="dt-cell">If no file is specified shows select file dialog, 
             otherwise edits file and performs specified command on it 
-            (you can use tab key for autocomplete).</div>
+            (you can use tab key for autocomplete).
+            You can also specify wildcards like ? or * 
+            to open multiple files.</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">escape</div>
@@ -1114,6 +1117,10 @@ Merging is not yet possible using a \n target, you can create a macro for that.<
 <div class="dt-row">
 <div class="dt-cell">:set ts=no</div>
 <div class="dt-cell">sets tabstop at every no</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ve=level</div>
+<div class="dt-cell">sets verbosity log level to specified level</div>
 </div>
 </div>
 </div>
