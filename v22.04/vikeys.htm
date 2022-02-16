@@ -440,6 +440,7 @@ and
 <div class="dt-cell">ESC</div>
 <div class="dt-cell">escape goes back to normal mode</div>
 </div>
+
 <div class="dt-row"><em>control char commands</em></div>
 <div class="dt-head">key</div>
 <div class="dt-head">action</div>
@@ -520,6 +521,49 @@ and
 <div class="dt-cell">ctrl ]</div>
 <div class="dt-cell">as Q</div>
 </div>
+
+                  
+<div class="dt-row"><em>vim commands</em></div>
+<div class="dt-head">key</div>
+<div class="dt-head">action</div>
+<div class="dt-row">
+<div class="dt-cell">ga</div>
+<div class="dt-cell">show ascii value</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">gd</div>
+<div class="dt-cell">jumps to ctags</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">gf</div>
+<div class="dt-cell">opens file under cursor</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">g*</div>
+<div class="dt-cell">find next word under cursor</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">g#</div>
+<div class="dt-cell">find previous word under cursor</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">gu</div>
+<div class="dt-cell">motion change to lowercase</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">gU</div>
+<div class="dt-cell">motion change to uppercase</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">g~</div>
+<div class="dt-cell">motion toggle case</div>
+</div>
+
 </div>
 </div>
 </div>
@@ -532,8 +576,6 @@ that takes care of repeating that command the number specified, and
 by a <em>c</em>, <em>d</em>, <em>y</em> character that changes, deletes or 
   yanks the specified motion.
 Also, it can be prefixed by the <em>g</em> character to support some vim commands.
-At this moment the gu, gU, and g~, to support lowercase, uppercase, reverse case 
-motion.
 </p>
 
 <p>[buffer]</p>
