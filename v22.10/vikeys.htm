@@ -263,7 +263,8 @@ and
 </div>
 <div class="dt-row">
 <div class="dt-cell">U</div>
-<div class="dt-cell">internet search of word under cursor, or selected text</div>
+<div class="dt-cell">internet search of word under cursor, or selected text,
+  using the Search engine</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">X</div>
@@ -797,7 +798,50 @@ to group expressions.</p>
 <div class="dt-row">
 <div class="dt-cell">goto</div>
 <div class="dt-cell">:[<em>1addr</em>]</div>
-<div class="dt-cell">Goto specified address</div>
+<div class="dt-cell">Goto specified address.
+Addresses are constructed as follows:
+- The character '.' (period) shall address the current line.
+- The character '$' shall address the last line of the edit buffer.
+- The positive decimal number n shall address the nth line of the edit buffer.
+- The address "'x" refers to the line marked with the mark name character 'x', 
+  which shall be a lowercase letter from the portable character set, 
+  the backquote character, or the single-quote character. It shall be 
+  an error if the line that was marked is not currently present in the edit 
+  buffer or the mark has not been set. Lines can be marked with the ex 
+  mark or k commands, or the vi m command.
+- A regular expression enclosed by slash characters ( '/' ) shall 
+  address the first line found by searching forwards from the line 
+  following the current line toward the end of the edit buffer and 
+  stopping at the first line for which the line excluding the 
+  terminating newline matches the regular expression. As stated in 
+  Regular Expressions in ex, an address consisting of a null regular 
+  expression delimited by slash characters ( "//" ) shall address the 
+  next line for which the line excluding the terminating newline matches 
+  the last regular expression encountered. In addition, the second slash 
+  can be omitted at the end of a command line. If the wrapscan edit option 
+  is set, the search shall wrap around to the beginning of the edit buffer 
+  and continue up to and including the current line, so that the entire 
+  edit buffer is searched. Within the regular expression, the sequence "\/" 
+  shall represent a literal slash instead of the regular expression delimiter.
+- A regular expression enclosed in question-mark characters ( '?' ) shall 
+  address the first line found by searching backwards from the line 
+  preceding the current line toward the beginning of the edit buffer 
+  and stopping at the first line for which the line excluding the 
+  terminating newline matches the regular expression. An address 
+  consisting of a null regular expression delimited by question-mark 
+  characters ( "??" ) shall address the previous line for which the 
+  line excluding the terminating newline matches the last regular 
+  expression encountered. In addition, the second question-mark can be 
+  omitted at the end of a command line. If the wrapscan edit option is set, 
+  the search shall wrap around from the beginning of the edit buffer to 
+  the end of the edit buffer and continue up to and including the 
+  current line, so that the entire edit buffer is searched. Within 
+  the regular expression, the sequence "\?" shall represent a literal question-mark 
+  instead of the RE delimiter.
+- A plus or a minus ( '+-' ) followed by a decimal number 
+  shall address the current line plus or minus the number. A '+' or '-' 
+  not followed by a decimal number shall address the current line plus or minus 1.
+</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">goto link</div>
