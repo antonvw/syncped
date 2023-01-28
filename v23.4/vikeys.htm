@@ -732,7 +732,9 @@ to group expressions.</p>
 <div class="dt-row">
 <div class="dt-cell">change directory</div>
 <div class="dt-cell">:chd[ir] cd</div>
-<div class="dt-cell">Change the current working directory to directory</div>
+<div class="dt-cell">Change the current working directory to directory. 
+If no directory argument is specified, and the HOME environment variable is set, 
+directory shall default to the value named in the HOME environment variable.</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">close</div>
@@ -1159,6 +1161,10 @@ Merging is not yet possible using a \n target, you can create a macro for that.<
 <div class="dt-row">
 <div class="dt-cell">:set ic</div>
 <div class="dt-cell">sets ignore case</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set magic</div>
+<div class="dt-cell">sets magic mode (regex)</div>
 </div>
 <div class="dt-row">
 <div class="dt-cell">:set mw</div>
