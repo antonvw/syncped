@@ -805,16 +805,17 @@ to group expressions.</p>
 <div class="dt-cell">:[<em>1addr</em>]</div>
 <div class="dt-cell">Goto specified address.
 Addresses are constructed as follows:
-- The character '.' (period) shall address the current line.
-- The character '$' shall address the last line of the edit buffer.
-- The positive decimal number n shall address the nth line of the edit buffer.
-- The address "'x" refers to the line marked with the mark name character 'x', 
+<ul>
+<li> The character '.' (period) shall address the current line.
+<li> The character '$' shall address the last line of the edit buffer.
+<li> The positive decimal number n shall address the nth line of the edit buffer.
+<li> The address "'x" refers to the line marked with the mark name character 'x', 
   which shall be a lowercase letter from the portable character set, 
   the backquote character, or the single-quote character. It shall be 
   an error if the line that was marked is not currently present in the edit 
   buffer or the mark has not been set. Lines can be marked with the ex 
   mark or k commands, or the vi m command.
-- A regular expression enclosed by slash characters ( '/' ) shall 
+<li> A regular expression enclosed by slash characters ( '/' ) shall 
   address the first line found by searching forwards from the line 
   following the current line toward the end of the edit buffer and 
   stopping at the first line for which the line excluding the 
@@ -828,7 +829,7 @@ Addresses are constructed as follows:
   and continue up to and including the current line, so that the entire 
   edit buffer is searched. Within the regular expression, the sequence "\/" 
   shall represent a literal slash instead of the regular expression delimiter.
-- A regular expression enclosed in question-mark characters ( '?' ) shall 
+<li> A regular expression enclosed in question-mark characters ( '?' ) shall 
   address the first line found by searching backwards from the line 
   preceding the current line toward the beginning of the edit buffer 
   and stopping at the first line for which the line excluding the 
@@ -843,9 +844,10 @@ Addresses are constructed as follows:
   current line, so that the entire edit buffer is searched. Within 
   the regular expression, the sequence "\?" shall represent a literal question-mark 
   instead of the RE delimiter.
-- A plus or a minus ( '+-' ) followed by a decimal number 
+<li> A plus or a minus ( '+-' ) followed by a decimal number 
   shall address the current line plus or minus the number. A '+' or '-' 
   not followed by a decimal number shall address the current line plus or minus 1.
+</ul>
 </div>
 </div>
 <div class="dt-row">
@@ -1138,7 +1140,7 @@ alone at the beginning of a line.
 If the input contains a '|' character, any subsequent characters, 
 up to the next newline are used as input text to the command, and text input
 mode is exited as well.
-Notice that thie behaviour is slightly different from the open group speifications.
+Notice that this behaviour is slightly different from the open group specifications.
 </p>
       
 <p>Set Options</p>
