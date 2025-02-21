@@ -1,0 +1,71 @@
+/* divtable (dt) classes 
+   see https://divtable.com/converter/ */
+
+.dt
+{
+  color: #404040;
+  background-color: #fafafa;
+	display: table;
+	width: 100%;
+}
+
+.dt-body 
+{
+	display: table-row-group;
+}
+
+.dt-cell, 
+.dt-head 
+{
+/*	border: 1px solid #999999; */
+  border: #6699CC double;
+	display: table-cell;
+	padding: 3px 5px;
+  font-size: 11px;
+}
+
+.dt-head
+{
+  background-color: #9acd32;
+	font-weight: bold;
+}
+
+.dt-row 
+{
+	display: table-row;
+}
+
+span.nobr 
+{ 
+  white-space: nowrap;
+}
+
+/* other elements */
+
+body
+{
+  background-color: #EEF0F0;
+}
+
+table
+{
+  /* font-family: Verdana */
+  font-weight: normal;
+  font-size: 11px;
+  color: #404040;
+  background-color: #fafafa;
+  border: 1px #6699CC solid;
+  vertical-align: top;
+}
+
+td
+{
+  vertical-align: top;
+}
+
+#main 
+{
+  position: absolute;
+  left: 5%;
+  right: 5%;
+}

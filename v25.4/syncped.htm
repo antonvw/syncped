@@ -1,0 +1,106 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>syncped help</title>
+<meta name="description" content="users guide for syncped"/>
+<meta name="keywords" content="syncped help"/>
+</head>
+
+<body>
+
+<p>
+  <big>
+    <center>
+    <img src="screenshot.png"/>
+    <hr></hr>
+
+    syncped is a <b>SYNC</b>hronizing <b>P</b>ortable <b>ED</b>itor
+    supporting more than 100 programming languages.
+    </center>
+  </big>
+</p>
+
+<div id="main">
+  <p>
+    It is available under Windows, Linux, Mac OS, 
+    has a vi compatibility mode, and
+    can be configured to work with most version control systems.
+  </p>
+
+  <p>
+    If one of its open files is changed by another application, it
+    is automatically synchronized (if the file was not changed).
+  </p>
+
+  <p>
+    <div id="nav">
+      <ul>
+        <li><a href="bars.htm">bars</a></li>
+        <li><a href="ctags.htm">ctags</a></li>
+        <li><a href="debug.htm">debug</a></li>
+        <li><a href="editortab.htm">editor tab</a></li>
+        <li><a href="listtab.htm">list tab</a></li>
+        <li><a href="vcs.htm">VCS</a></li>
+        <li><a href="vikeys.htm">vi keys</a></li>
+        <li><a href="vimacros.htm">vi macros</a></li>
+      </ul>
+    </div>
+  </p>
+      
+  <p>
+    The config directory is ~/.config/wex or application exe
+    directory on windows.
+  </p>
+
+  <p>
+    You can also enable verbose logging mode (-v) which allows
+    you to keep track of opening / saving files, and 
+    processes executed. Using option -V allows you to
+    set the log severity level, with 1 trace level, downto 6 fatal level.
+    The logfile syncped.log is present in the config directory, and 
+    is written to stdout.
+      
+    You can also set verbosity using :set ve
+  </p>
+      
+  <p>
+    The config is stored as syncped.json in the config directory,
+    but you can use a local json file by specifying the -j 
+    command line parameter.
+  </p>
+      
+  <p>
+    Default syncped starts up in visual mode, by specifying --ex
+    on the commandline it starts up in ex mode. In ex mode large
+    files are supported, as the file is read line by line, and
+    it is not kept in memory.
+    There is also a margins setting 'Size visual' that determines
+    the size of a file limit for visual opening. If file size exceeds
+    this limit, it default opens in ex mode. Large files 
+    containing million lines can be edited this way.
+    The margin setting 'Size lexer' determines the max size of a file
+    for which syntax highlighting is performed. If the file size exceeds
+    this limit, no highlighting is performed.
+  </p>
+
+  <p>
+    You can also set a Beautifier to setup a binary that takes
+    care of beautyfying source code, e.g. select a clang-format binary.
+    You can also set a Beautifier to setup a binary that takes
+    care of beautyfying cmake code, e.g. select a gersemi binary.
+    For git repo's this respects any .clang-format or .gersemirc
+    file in the git root repo.
+    It is used after you changed a file, and closed the tab from the notebook,
+    or if you do a Replace In Files that also has .clang-format related file.
+  </p>
+  
+  <p>
+    server:
+    sp -w /tmp/xx &
+    listener:
+    tail -f /tmp/xx | sp -E
+  </p>
+</div>
+
+</body>
+</html>

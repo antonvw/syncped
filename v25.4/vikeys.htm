@@ -1,0 +1,1334 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css"></link>
+<title>vi Keys</title>
+</head>
+
+<body>
+<center> <a id="vikeys"> <b>vi Keys</b> </a> </center>
+
+<div id="main">
+
+<p>
+The following vi keys are supported for navigating and editing, after setting 
+vi Mode in the options (the default). Most keys follow the open group specifations for
+<a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/vi.html">vi</a> 
+and 
+<a href="http://pubs.opengroup.org/onlinepubs/9699919799/utilities/ex.html">ex</a> 
+</p>
+      
+
+
+<p>vi commands:</p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-cell">
+
+<div class="dt"><em>motion commands</em>
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">key</div>
+<div class="dt-head">action</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">b</div>
+<div class="dt-cell">move left one word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">e</div>
+<div class="dt-cell">move word right end</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">f</div>
+<div class="dt-cell">find char</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">h</div>
+<div class="dt-cell">move left</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">j</div>
+<div class="dt-cell">move down</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">k</div>
+<div class="dt-cell">move up</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">l</div>
+<div class="dt-cell">move right</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">n</div>
+<div class="dt-cell">repeat the most recent search, in the same direction</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">t</div>
+<div class="dt-cell">find char, no selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">w</div>
+<div class="dt-cell">move right one word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">B</div>
+<div class="dt-cell">move left one big word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">E</div>
+<div class="dt-cell">word right end one big word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">F</div>
+<div class="dt-cell">find char backwards</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">G</div>
+<div class="dt-cell">goto end or line number if prefixed</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">H</div>
+<div class="dt-cell">goto first line of the screen</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">L</div>
+<div class="dt-cell">goto last line of the screen</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">M</div>
+<div class="dt-cell">goto middle line of the screen</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">N</div>
+<div class="dt-cell">repeat the most recent search, in the opposite direction from 
+                    original search</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">T</div>
+<div class="dt-cell">find char backwards, no selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">W</div>
+<div class="dt-cell">move right one big word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">/</div>
+<div class="dt-cell">find next word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">?</div>
+<div class="dt-cell">find previous word</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">'?</div>
+<div class="dt-cell">goto marker ?</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">,</div>
+<div class="dt-cell">repeat last find char in the reverse direction</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell"><em>space</em></div>
+<div class="dt-cell">right one character</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">0</div>
+<div class="dt-cell">begin of line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">[</div>
+<div class="dt-cell">move to previous "{...}" section</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">]</div>
+<div class="dt-cell">move to next "{...}" section</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">(</div>
+<div class="dt-cell">paragraph up, in visual mode adds to selection (same as {)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">)</div>
+<div class="dt-cell">paragraph down, in visual mode adds to selection (same as })</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">{</div>
+<div class="dt-cell">paragraph up, in visual mode adds to selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">}</div>
+<div class="dt-cell">paragraph down, in visual mode adds to selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">^</div>
+<div class="dt-cell">begin of line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">+</div>
+<div class="dt-cell">move to first character on the next line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">|</div>
+<div class="dt-cell">goto column number specified by prefix</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">-</div>
+<div class="dt-cell">move to first character on the previous line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">$</div>
+<div class="dt-cell">end of line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">%</div>
+<div class="dt-cell">matching brace, in visual mode selects with matching brace</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">_</div>
+<div class="dt-cell">next line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">;</div>
+<div class="dt-cell">repeat last find char</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">!</div>
+<div class="dt-cell">see ex :! command</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dt-cell">
+<div class="dt"><em>other commands</em>
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">key</div>
+<div class="dt-head">action</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">m?</div>
+<div class="dt-cell">mark current line (one letter marker)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">p</div>
+<div class="dt-cell">put after cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">q</div>
+<div class="dt-cell">stop macro recording</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">qx</div>
+<div class="dt-cell">record macro x</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">qX</div>
+<div class="dt-cell">record macro x (appends to x)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">r?</div>
+<div class="dt-cell">replace current character only</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">s</div>
+<div class="dt-cell">same as c'space'</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">u</div>
+<div class="dt-cell">undo</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">x</div>
+<div class="dt-cell">delete</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">D</div>
+<div class="dt-cell">delete line right</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">J</div>
+<div class="dt-cell">join lines</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">P</div>
+<div class="dt-cell">put before cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">S</div>
+<div class="dt-cell">same as c_</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">Q</div>
+<div class="dt-cell">find tag under cursor (or next tag) and open page</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">U</div>
+<div class="dt-cell">internet search of word under cursor, or selected text,
+  using the Search engine</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">X</div>
+<div class="dt-cell">delete backwards</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">Y</div>
+<div class="dt-cell">yank current line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">d</div>
+<div class="dt-cell">delete selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">dd</div>
+<div class="dt-cell">delete line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">dgg</div>
+<div class="dt-cell">delete from start of the file until current line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">gg</div>
+<div class="dt-cell">goto begin</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">y</div>
+<div class="dt-cell">yank selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">yy</div>
+<div class="dt-cell">yank line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">zc</div>
+<div class="dt-cell">fold close</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">zf</div>
+<div class="dt-cell">fold enable</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">zo</div>
+<div class="dt-cell">fold open</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">zE</div>
+<div class="dt-cell">fold disable</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">zM</div>
+<div class="dt-cell">close all folds</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">zR</div>
+<div class="dt-cell">open all folds</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ZZ</div>
+<div class="dt-cell">save and quit</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">.</div>
+<div class="dt-cell">repeat last action</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">~</div>
+<div class="dt-cell">toggle case</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">*</div>
+<div class="dt-cell">next occurrence of word under cursor, or selected text</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">#</div>
+<div class="dt-cell">previous occurrence of word under cursor, or selected text</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">&gt;</div>
+<div class="dt-cell">increase indent for current line, selection or visual area</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">&lt;</div>
+<div class="dt-cell">decrease indent for current line, selection or visual area</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">tab</div>
+<div class="dt-cell">indents selection (if on pos 0)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">TAB</div>
+<div class="dt-cell">dedents selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">@x</div>
+<div class="dt-cell">execute buffer: plays back macro x (register)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">@@</div>
+<div class="dt-cell">execute last buffer: plays back last macro</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">@Xx@</div>
+<div class="dt-cell">plays back macro Xx (several characters, starting uppercase)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">"x</div>
+<div class="dt-cell">prepares register x for receiving clipboard for next command 
+                    instead of unnamed register</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">"X</div>
+<div class="dt-cell">see previous, now appends contents of clipboard to register x</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dt-cell">
+<div class="dt"><em>mode change commands</em>
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">key</div>
+<div class="dt-head">action</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">a</div>
+<div class="dt-cell">insert after cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">c</div>
+<div class="dt-cell">changes selection</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">i</div>
+<div class="dt-cell">insert before cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">o</div>
+<div class="dt-cell">insert after line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">v</div>
+<div class="dt-cell">enter visual mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">A</div>
+<div class="dt-cell">insert after end of line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">C</div>
+<div class="dt-cell">change to end of line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">I</div>
+<div class="dt-cell">insert at begin</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">K, ctrl v</div>
+<div class="dt-cell">enter visual block mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">O</div>
+<div class="dt-cell">insert before line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">R</div>
+<div class="dt-cell">replace many chars, enters overtype mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">V</div>
+<div class="dt-cell">enter visual line mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ESC</div>
+<div class="dt-cell">escape goes back to normal mode</div>
+</div>
+
+<div class="dt-row"><em>control char commands</em></div>
+<div class="dt-head">key</div>
+<div class="dt-head">action</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl b</div>
+<div class="dt-cell">page backward</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl d</div>
+<div class="dt-cell">page scroll down</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl e</div>
+<div class="dt-cell">scroll down</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl f</div>
+<div class="dt-cell">page forward</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl g</div>
+<div class="dt-cell">display information</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl h</div>
+<div class="dt-cell">delete back</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl j</div>
+<div class="dt-cell">increment word under cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl l</div>
+<div class="dt-cell">decrement word under cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl m</div>
+<div class="dt-cell">line down</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl p</div>
+<div class="dt-cell">line up</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl r?</div>
+<div class="dt-cell">inserts contents of register ?</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl r%</div>
+<div class="dt-cell">inserts contents of % register, or copies contents to 
+                    clipboard if not in insert mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl r=</div>
+<div class="dt-cell">enters register <em>calculation mode</em></div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl t</div>
+<div class="dt-cell">jumps to previous tag</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl u</div>
+<div class="dt-cell">page scroll up</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl v</div>
+<div class="dt-cell">find next tag and open page</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl w</div>
+<div class="dt-cell">go back to page active before Q</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl y</div>
+<div class="dt-cell">scroll up</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">ctrl ]</div>
+<div class="dt-cell">as Q</div>
+</div>
+
+                  
+<div class="dt-row"><em>vim commands</em></div>
+<div class="dt-head">key</div>
+<div class="dt-head">action</div>
+<div class="dt-row">
+<div class="dt-cell">ga</div>
+<div class="dt-cell">show ascii value</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">gd</div>
+<div class="dt-cell">jumps to ctags</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">gf</div>
+<div class="dt-cell">opens file under cursor</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">g*</div>
+<div class="dt-cell">find next word under cursor</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">g#</div>
+<div class="dt-cell">find previous word under cursor</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">gt</div>
+<div class="dt-cell">goes to next tab</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">gu</div>
+<div class="dt-cell">motion change to lowercase</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">gU</div>
+<div class="dt-cell">motion change to uppercase</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">g~</div>
+<div class="dt-cell">motion toggle case</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<p>Each <em>motion command</em> can be prefixed with a multidigit number, 
+that takes care of repeating that command the number specified, and 
+by a <em>c</em>, <em>d</em>, <em>y</em> character that changes, deletes or 
+  yanks the specified motion.
+Also, it can be prefixed by the <em>g</em> character to support some vim commands.
+</p>
+
+<p>[buffer]</p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">name</div>
+<div class="dt-head">purpose</div>
+<div class="dt-head">explanation</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">.</div>
+<div class="dt-cell">insert register</div>
+<div class="dt-cell">last inserted text</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">0</div>
+<div class="dt-cell">yank register (or unnamed buffer)</div>
+<div class="dt-cell">last yank value</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">1 - 9</div>
+<div class="dt-cell">delete registers</div>
+<div class="dt-cell">queue of 9 last deleted values</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">a - z</div>
+<div class="dt-cell">standard registers</div>
+<div class="dt-cell">normal register</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">*</div>
+<div class="dt-cell">clipboard register</div>
+<div class="dt-cell">contents of clipboard</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">%</div>
+<div class="dt-cell">filename register</div>
+<div class="dt-cell">current filename</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">_</div>
+<div class="dt-cell">black hole register</div>
+<div class="dt-cell">anything written to it is not kept</div>
+</div>
+</div>
+</div>
+<p><em>Calculation mode</em></p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">operator</div>
+<div class="dt-head">description</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">+</div>
+<div class="dt-cell">add</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">-</div>
+<div class="dt-cell">subtract</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">*</div>
+<div class="dt-cell">multiply</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">/</div>
+<div class="dt-cell">divide</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">&lt;</div>
+<div class="dt-cell">shift left</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">&gt;</div>
+<div class="dt-cell">shift right</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">.</div>
+<div class="dt-cell">current line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">$</div>
+<div class="dt-cell">line count</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">%</div>
+<div class="dt-cell">modulo</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">|</div>
+<div class="dt-cell">bitwise or</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">&amp;</div>
+<div class="dt-cell">bitwise and</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">^</div>
+<div class="dt-cell">bitwise xor</div>
+</div>
+</div>
+</div>
+<p>You can also insert contents of markers, or of registers, or use parenthesis 
+to group expressions.</p>
+
+
+
+<p>ex commands:</p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">command</div>
+<div class="dt-head">keys</div>
+<div class="dt-head">action</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">abbreviate</div>
+<div class="dt-cell">:ab[breviate] [<em>lhs rhs</em>]</div>
+<div class="dt-cell">Abbreviate lhs for rhs, or shows current abbreviations. 
+                    An abbreviation is used in insert-mode.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">adjust window</div>
+<div class="dt-cell">:[<em>1addr</em>]z[<em>type</em>][<em>count</em>][<em>flags</em>]</div>
+<div class="dt-cell">Print the specified line with context. 
+    If count is not specified, it default is 2. Type can be:<br/> 
+    - : The specified line shall be decremented by the following value: 
+              (((number of "-" characters) x count) -1)<br/> 
+    + : The specified line shall be incremented by the following value: 
+              (((number of "+" characters) -1) x count) +<br/> 
+    ^ : The specified line shall be decremented by the following value: 
+              (((number of "^" characters) +1) x count) -1 <br/> 
+    = : Embed context into lines of 40 - characters, with (count -1) / 2 around 
+              match<br/> 
+    . : show context with (count -1) / 2 around match</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">append</div>
+<div class="dt-cell">:[<em>1addr</em>]a[ppend]</div>
+<div class="dt-cell">Enter ex <em>text input mode</em>; the input text is placed 
+                    after the specified line.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">arguments</div>
+<div class="dt-cell">:ar[rgs]</div>
+<div class="dt-cell">Shows command line arguments, if provided</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">change</div>
+<div class="dt-cell">:[<em>2addr</em>]c[hange]</div>
+<div class="dt-cell">Enter <em>text input mode</em>; the input text replaces the specified lines</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">change directory</div>
+<div class="dt-cell">:chd[ir] cd</div>
+<div class="dt-cell">Change the current working directory to directory</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">close</div>
+<div class="dt-cell">:close</div>
+<div class="dt-cell">Closes current document</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">copy</div>
+<div class="dt-cell">:[<em>2addr</em>]co[py] <em>1addr</em><br/>
+                     :[<em>2addr</em>]t <em>1addr</em></div>
+<div class="dt-cell">Copy the specified lines after the 
+            specified destination line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">de</div>
+<div class="dt-cell">:de debug</div>
+<div class="dt-cell">Performs debug action, as available in debug menu 
+            from wex-menus.xml</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">delete</div>
+<div class="dt-cell">:[<em>2addr</em>]d[elete][<em>buffer</em>]</div>
+<div class="dt-cell">Delete the specified lines into a buffer 
+            (defaulting to the unnamed buffer)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">edit</div>
+<div class="dt-cell">:e[dit] [<em>+command</em>][<em>file</em>]</div>
+<div class="dt-cell">If no file is specified shows select file dialog, 
+            otherwise edits file and performs specified command on it 
+            (you can use tab key for autocomplete).
+            You can also specify wildcards like ? or * 
+            to open multiple files.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">escape</div>
+<div class="dt-cell">:!<em>command</em><br/> :[<em>2addr</em>]!<em>command</em></div>
+<div class="dt-cell">If no lines are specified executes command and shows output. 
+            If lines are specified, they are passed to the program as standard 
+            input, and the standard output and standard error of the program 
+            replaces those lines in the edit buffer.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">execute</div>
+<div class="dt-cell">:[<em>2addr</em>]@<em>buffer</em></div>
+<div class="dt-cell">For each line executes the buffer.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">file</div>
+<div class="dt-cell">:f</div>
+<div class="dt-cell">shows filename and state</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">global</div>
+<div class="dt-cell">
+  :[<em>2addr</em>]g[lobal]/<em>pattern</em>/[<em>commands</em>]<br/> 
+  :[<em>2addr</em>]v/<em>pattern</em>/[<em>commands</em>]</div>
+<div class="dt-cell">Performs global commands
+<ul>
+<li>The optional '!' character after the global command shall be the same as executing the v command.
+<li>If no lines are specified, the lines shall default to the entire file.
+<li>If pattern and commands are empty: remove all markers<br/> 
+otherwise if commands are empty: mark lines containing pattern <br/> 
+otherwise executes all commands for each line that matches pattern (global) or
+does not match( v or global!)
+<li>Multiple ex commands can be specified by entering multiple commands on a single line using a <vertical-line> to delimit them
+</ul>
+</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">goto</div>
+<div class="dt-cell">:[<em>1addr</em>]</div>
+<div class="dt-cell">Goto specified address. See Where: </div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">goto link</div>
+<div class="dt-cell">:gt</div>
+<div class="dt-cell">If text is selected and is a link, goes to link, 
+            otherwise goes to link on current line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">grep</div>
+<div class="dt-cell">:grep</div>
+<div class="dt-cell">grep:grep 
+            [<em>match</em>]
+            [<em>extension</em>]
+            [<em>folder</em>]
+            [<em>options</em>]If nothing specified shows find in files dialog, 
+              otherwise greps for match in folder matching file extension using 
+              options:<br/> 
+            /r: recursive</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">help</div>
+<div class="dt-cell">:help</div>
+<div class="dt-cell">Shows help</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">indent</div>
+<div class="dt-cell">:[<em>2addr</em>][&gt;|&lt;]</div>
+<div class="dt-cell">Increase, decrease indent for range</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">insert</div>
+<div class="dt-cell">:[<em>1addr</em>]i[nsert]</div>
+<div class="dt-cell">Enter ex <em>text input mode</em>; the input text is placed before 
+            the specified line.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">join</div>
+<div class="dt-cell">:[<em>2addr</em>]j[oin]</div>
+<div class="dt-cell">Joins lines</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">list</div>
+<div class="dt-cell">:[<em>2addr</em>]l[ist][<em>flags</em>]</div>
+<div class="dt-cell">See print</div>
+</div>
+                                  
+<div class="dt-row">
+<div class="dt-cell">map</div>
+<div class="dt-cell">:map [<em>alias</em> <em>cmd</em>]</div>
+<div class="dt-cell">Maps <em>alias</em> to <em>cmd</em>, or shows current maps. 
+              The <em>alias</em> is interpreted as follow:
+<ul>
+<li>It is a number. Use to e.g. overwrite control keys, 
+                <code>map 5 WWW</code> results in redefining ctrl-e as WWW.</li>
+<li>Otherwise. Maps strings to other strings, e.g. 
+                <code>map :A :ab</code> results in showing abbreviations after i
+                pressing :A.</li>
+</ul> </div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">mark</div>
+<div class="dt-cell">:[<em>1addr</em>]ma[rk]<em>character</em><br/>
+                    :[<em>1addr</em>]k<em>character</em></div>
+<div class="dt-cell">Marks address with character</div>
+</div>
+
+<div class="dt-row">
+<div class="dt-cell">marks</div>
+<div class="dt-cell">:marks</div>
+<div class="dt-cell">Shows all markers</div>
+</div>
+                                
+<div class="dt-row">
+<div class="dt-cell">move</div>
+<div class="dt-cell">:[<em>2addr</em>]m[ove] <em>1addr</em></div>
+<div class="dt-cell">Move the specified lines after the specified destination 
+            line x</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">new</div>
+<div class="dt-cell">:new</div>
+<div class="dt-cell">New document (dialog)</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">number</div>
+<div class="dt-cell">:[<em>2addr</em>]nu[mber][<em>flags</em>]
+                     :[<em>2addr</em>]#[<em>flags</em>]</div>
+<div class="dt-cell">These commands shall be equivalent to the ex command:
+            [2addr] p[rint][count] #[flags] </div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">print</div>
+<div class="dt-cell">:[<em>2addr</em>]p[rint][<em>flags</em>]<br/> 
+                     :print [<em>file</em>]</div>
+<div class="dt-cell">Write the addressed lines<br/> 
+            If the # flag is specified, each line is preceded by line number.<br/> 
+            The second synopsis shows print dialog if file is not spcified, 
+            otherwise prints file.
+            If the l flag is specified, each line ends with a $ sign.
+</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">put</div>
+<div class="dt-cell">:[<em>1addr</em>]pu[t][<em>buffer</em>]</div>
+<div class="dt-cell">Append text from the specified buffer 
+            (by default, the unnamed buffer) to the specified line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">quit</div>
+<div class="dt-cell">:q[ui] [!]</div>
+<div class="dt-cell">Quit unless modified, quit forced</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">read</div>
+<div class="dt-cell">:[<em>1addr</em>]r[ead] [!][<em>file</em>]</div>
+<div class="dt-cell">If ! not specified insert contents of file below cursor, 
+            otherwise inserts output or running file command below cursor</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">register</div>
+<div class="dt-cell">:reg</div>
+<div class="dt-cell">Shows registers (buffers) and variables from calculation mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">sed</div>
+<div class="dt-cell">:sed [<em>match</em> <em>replace</em>]
+            [<em>extension</em>]
+            [<em>folder</em>][<em>options</em>]</div>
+<div class="dt-cell">If nothing specified shows replace in files dialog, 
+            otherwise replaces match by replace in folder matching file extension 
+            using options:<br/> 
+            /r: recursive</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">set</div>
+<div class="dt-cell">:set [<em>
+  option[=[value]] ...][nooption ...][option? ...][all]</em>]</div>
+<div class="dt-cell">If all specified shows all options, 
+            otherwise sets, unsets, or queries specified options</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">sort</div>
+<div class="dt-cell">:[<em>2addr</em>]S[<em>options</em>]</div>
+<div class="dt-cell">Sorts range by lines using options:<br/> 
+            r: reverse<br/> u: unique<br/> 
+            x,y: use columns</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">source</div>
+<div class="dt-cell">:so <em>file</em></div>
+<div class="dt-cell">Executes all commands from file</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">substitute</div>
+<div class="dt-cell">
+  <span class="nobr">:[<em>2addr</em>]s[ubstitute]/<em>pattern/repl/[options]</em></span><br/> 
+      :[<em>2addr</em>]&amp;[<em>options</em>]<br/> 
+      :[<em>2addr</em>]~[<em>options</em>]</div>
+<div class="dt-cell">Replace the first instance of the pattern pattern by the 
+              string repl on each specified line. If both pattern and repl 
+              are not specified or are empty (for example, "//" ), 
+              the last s command is repeated. If only pattern is not specified 
+              or is empty, the last regular expression used in the editor is 
+              used as the pattern.<br/> 
+              Supported options:<br/> 
+              i: ignore case<br/> 
+              c: ask for confirmation<br/> 
+              g: global, otherwise only first match on line<br/> 
+              When substituting you can use:
+<ul>
+<li>&amp; or \0 to represent the target,</li>
+<li>\U to convert to uppercase,</li>
+<li>\L to convert to lowercase,</li>
+<li>$ to match a line end, e.g. %s/$/EOL appends the string EOL at the end of each line.</li>
+<li>~ to match against a previous replacement string.</li>
+</ul>
+Merging is not yet possible using a \n target, you can create a macro for that.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">syntax</div>
+<div class="dt-cell">:syntax <em>options</em></div>
+<div class="dt-cell">Use syntax highlighting, options are on or off</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">tab</div>
+<div class="dt-cell">:n<br/> :prev</div>
+<div class="dt-cell">Next or previous</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">tag</div>
+<div class="dt-cell">:ta tag</div>
+<div class="dt-cell">Jumps to tag</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">unabbreviate</div>
+<div class="dt-cell">:una[bbrev] lhs</div>
+<div class="dt-cell">Unabbreviate lhs</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">unmap</div>
+<div class="dt-cell">:unm[ap] lhs</div>
+<div class="dt-cell">Unmaps lhs</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">version</div>
+<div class="dt-cell">:ve[rsion]</div>
+<div class="dt-cell">Shows version</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">visual</div>
+<div class="dt-cell">:vi</div>
+<div class="dt-cell">Switches to visual mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">write</div>
+<div class="dt-cell">:[<em>2addr</em>]w[rite] [&gt;&gt;][<em>file</em>]</div>
+<div class="dt-cell">If no lines are specified, the entire file is used. 
+            If the &gt;&gt; argument is specified, and the file already exists, 
+            the lines are appended to the file instead of replacing its contents.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">write and exit</div>
+<div class="dt-cell">:x[it]</div>
+<div class="dt-cell">Save and quit</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">write line</div>
+<div class="dt-cell">:[<em>1addr</em>]=</div>
+<div class="dt-cell">Shows line number</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">yank</div>
+<div class="dt-cell">:[<em>2addr</em>]ya[nk][<em>buffer</em>]</div>
+<div class="dt-cell">Copy the specified lines to the specified buffer 
+            (by default, the unnamed buffer)</div>
+</div>
+</div>
+</div>
+
+
+
+<p>Where: </p>
+<p><em>[1addr]</em> a single line address:</p>
+  
+Addresses are constructed as follows:
+<ul>
+<li> The character '.' (period) shall address the current line.
+<li> The character '$' shall address the last line of the edit buffer.
+<li> The positive decimal number n shall address the nth line of the edit buffer.
+<li> The address "'x" refers to the line marked with the mark name character 'x', 
+  which shall be a lowercase letter from the portable character set, 
+  the backquote character, or the single-quote character. It shall be 
+  an error if the line that was marked is not currently present in the edit 
+  buffer or the mark has not been set. Lines can be marked with the ex 
+  mark or k commands, or the vi m command.
+  In addition, it is also possible to use the ` character instead of 
+  the backquote, this also saves the column to the marker.
+<li> A regular expression enclosed by slash characters ( '/' ) shall 
+  address the first line found by searching forwards from the line 
+  following the current line toward the end of the edit buffer and 
+  stopping at the first line for which the line excluding the 
+  terminating newline matches the regular expression. As stated in 
+  Regular Expressions in ex, an address consisting of a null regular 
+  expression delimited by slash characters ( "//" ) shall address the 
+  next line for which the line excluding the terminating newline matches 
+  the last regular expression encountered. In addition, the second slash 
+  can be omitted at the end of a command line. If the wrapscan edit option 
+  is set, the search shall wrap around to the beginning of the edit buffer 
+  and continue up to and including the current line, so that the entire 
+  edit buffer is searched. Within the regular expression, the sequence "\/" 
+  shall represent a literal slash instead of the regular expression delimiter.
+<li> A regular expression enclosed in question-mark characters ( '?' ) shall 
+  address the first line found by searching backwards from the line 
+  preceding the current line toward the beginning of the edit buffer 
+  and stopping at the first line for which the line excluding the 
+  terminating newline matches the regular expression. An address 
+  consisting of a null regular expression delimited by question-mark 
+  characters ( "??" ) shall address the previous line for which the 
+  line excluding the terminating newline matches the last regular 
+  expression encountered. In addition, the second question-mark can be 
+  omitted at the end of a command line. If the wrapscan edit option is set, 
+  the search shall wrap around from the beginning of the edit buffer to 
+  the end of the edit buffer and continue up to and including the 
+  current line, so that the entire edit buffer is searched. Within 
+  the regular expression, the sequence "\?" shall represent a literal question-mark 
+  instead of the RE delimiter.
+<li> A plus or a minus ( '+-' ) followed by a decimal number 
+  shall address the current line plus or minus the number. A '+' or '-' 
+  not followed by a decimal number shall address the current line plus or minus 1.
+</ul>
+  
+<p><em>[2addr]</em> two addresses specifying an inclusive range of lines:</p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">chars</div>
+<div class="dt-head">range</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">%</div>
+<div class="dt-cell">entire document</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">*</div>
+<div class="dt-cell">visible area</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">'&lt;,'&gt;</div>
+<div class="dt-cell">visual (selected) area</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell"><em>[1addr]</em>,<em>[1addr]</em></div>
+<div class="dt-cell">inclusive range of lines</div>
+</div>
+</div>
+</div>
+
+
+
+<p>Text Input Mode</p>
+<p> Text input mode can be entered by the append, insert, or change commands; 
+it can be exited (and command mode re-entered) by typing a dot ( '.' ) 
+alone at the beginning of a line.
+If the input contains a '|' character, any subsequent characters, 
+up to the next newline are used as input text to the command, and text input
+mode is exited as well.
+Notice that this behaviour is slightly different from the open group specifications.
+</p>
+      
+<p>Set Options</p>
+<p>all set commands can be entered as modeline as well, 
+   at begin or end of file, boolean options can be switched
+   off by prefixing the option with no, current value
+   can be queried by postfixing by a ?
+</p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">command</div>
+<div class="dt-head">purpose</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ac</div>
+<div class="dt-cell">sets auto complete</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ai</div>
+<div class="dt-cell">sets auto indentation</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set aw</div>
+<div class="dt-cell">sets auto write</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set eb</div>
+<div class="dt-cell">sets error bells</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set el</div>
+<div class="dt-cell">sets edge line</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ic</div>
+<div class="dt-cell">sets ignore case</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set mw</div>
+<div class="dt-cell">sets match words</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set nu</div>
+<div class="dt-cell">sets line numbers</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set readonly</div>
+<div class="dt-cell">sets readonly</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set showmode</div>
+<div class="dt-cell">sets showing vi mode</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set sm</div>
+<div class="dt-cell">sets show match</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set sws</div>
+<div class="dt-cell">sets whitespace</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ut</div>
+<div class="dt-cell">sets use tabs</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set wm</div>
+<div class="dt-cell">sets wrap margin</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ws</div>
+<div class="dt-cell">sets wrap scan</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set dir=dir</div>
+<div class="dt-cell">sets dir</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ec=no</div>
+<div class="dt-cell">sets edge column</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set report=no</div>
+<div class="dt-cell">sets reported lines</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set sw=no</div>
+<div class="dt-cell">sets indentation</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set sy=lexer</div>
+<div class="dt-cell">sets lexer</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ts=no</div>
+<div class="dt-cell">sets tabstop at every no</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">:set ve=level</div>
+<div class="dt-cell">sets verbosity log level to specified level</div>
+</div>
+</div>
+</div>
+
+<p>Find and replace use 
+<a href="http://www.cplusplus.com/reference/regex/ECMAScript/">
+  std::regex ECMAScript regular expressions</a> 
+</p>
+<div class="dt">
+<div class="dt-body">
+<div class="dt-row">
+<div class="dt-head">character</div>
+<div class="dt-head">matches</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">.</div>
+<div class="dt-cell">Any character</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">(</div>
+<div class="dt-cell">This marks the start of a region for tagging a match.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">)</div>
+<div class="dt-cell">This marks the end of a tagged region.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">\int</div>
+<div class="dt-cell">The result of the submatch whose opening parenthesis is the 
+            int-th (int shall begin by a digit other than 0). 
+            For example, if the search string was Fred\([1-9]\)XXX and the 
+            replace string was Sam\1YYY, when applied to Fred2XXX this would 
+            generate Sam2YYY. 
+            \0 refers to all of the matching text.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">\b</div>
+<div class="dt-cell">This matches a word boudary.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">\x</div>
+<div class="dt-cell">This allows you to use a character x that would otherwise 
+            have a special meaning. 
+            For example, \[ would be interpreted as [ and not as the start of 
+            a character set.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">[...]</div>
+<div class="dt-cell">The target character is part of the class, 
+            for example, [abc] means any of the characters a, b or c. 
+            You can also use ranges, for example [a-z] for any lower case character.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">[^...]</div>
+<div class="dt-cell">The target character is not part of the class. 
+            For example, [^A-Za-z] means any character except an 
+            alphabetic character.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">^</div>
+<div class="dt-cell">This matches the start of a line (unless used inside a class, 
+            see above).</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">$</div>
+<div class="dt-cell">This matches the end of a line.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">*</div>
+<div class="dt-cell">This matches 0 or more times. 
+            For example, Sa*m matches Sm, Sam, Saam, Saaam and so on.</div>
+</div>
+<div class="dt-row">
+<div class="dt-cell">+</div>
+<div class="dt-cell">This matches 1 or more times. 
+            For example, Sa+m matches Sam, Saam, Saaam and so on.</div>
+</div>
+</div>
+</div>      
+
+<p>
+Regular expressions will only match ranges within a single line, 
+never matching over multiple lines.
+</p>
+
+</div>
+</body>
+</html>
