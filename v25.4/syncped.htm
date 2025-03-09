@@ -15,14 +15,14 @@
     <hr></hr>
 
     syncped is a <b>SYNC</b>hronizing <b>P</b>ortable <b>ED</b>itor
-    supporting more than 100 programming languages.
+    supporting more than 150 programming languages.
     </center>
   </big>
 </p>
 
 <div id="main">
   <p>
-    It is available under Windows, Linux, Mac OS, 
+    It is available under Windows, Linux, Mac OS,
     has a vi compatibility mode, and
     can be configured to work with most version control systems.
   </p>
@@ -46,29 +46,21 @@
       </ul>
     </div>
   </p>
-      
+
   <p>
+    <h3>
+    config
+    </h3>
     The config directory is ~/.config/wex or application exe
     directory on windows.
   </p>
 
   <p>
-    You can also enable verbose logging mode (-v) which allows
-    you to keep track of opening / saving files, and 
-    processes executed. Using option -V allows you to
-    set the log severity level, with 1 trace level, downto 6 fatal level.
-    The logfile syncped.log is present in the config directory, and 
-    is written to stdout.
-      
-    You can also set verbosity using :set ve
-  </p>
-      
-  <p>
     The config is stored as syncped.json in the config directory,
-    but you can use a local json file by specifying the -j 
-    command line parameter.
+    but you can use a local json file by specifying the -j
+    commandline parameter.
   </p>
-      
+
   <p>
     Default syncped starts up in visual mode, by specifying --ex
     on the commandline it starts up in ex mode. In ex mode large
@@ -76,7 +68,7 @@
     it is not kept in memory.
     There is also a margins setting 'Size visual' that determines
     the size of a file limit for visual opening. If file size exceeds
-    this limit, it default opens in ex mode. Large files 
+    this limit, it default opens in ex mode. Large files
     containing million lines can be edited this way.
     The margin setting 'Size lexer' determines the max size of a file
     for which syntax highlighting is performed. If the file size exceeds
@@ -84,21 +76,54 @@
   </p>
 
   <p>
+    <h3>
+    logging
+    </h3>
+    You can enable verbose logging mode (-v) which allows
+    you to keep track of opening / saving files, and
+    processes executed. Using option -V allows you to
+    set the log severity level, with 1 trace level, downto 6 fatal level.
+    The logfile syncped.log is present in the config directory, and
+    is written to stdout as well.
+
+    You can also set verbosity using :set ve
+  </p>
+
+  <p>
+    <h3>Beaufitiers</h3>
     You can also set a Beautifier to setup a binary that takes
-    care of beautyfying source code, e.g. select a clang-format binary.
-    You can also set a Beautifier to setup a binary that takes
-    care of beautyfying cmake code, e.g. select a gersemi binary.
-    For git repo's this respects any .clang-format or .gersemirc
-    file in the git root repo.
+    care of beautyfying:
+
+    <ul>
+    <li> source code: select a clang-format binary.
     It is used after you changed a file, and closed the tab from the notebook,
     or if you do a Replace In Files that also has .clang-format related file.
+    </li>
+    <li> cmake code: select a gersemi binary.</li>
+    <li> robot framework code: select a robotidy binary</li>
+    </ul>
+
+    For git repo's this respects any .clang-format or .gersemirc
+    file in the git root repo.
   </p>
-  
+
   <p>
-    server:
-    sp -w /tmp/xx &
-    listener:
-    tail -f /tmp/xx | sp -E
+    <h3>
+    commandline options
+    </h3>
+    an interesting setup is to
+    connect a syncped server and listener, that sends commands from
+    the server to the listener:
+
+    <header>
+    <h3>server:</h3>
+    <code>syncped -w /tmp/script &</code>
+    </header>
+
+    <header>
+    <h3>listener:</h3>
+    <code>tail -f /tmp/script | syncped -E</code>
+    </header>
   </p>
 </div>
 
