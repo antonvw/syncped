@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>vi Macros</title>
+</head>
+
+<body>
+<center><a id="vimacros"><b>vi Macros</b></a></center>
+
+<div id="main">
+<p>
+Some special macro variables exist as well, see the wex-macros.xml file.
+These variables can be used inside macros, or entered on the vi bar.
+When used inside macros, they are expanded when playing back.
+
+<p>
+Macros can refer to template files, giving you a possibility to
+e.g. create header files.
+
+<p>
+You can also record and playback macros from the menu bar. In that
+case macro names are not limited to one character.
+
+<p>
+You might add a macro to do a substitute on all open pages by
+pressing:
+
+<p>
+<code>
+qa<br>
+:%s/xxx/YYY/gc<br>
+:n<br>
+q<br>
+</code>
+
+<p>
+Then, after pressing <code>100@a</code>, this macro is run 100 times, to
+substitute in (at most) 100 open files, it stops at the last tab.
+
+<p>
+You can also add a macro to update column numbers. If you have the following
+columns:
+
+<p>
+<code>
+age   income<br>
+20    1000<br>
+21    1010<br>
+22    1020<br>
+23    1030<br>
+24    1040<br>
+</code>
+
+<p>
+The next macro increments the income on current line with 100,
+and moves to the next line:
+  
+<p>
+<code>
+qb<br>
+w<br>
+"x<br>
+yw<br>
+b<br>
+cw<br>
+^R=^Rx+100<br>
+ESCAPE<br>
+0j<br>
+q<br>
+</code>
+                          
+</div>
+</body>
+</html>
