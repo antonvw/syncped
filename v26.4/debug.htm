@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="syncped.css" />
+<title>debug</title>
+</head>
+
+<body>
+<center>
+  <a id="debug">
+</center>
+
+<div id="main">
+  <p>
+    Support for debugging is configured by the wex-menus.xml file. 
+    At this moment there is support for gdb.
+  </p>
+
+  <p>
+    Debugging is available if option -d is added when starting up.
+    Markers for breakpoints and current line of execution
+    are shown in the source code.
+  </p>
+
+  <p>
+    e.g. the next gdb commands are supported:
+  </p>
+
+  <p>
+    <table border="1" valign="top">
+      <tr bgcolor="#9acd32">
+        <th align="left">svn command</th>
+        <th align="left">action</th>
+      </tr>
+      <tr><td>break</td><td>invokes svn add</td></tr>
+      <tr><td>file </td><td>shows svn diff</td></tr>
+      <tr><td>next </td><td>asks for revision and shows revision in editor window</td></tr>
+      <tr><td>run  </td><td>asks for revision and shows revision with blame info in editor window</td></tr>
+      <tr><td>until</td><td>asks for commit text and commits</td></tr>
+    </table>
+  </p>
+
+  <p>
+    The debug submenu is shown when right clicking on an editor window.
+  </p>
+
+</div>
+</body>
+</html>
